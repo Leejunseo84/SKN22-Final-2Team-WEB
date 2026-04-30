@@ -49,7 +49,7 @@ logs/
 services/django/media/
 
 # Non-operational repository content
-docs/
+# docs/
 notebooks/
 scripts/
 tests/
@@ -94,3 +94,5 @@ GEMINI.md
 aws
 awscliv2.zip
 test_*
+.agents/
+scratch/

@@ -1,0 +1,3622 @@
+[
+  {
+    "id": "case_001_no_profile_A",
+    "description": "반려동물 정보 없이 일반적인 상품 추천 요청 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-001",
+      "user_input": "강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.5187591003987133,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.5181817007232701,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4943942401767729,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001249",
+          "goods_name": "뉴트리나 건강백서 건강한 체중 2kg",
+          "rerank_score": 0.4536487217782943,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.45)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_001_no_profile_B",
+    "description": "이미 추천받은 상품 외에 다른 카테고리(간식)를 추가로 요청하는 시나리오",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-002",
+      "user_input": "간식도 같이 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GS251131818",
+          "goods_name": "[첫구매전용] 로얄캐닌 독 포메라니안 어덜트 3kg 관절건강 + 간식증정",
+          "rerank_score": 0.8635837110919728,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.86)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251050759",
+          "goods_name": "로얄캐닌 독 에듁 50g 영양보조제",
+          "rerank_score": 0.8562339239987886,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.86)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251131814",
+          "goods_name": "[첫구매전용] 로얄캐닌 독 미니 인도어 어덜트 3kg 소화기 건강 + 간식증정",
+          "rerank_score": 0.8292174289431473,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.83)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251119401",
+          "goods_name": "스몰배치 터키 슈퍼부스터 198g",
+          "rerank_score": 0.6879495950037153,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.69)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251131817",
+          "goods_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+          "rerank_score": 0.5995582403134533,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.60)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_001_with_profile",
+    "description": "강아지 프로필이 있을 때 일반 사료 요청 시나리오",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-003",
+      "user_input": "우리 강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_002_no_profile",
+    "description": "특정 품종 및 카테고리에 맞는 상품 추천 시나리오 (프로필 미선택)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-004",
+      "user_input": "푸들 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "breed": "푸들"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "breed": "푸들",
+        "category": "사료"
+      },
+      "search_query": "강아지 푸들 사료",
+      "golden_products": [
+        {
+          "goods_id": "GI251025376",
+          "goods_name": "로얄캐닌 독 푸들 어덜트 500g 피모관리",
+          "rerank_score": 0.9380619460322964,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.94)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251035326",
+          "goods_name": "[12개세트] 로얄캐닌 독 푸들 어덜트 파우치 85g 피모관리",
+          "rerank_score": 0.8982545729736746,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.90)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251125512",
+          "goods_name": "로얄캐닌 독 푸들 어덜트 8+ 1.5kg 피모관리",
+          "rerank_score": 0.7861845991576579,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.79)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4920722977606246,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099898",
+          "goods_name": "시그니처바이 고양이 P/a 30g 8개",
+          "rerank_score": 0.4291435105094697,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.43)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "푸들",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_002_with_profile",
+    "description": "프로필의 품종(포메라니안) 정보를 활용한 상품 추천 시나리오 (사과)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-004-W",
+      "user_input": "우리 아이 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "사과",
+          "species": "강아지",
+          "breed": "포메라니안",
+          "active": true,
+          "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+          "species_en": "dog"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "사과",
+        "pet_type": "강아지",
+        "breed": "포메라니안",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "golden_products": [],
+      "expected_response_contains": [
+        "사과",
+        "포메라니안",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [
+          "eye",
+          "immunity"
+        ],
+        "allergies": [
+          "닭고기"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_003_with_profile",
+    "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-005-W",
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "포도",
+          "species": "고양이",
+          "health_concerns": [
+            "피부",
+            "헤어볼"
+          ],
+          "active": true,
+          "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+          "species_en": "cat",
+          "breed": "아비시니안"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ]
+      },
+      "search_query": "고양이 사료 피부 헤어볼",
+      "golden_products": [],
+      "expected_response_contains": [
+        "포도",
+        "피부",
+        "헤어볼",
+        "건강",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [
+          "dental"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_004_with_profile",
+    "description": "대형견 프로필의 건강 고민(체중, 피부) 정보를 활용한 상품 추천 시나리오 (골드)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-006-W",
+      "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "골드",
+          "species": "강아지",
+          "breed": "골든 리트리버",
+          "active": true,
+          "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+          "species_en": "dog"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "breed": "골든 리트리버",
+        "category": "사료",
+        "health_concerns": [
+          "체중",
+          "피부"
+        ]
+      },
+      "search_query": "강아지 사료 체중 피부",
+      "golden_products": [],
+      "expected_response_contains": [
+        "골드",
+        "체중",
+        "피부",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight",
+          "skin"
+        ],
+        "allergies": [
+          "가다랑어",
+          "양고기"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_003_with_profile",
+    "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-005-W",
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "포도",
+          "species": "고양이",
+          "health_concerns": [
+            "피부",
+            "헤어볼"
+          ],
+          "active": true,
+          "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+          "species_en": "cat",
+          "breed": "아비시니안"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ]
+      },
+      "search_query": "고양이 사료 피부 헤어볼",
+      "golden_products": [],
+      "expected_response_contains": [
+        "포도",
+        "피부",
+        "헤어볼",
+        "건강",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [
+          "dental"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_004_no_profile_A",
+    "description": "다중 속성(나이, 카테고리) 기반 상품 요청 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-006",
+      "user_input": "6살 강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "age": "6살"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지"
+      },
+      "requires_clarification": false,
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.5187591003987133,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.5181817007232701,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4943942401767729,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001249",
+          "goods_name": "뉴트리나 건강백서 건강한 체중 2kg",
+          "rerank_score": 0.4536487217782943,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.45)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "6살",
+        "강아지",
+        "사료",
+        "추천"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_004_no_profile_B",
+    "description": "다중 속성 기반 요청 후 추가 상품 요청 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-007",
+      "user_input": "간식은 없어?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "6살 강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "6살 강아지를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "age": "6살"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "age": "6살",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "golden_products": [
+        {
+          "goods_id": "GI251119687",
+          "goods_name": "고위드테일 흑돼지 크런칩 85g",
+          "rerank_score": 0.7394325267080241,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.74)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091601",
+          "goods_name": "개이득 소 큐브 200g",
+          "rerank_score": 0.5519790822614058,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.55)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091590",
+          "goods_name": "브리더랩 황태&소고기 고구마말이 180g",
+          "rerank_score": 0.5431509824094706,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.54)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091600",
+          "goods_name": "개이득 소 슬라이스 200g",
+          "rerank_score": 0.5145555530363182,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.51)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091603",
+          "goods_name": "개이득 연어 큐브 200g",
+          "rerank_score": 0.5092164938039125,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.51)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "category": "간식"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_004_with_profile_A",
+    "description": "강아지 프로필 기반 연령 맞춤 사료 요청 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-008",
+      "user_input": "초코 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "age": "8살",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_004_with_profile_B",
+    "description": "프로필 대화 중 다중 카테고리 탐색 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-009",
+      "user_input": "간식도 같이 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "age": "8살",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_005_no_profile_A",
+    "description": "한 번에 여러 반려동물(강아지, 고양이) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010",
+      "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.49531134009062366,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.50)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.49478954758849325,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.46988481129647375,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.47)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251135736",
+          "goods_name": "풀무원아미오 강아지 시원하개(1.5kg)",
+          "rerank_score": 0.43739179050642046,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.44)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기",
+        "그리고",
+        "고양이",
+        "간식",
+        "보여드릴까요"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_005_no_profile_B",
+    "description": "복합 요청 중 두 번째 상품(고양이 간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-B",
+      "user_input": "응 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "GI251099897",
+          "goods_name": "시그니처바이 고양이 A/a 30g 8개",
+          "rerank_score": 0.9000155180354232,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.90)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000006127",
+          "goods_name": "간택 고등어&타우린 50g",
+          "rerank_score": 0.7288570084766876,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.73)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251127725",
+          "goods_name": "쉐지애 참치&소고기 고양이 브로스캔 70g",
+          "rerank_score": 0.6342181084869724,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251135576",
+          "goods_name": "아임캣 뉴트리미오 고양이캔 참치&게살",
+          "rerank_score": 0.5228244447595722,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251132332",
+          "goods_name": "펫메이드 치킨그라스 면역력강화",
+          "rerank_score": 0.5040558638115619,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.50)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "고양이",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {},
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_005_with_profile_A",
+    "description": "다중 프로필(강아지 초코, 고양이 바나나) 기반 복합 상품 추천 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-W",
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "그다음",
+        "바나나",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_005_with_profile_B",
+    "description": "다중 프로필 복합 요청 중 두 번째 상품(바나나 간식) 순차 추천 시나리오 (후속 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-W-B",
+      "user_input": "응 바나나 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 영양 사료 리스트입니다! 그다음으로 바나나 간식도 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "GI251099897",
+          "goods_name": "시그니처바이 고양이 A/a 30g 8개",
+          "rerank_score": 0.9000155180354232,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.90)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000006127",
+          "goods_name": "간택 고등어&타우린 50g",
+          "rerank_score": 0.7288570084766876,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.73)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251127725",
+          "goods_name": "쉐지애 참치&소고기 고양이 브로스캔 70g",
+          "rerank_score": 0.6342181084869724,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251135576",
+          "goods_name": "아임캣 뉴트리미오 고양이캔 참치&게살",
+          "rerank_score": 0.5228244447595722,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251132332",
+          "goods_name": "펫메이드 치킨그라스 면역력강화",
+          "rerank_score": 0.5110741073931336,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.51)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "간식"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_006_no_profile_A",
+    "description": "특정 카테고리(장난감) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-011",
+      "user_input": "강아지 장난감 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감",
+      "golden_products": [
+        {
+          "goods_id": "PI000015254",
+          "goods_name": "헙스 멜란지 토이 원숭이",
+          "rerank_score": 0.6573061874063557,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.66)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251082619",
+          "goods_name": "KONG 콩 클래식 장난감 대",
+          "rerank_score": 0.5913412095171482,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.59)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251129079",
+          "goods_name": "바우독 대나무 판다 펫 토이 바스락 노즈워크 장난감 강아지 인형",
+          "rerank_score": 0.5,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.50)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GO251132474",
+          "goods_name": "뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)",
+          "rerank_score": 0.45790771688517695,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.46)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251133111",
+          "goods_name": "레토 강아지 노즈워크 장난감 간식 퍼즐 LDG-NW04",
+          "rerank_score": 0.4355756157751105,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.44)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "장난감",
+        "추천",
+        "여기",
+        "어떤"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품",
+          "subcategory": "장난감"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_006_no_profile_B",
+    "description": "추천 결과 중 특정 속성(재질, 성분) 추가 질문 시나리오 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-012",
+      "user_input": "면으로 된걸로 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 강아지 장난감들입니다! 고무 공이나 소리 나는 인형 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감 면",
+      "golden_products": [
+        {
+          "goods_id": "GI251132383",
+          "goods_name": "두잇 야미볼",
+          "rerank_score": 0.7989643618641485,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.80)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000015254",
+          "goods_name": "헙스 멜란지 토이 원숭이",
+          "rerank_score": 0.7712423888135902,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.77)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251129855",
+          "goods_name": "펫팀 새싹 노즈워크 매트 애플그린 L",
+          "rerank_score": 0.7547971383618455,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.75)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251082619",
+          "goods_name": "KONG 콩 클래식 장난감 대",
+          "rerank_score": 0.7246127293650537,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.72)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251129854",
+          "goods_name": "펫팀 새싹 노즈워크 매트 버터크림 L",
+          "rerank_score": 0.6416430931351137,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.64)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "면",
+        "장난감",
+        "추천"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품",
+          "subcategory": "장난감"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_006_with_profile_A",
+    "description": "프로필(초코) 정보에 맞춘 장난감 추천 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-011-W",
+      "user_input": "우리 초코 장난감 좀 추천해줄래?",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "장난감",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품",
+          "subcategory": "장난감"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_006_with_profile_B",
+    "description": "프로필(초코) 정보 기반 장난감 추천 중 재질 추가 필터링 시나리오 (후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-012-W",
+      "user_input": "면으로 된 건 없어?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 초코 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "초코가 좋아할 만한 장난감들이에요! 치발기나 공 종류가 인기가 많아요."
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감 면",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "면",
+        "장난감",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품",
+          "subcategory": "장난감"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_007_no_profile",
+    "description": "인기 상품 또는 특정 테마(가을, 외출 등)별 상품 추천 시나리오 (프로필 미선택)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-012",
+      "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "popularity",
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "의류"
+      },
+      "search_query": "강아지 옷 인기",
+      "golden_products": [
+        {
+          "goods_id": "GO251134983",
+          "goods_name": "도그웨그 스트라이프 카라 니트 강아지 고양이 겨울 옷 블루/브라운 S-XL",
+          "rerank_score": 1.01,
+          "match_reason": "실제 서비스 로직(Rerank Score: 1.01)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251129929",
+          "goods_name": "강아지옷장 3단 강아지행거 애견 고양이 반려동물 강아지옷걸이",
+          "rerank_score": 1.009391495601173,
+          "match_reason": "실제 서비스 로직(Rerank Score: 1.01)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GO251129093",
+          "goods_name": "도그웨그 해피 펫 와플 나시티 강아지 여름 옷 티셔츠 블루/옐로우 XS-XXL",
+          "rerank_score": 1.0088023088023088,
+          "match_reason": "실제 서비스 로직(Rerank Score: 1.01)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GO251134321",
+          "goods_name": "하웃 강아지 후리스 뽀글이 강아지 가을옷 겨울옷 셰르파 플리스 자켓",
+          "rerank_score": 1.0082315340909092,
+          "match_reason": "실제 서비스 로직(Rerank Score: 1.01)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GO251130677",
+          "goods_name": "크레용펫 소르베 쁘띠 리본 옷",
+          "rerank_score": 1.0076783216783216,
+          "match_reason": "실제 서비스 로직(Rerank Score: 1.01)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "인기",
+        "강아지",
+        "옷",
+        "추천"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_007_with_profile",
+    "description": "프로필(바나나) 정보에 맞춘 인기 상품(모래) 추천 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-013-W",
+      "user_input": "요즘 바나나한테 필요한 인기 있는 것 좀 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "popularity",
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "모래"
+      },
+      "search_query": "고양이 모래 인기",
+      "golden_products": [
+        {
+          "goods_id": "GS251098234",
+          "goods_name": "[6개세트] 바른벤토모래 6kg",
+          "rerank_score": 0.9816675528658952,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.98)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251041644",
+          "goods_name": "[1박스] 모래혁명(중간입자) 6kg x 3개",
+          "rerank_score": 0.7932979342821077,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.79)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251050135",
+          "goods_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+          "rerank_score": 0.7664910756887229,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.77)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251098233",
+          "goods_name": "[3개세트] 바른벤토모래 6kg",
+          "rerank_score": 0.7518906195941737,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.75)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251127591",
+          "goods_name": "[첫구매전용][3개세트] 바른벤토모래 6kg",
+          "rerank_score": 0.7142990808182791,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.71)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "인기",
+        "모래",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_no_profile_A",
+    "description": "3가지 이상의 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014",
+      "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.5187591003987133,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.5181817007232701,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4943942401767729,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001249",
+          "goods_name": "뉴트리나 건강백서 건강한 체중 2kg",
+          "rerank_score": 0.4536487217782943,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.45)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기",
+        "그다음",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_no_profile_B",
+    "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015",
+      "user_input": "간식도 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "GI251119687",
+          "goods_name": "고위드테일 흑돼지 크런칩 85g",
+          "rerank_score": 0.7394325267080241,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.74)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091601",
+          "goods_name": "개이득 소 큐브 200g",
+          "rerank_score": 0.5320621867091875,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.53)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251080203",
+          "goods_name": "아임펫 리얼 통살의 정석 참치맛 10개입",
+          "rerank_score": 0.529534822684093,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.53)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251133819",
+          "goods_name": "든든 동결건조 포근한 노른자 100g",
+          "rerank_score": 0.5220024370616491,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091590",
+          "goods_name": "브리더랩 황태&소고기 고구마말이 180g",
+          "rerank_score": 0.5219192647570128,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "간식",
+        "추천",
+        "여기",
+        "마지막으로",
+        "용품",
+        "보여줄까요"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {},
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_no_profile_C",
+    "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016",
+      "user_input": "마지막으로 용품도 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "GI251026283",
+          "goods_name": "오로자임 하이진겔 70g",
+          "rerank_score": 0.5575379980431563,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.56)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GO251132104",
+          "goods_name": "펫테일 강아지 슬링백 포대기",
+          "rerank_score": 0.5,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.50)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251132378",
+          "goods_name": "두잇 바나나브러쉬",
+          "rerank_score": 0.46358864565386304,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.46)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251129929",
+          "goods_name": "강아지옷장 3단 강아지행거 애견 고양이 반려동물 강아지옷걸이",
+          "rerank_score": 0.4343460330082404,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.43)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000002772",
+          "goods_name": "클린업 그루밍 글러브",
+          "rerank_score": 0.408743685899494,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.41)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "용품",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "category": "용품"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_with_profile_A",
+    "description": "다중 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 초코 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014-W",
+      "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "그다음",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_with_profile_B",
+    "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 초코 - 후속 요청 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015-W",
+      "user_input": "응 간식도 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "간식",
+        "추천",
+        "마지막으로",
+        "용품",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_008_with_profile_C",
+    "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 초코 - 후속 요청 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016-W",
+      "user_input": "마지막 용품도 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "용품",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "용품"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_009_no_profile_A",
+    "description": "추천 요청이 불분명할 경우 안내 유도 시나리오 (비정형 질문 대응 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014",
+      "user_input": "오늘 날씨 되게 좋다",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "날씨",
+        "상품",
+        "찾으시는",
+        "정보"
+      ],
+      "target_pet_id": null,
+      "search_query": "오늘 날씨 되게 좋다",
+      "golden_products": [
+        {
+          "goods_id": "GI251017381",
+          "goods_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+          "rerank_score": 0.859817218544427,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.86)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251128410",
+          "goods_name": "오늘멍냥 강아지 고양이 눈꼽빗 콤빗 블랙",
+          "rerank_score": 0.6570294784580497,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.66)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251028079",
+          "goods_name": "[1박스] 코스믹캣 해피데이 소프트 가는입자 6kg x 3개",
+          "rerank_score": 0.6484531328970993,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.65)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251017375",
+          "goods_name": "now 그레인프리 시니어 캣 3.6kg",
+          "rerank_score": 0.6284093810394648,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251104121",
+          "goods_name": "펫생각 하루조이 미니말랑 자색고구마 노즈워크 간식 200g",
+          "rerank_score": 0.5712458341184392,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.57)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {},
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_009_no_profile_B",
+    "description": "안내 유도 후에도 반복적인 비정형 질문 시 최종 전환 멘트 검증 (비정형 질문 대응 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015",
+      "user_input": "너는 주말에 보통 뭐해?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 반려동물과 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "지금까지 대화가 즐거웠습니다",
+        "본론으로 들어가 볼까요",
+        "어떤 상품을 찾으시나요"
+      ],
+      "target_pet_id": null,
+      "search_query": "너는 주말에 보통 뭐해?",
+      "golden_products": [
+        {
+          "goods_id": "PI000006085",
+          "goods_name": "런치 보니또 오리지널 참치 20g",
+          "rerank_score": 0.8854036310831317,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.89)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000006087",
+          "goods_name": "런치 보니또 가쓰오부시맛 20g",
+          "rerank_score": 0.8649783924526234,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.86)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001514",
+          "goods_name": "이나바 챠오 츄르 참치 버라이어티 40개입 (SC-131)",
+          "rerank_score": 0.8256540582923655,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.83)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251104121",
+          "goods_name": "펫생각 하루조이 미니말랑 자색고구마 노즈워크 간식 200g",
+          "rerank_score": 0.7565866190925369,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.76)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091157",
+          "goods_name": "Think Your Dog Teeth 띵크유어도그티 소고기딩고 우유껌 스틱형 20p",
+          "rerank_score": 0.7317138964011909,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.73)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {},
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_009_with_profile_A",
+    "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 1",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014-W",
+      "user_input": "초코랑 놀러 가고 싶다",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "초코",
+        "산책",
+        "나들이",
+        "어떤",
+        "상품"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "search_query": "강아지 말티즈 weight",
+      "golden_products": [],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_009_with_profile_B",
+    "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 2",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015-W",
+      "user_input": "너는 주말에 보통 뭐해?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "초코랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "초코",
+        "대화",
+        "본론",
+        "상품",
+        "찾으시는"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "search_query": "강아지 말티즈 weight",
+      "golden_products": [],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_no_profile_A",
+    "description": "펫 전환 테스트를 위한 초기 강아지 상품 요청 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016",
+      "user_input": "강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.5187591003987133,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.5181817007232701,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4943942401767729,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001249",
+          "goods_name": "뉴트리나 건강백서 건강한 체중 2kg",
+          "rerank_score": 0.4536487217782943,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.45)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_no_profile_B",
+    "description": "대화 중 펫 전환(Pet Switch) 및 맥락 교정 테스트 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-017",
+      "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "is_pet_switched": true,
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "고양이",
+        "어떤",
+        "상품",
+        "사료",
+        "간식",
+        "용품",
+        "모래",
+        "습식관"
+      ],
+      "search_query": "아니 강아지 말고 고양이 꺼 보여줘 고양이 사료",
+      "golden_products": [
+        {
+          "goods_id": "GI251017376",
+          "goods_name": "now 그레인프리 시니어 캣 7.2kg",
+          "rerank_score": 0.9073637468017712,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.91)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099902",
+          "goods_name": "시그니처바이 고양이 A/a 대용량 10g 30개",
+          "rerank_score": 0.7214758165583187,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.72)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099901",
+          "goods_name": "시그니처바이 고양이 P/a 대용량 10g 30개",
+          "rerank_score": 0.6769819441202768,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.68)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099897",
+          "goods_name": "시그니처바이 고양이 A/a 30g 8개",
+          "rerank_score": 0.671398806331197,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.67)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251135538",
+          "goods_name": "쉐지애 참치 고양이 주식 파우치 85g",
+          "rerank_score": 0.580952380952381,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.58)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_no_profile_C",
+    "description": "펫 전환 후 카테고리 응답 및 최종 추천 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-018",
+      "user_input": "사료",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 강아지 말고 고양이 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GS251018155",
+          "goods_name": "[12개세트] 로얄캐닌 캣 인스팅티브 파우치 85g 요로기계 건강",
+          "rerank_score": 0.7853080025555801,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.79)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251051969",
+          "goods_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+          "rerank_score": 0.6960892662712221,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.70)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000002305",
+          "goods_name": "웰니스 코어 시그니쳐 셀렉트 슈레드 닭고기와 닭간 79g",
+          "rerank_score": 0.6807087346355584,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.68)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "rerank_score": 0.6489335309106463,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.65)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251131933",
+          "goods_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+          "rerank_score": 0.6339650261209756,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "고양이",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_with_profile_A",
+    "description": "펫 전환 테스트를 위한 초기 펫 상품 요청 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-019",
+      "user_input": "초코 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료 시니어",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_with_profile_B",
+    "description": "이름 고지를 통한 펫 전환(Pet Switch) 테스트 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-020",
+      "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "pet_name": "바나나",
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "is_pet_switched": true,
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "바나나",
+        "고양이",
+        "어떤",
+        "상품",
+        "사료",
+        "간식",
+        "용품",
+        "모래",
+        "습식관"
+      ],
+      "search_query": "아니 초코 말고 바나나 꺼 보여줘 고양이 러시안 블루 사료 키튼",
+      "golden_products": [
+        {
+          "goods_id": "PI000012481",
+          "goods_name": "퓨리나 캣 원 키튼 1.4kg",
+          "rerank_score": 0.7334846586939479,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.73)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251063359",
+          "goods_name": "레오나르도 키튼 1.8kg",
+          "rerank_score": 0.7243217811974775,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.72)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251093272",
+          "goods_name": "로얄캐닌 캣 키튼 1.2kg",
+          "rerank_score": 0.7110933971582648,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.71)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000002332",
+          "goods_name": "뉴트리플랜 고양이 키튼 플러스 1.5kg",
+          "rerank_score": 0.6759570417078323,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.68)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000000901",
+          "goods_name": "now 그레인프리 키튼 3.6kg",
+          "rerank_score": 0.6563338773203009,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.66)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "키튼",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_010_with_profile_C",
+    "description": "이름 고지를 통한 펫 전환 후 최종 추천 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-021",
+      "user_input": "사료",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 초코 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나(고양이)를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_name": "바나나",
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GS251018155",
+          "goods_name": "[12개세트] 로얄캐닌 캣 인스팅티브 파우치 85g 요로기계 건강",
+          "rerank_score": 0.7853080025555801,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.79)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251051969",
+          "goods_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+          "rerank_score": 0.6960892662712221,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.70)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000002305",
+          "goods_name": "웰니스 코어 시그니쳐 셀렉트 슈레드 닭고기와 닭간 79g",
+          "rerank_score": 0.6807087346355584,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.68)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "rerank_score": 0.6489335309106463,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.65)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251131933",
+          "goods_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+          "rerank_score": 0.6339650261209756,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_011_no_profile_A",
+    "description": "알러지 제외 조건 검증 - 초기 요청 (종 정보 확인 필요)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-022",
+      "user_input": "닭고기 알러지 없는 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": null
+      },
+      "decomposed_tasks": [],
+      "allergies": [
+        "닭고기",
+        "치킨"
+      ],
+      "requires_clarification": true,
+      "clarification_target": "pet_type",
+      "expected_response_contains": [
+        "반려동물",
+        "강아지",
+        "고양이",
+        "어떤"
+      ],
+      "search_query": "사료",
+      "golden_products": [
+        {
+          "goods_id": "GI251120779",
+          "goods_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+          "rerank_score": 0.690278857145145,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.69)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251053994",
+          "goods_name": "퓨리나 캣 원 시니어 1.4kg",
+          "rerank_score": 0.6834686091396522,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.68)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251017375",
+          "goods_name": "now 그레인프리 시니어 캣 3.6kg",
+          "rerank_score": 0.5971594868454783,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.60)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099901",
+          "goods_name": "시그니처바이 고양이 P/a 대용량 10g 30개",
+          "rerank_score": 0.5667025134402234,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.57)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251133007",
+          "goods_name": "닥터클라우더 베스트 초이스 시니어 라이트 1.4kg (350g×4개)",
+          "rerank_score": 0.4685099846390167,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.47)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": [
+          "닭고기"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_011_no_profile_B",
+    "description": "알러지 제외 조건 검증 - 종 정보 획득 후 추천",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-023",
+      "user_input": "강아지",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "닭고기 알러지 없는 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 사료인가요? (강아지/고양이)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "allergies": [
+          "닭고기",
+          "치킨"
+        ]
+      },
+      "allergies": [
+        "닭고기",
+        "치킨"
+      ],
+      "search_query": "강아지 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GI251127318",
+          "goods_name": "우리주 가수분해 투뿔리아 소프트사료 200g(소고기/뼈와관절)",
+          "rerank_score": 0.7768330138326259,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.78)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001243",
+          "goods_name": "뉴트리나 건강백서 건강한 관절 2kg",
+          "rerank_score": 0.5187591003987133,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001244",
+          "goods_name": "뉴트리나 건강백서 건강한 6세이상 2kg",
+          "rerank_score": 0.5181817007232701,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.52)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001102",
+          "goods_name": "로얄캐닌 독 시츄 어덜트 1.5kg 피모관리",
+          "rerank_score": 0.4943942401767729,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.49)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001249",
+          "goods_name": "뉴트리나 건강백서 건강한 체중 2kg",
+          "rerank_score": 0.4536487217782943,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.45)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "닭고기",
+        "제외",
+        "추천"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_011_with_profile",
+    "description": "프로필 기반 알러지 자동 필터링 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-024",
+      "user_input": "사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "allergies": [
+            "닭고기"
+          ],
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료",
+        "allergies": [
+          "닭고기"
+        ]
+      },
+      "allergies": [
+        "닭고기"
+      ],
+      "search_query": "강아지 사료",
+      "golden_products": [],
+      "expected_response_contains": [
+        "초코",
+        "알러지",
+        "닭고기",
+        "제외",
+        "사료"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        "age_group": "시니어",
+        "health_concerns": [
+          "weight"
+        ],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_012_no_profile_A",
+    "description": "특수 포뮬러 조건 검증 (그레인 프리) - 초기 요청 (종 정보 확인 필요)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-025",
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": null
+      },
+      "decomposed_tasks": [],
+      "allergies": [
+        "곡물",
+        "그레인"
+      ],
+      "requires_clarification": true,
+      "clarification_target": "pet_type",
+      "expected_response_contains": [
+        "어떤 반려동물",
+        "강아지",
+        "고양이"
+      ],
+      "search_query": "간식",
+      "golden_products": [
+        {
+          "goods_id": "PI000006085",
+          "goods_name": "런치 보니또 오리지널 참치 20g",
+          "rerank_score": 0.7464911339757072,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.75)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251119687",
+          "goods_name": "고위드테일 흑돼지 크런칩 85g",
+          "rerank_score": 0.6951993450351308,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.70)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000006087",
+          "goods_name": "런치 보니또 가쓰오부시맛 20g",
+          "rerank_score": 0.6086986893175553,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.61)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251037935",
+          "goods_name": "황제트릿 동결건조 유산균 간식 닭가슴살 110g",
+          "rerank_score": 0.5966932470064152,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.60)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251127476",
+          "goods_name": "[첫구매전용] 황제트릿 동결건조 유산균 간식 북어 35g + 연어 45g 세트",
+          "rerank_score": 0.584919546457813,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.58)에 의해 추천되었습니다."
+        }
+      ],
+      "debug_info": {
+        "filters": {
+          "category": "간식"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": [
+          "곡물"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_012_no_profile_B",
+    "description": "특수 포뮬러 조건 검증 (그레인 프리) - 종 정보 획득 후 추천",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-026",
+      "user_input": "강아지",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (강아지/고양이)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식",
+        "allergies": [
+          "곡물",
+          "그레인"
+        ]
+      },
+      "allergies": [
+        "곡물",
+        "그레인"
+      ],
+      "search_query": "강아지 간식",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GI251119687",
+          "goods_name": "고위드테일 흑돼지 크런칩 85g",
+          "rerank_score": 0.7394325267080241,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.74)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091601",
+          "goods_name": "개이득 소 큐브 200g",
+          "rerank_score": 0.5519790822614058,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.55)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091590",
+          "goods_name": "브리더랩 황태&소고기 고구마말이 180g",
+          "rerank_score": 0.5431509824094706,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.54)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091600",
+          "goods_name": "개이득 소 슬라이스 200g",
+          "rerank_score": 0.5145555530363182,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.51)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251091603",
+          "goods_name": "개이득 연어 큐브 200g",
+          "rerank_score": 0.5092164938039125,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.51)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "곡물 제외",
+        "그레인 프리",
+        "간식",
+        "추천"
+      ],
+      "debug_info": {
+        "filters": {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": [
+          "곡물"
+        ]
+      }
+    }
+  },
+  {
+    "id": "case_012_with_profile",
+    "description": "프로필 기반 성분 선호도 반영 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-027",
+      "user_input": "간식 좀 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "food_preferences": [
+            "그레인프리"
+          ],
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식",
+        "allergies": [
+          "곡물"
+        ]
+      },
+      "allergies": [
+        "곡물"
+      ],
+      "search_query": "고양이 간식 그레인프리",
+      "golden_products": [
+        {
+          "goods_id": "PI000004364",
+          "goods_name": "그리니즈 필라인 이빨과자 점보 참치 277g",
+          "rerank_score": 0.9267875118240033,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.93)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000004360",
+          "goods_name": "그리니즈 필라인 이빨과자 치킨 점보 277g",
+          "rerank_score": 0.9036064653259169,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.90)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099897",
+          "goods_name": "시그니처바이 고양이 A/a 30g 8개",
+          "rerank_score": 0.8731150383072318,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.87)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000004362",
+          "goods_name": "그리니즈 필라인 이빨과자 점보 연어 277g",
+          "rerank_score": 0.8382118247812709,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.84)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000003329",
+          "goods_name": "뉴트리플랜 펫밀크 반려묘전용 50ml",
+          "rerank_score": 0.8319180933627183,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.83)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "그레인프리",
+        "간식",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "간식"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_013_no_profile",
+    "description": "비즈니스 로직 검증 (최저가 정렬)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-028",
+      "user_input": "제일 싼 고양이 모래 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "sort": "price_asc"
+      },
+      "sort": "price_asc",
+      "search_query": "고양이 모래",
+      "golden_products": [
+        {
+          "goods_id": "GI251048346",
+          "goods_name": "호랑이 두부모래 참숯 7L",
+          "rerank_score": 0.6696644140816965,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.67)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251062497",
+          "goods_name": "사니캣 옥수수 모래 6L",
+          "rerank_score": 0.5038145528903231,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.50)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000003563",
+          "goods_name": "샌드마스터 두부모래 오리지널 2.8kg",
+          "rerank_score": 0.6501200596412313,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.65)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000003504",
+          "goods_name": "벤토피아 더스트프리 무향 6.35kg",
+          "rerank_score": 0.33621154383992735,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.34)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251075985",
+          "goods_name": "펫띵 커피홀 모래 6L (3.25kg)",
+          "rerank_score": 0.7002050747822884,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.70)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "최저가",
+        "가장 저렴한",
+        "모래",
+        "추천"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이",
+          "category": "모래",
+          "subcategory": "벤토나이트"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_013_with_profile",
+    "description": "멀티턴 대화 중 가격 조건 추가 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-029",
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "바나나 모래 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 벤토나이트 모래 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "모래",
+        "sort": "price_asc"
+      },
+      "sort": "price_asc",
+      "search_query": "고양이 모래",
+      "golden_products": [
+        {
+          "goods_id": "GI251134662",
+          "goods_name": "크레용펫 부스러기 제로 촘촘 모래삽",
+          "rerank_score": 0.17451635083628791,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.17)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251105143",
+          "goods_name": "초심 두부모래 라벤더 7L",
+          "rerank_score": 0.38966999413249614,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.39)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251105144",
+          "goods_name": "초심 두부모래 우유향 7L",
+          "rerank_score": 0.033209519282686784,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.03)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251099960",
+          "goods_name": "캣츠루틴 순두부모래 7L",
+          "rerank_score": 0.4622475654717156,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.46)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251105142",
+          "goods_name": "초심 두부모래 오리지널 7L",
+          "rerank_score": 0.4579710018321135,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.46)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "제일 저렴한",
+        "가격 낮은 순",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "debug_info": {
+        "filters": {
+          "pet_type": "고양이"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  },
+  {
+    "id": "case_014_no_profile",
+    "description": "비즈니스 로직 검증 (특정 브랜드 제외)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-030",
+      "user_input": "로얄캐닌 말고 다른 사료 있어?",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "exclude_brands": [
+          "로얄캐닌"
+        ]
+      },
+      "exclude_brands": [
+        "로얄캐닌"
+      ],
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "rerank_score": 0.9339516033700574,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.93)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "rerank_score": 0.8216501725171927,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.82)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "rerank_score": 0.764862959604973,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.76)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "GS251131818",
+          "goods_name": "[첫구매전용] 로얄캐닌 독 포메라니안 어덜트 3kg 관절건강 + 간식증정",
+          "rerank_score": 0.7332946611202198,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.73)에 의해 추천되었습니다."
+        },
+        {
+          "goods_id": "PI000001067",
+          "goods_name": "로얄캐닌 독 미니 인도어 시니어 1.5kg 소화도움",
+          "rerank_score": 0.6339772876990807,
+          "match_reason": "실제 서비스 로직(Rerank Score: 0.63)에 의해 추천되었습니다."
+        }
+      ],
+      "expected_response_contains": [
+        "로얄캐닌",
+        "브랜드 제외",
+        "다른 브랜드",
+        "추천"
+      ],
+      "target_pet_id": null,
+      "debug_info": {
+        "filters": {
+          "category": "사료",
+          "brand": "로얄캐닌"
+        },
+        "age_group": "어덜트",
+        "health_concerns": [],
+        "allergies": []
+      }
+    }
+  }
+]

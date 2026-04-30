@@ -1,0 +1,4097 @@
+[
+  {
+    "id": "case_001_no_profile_A",
+    "description": "반려동물 정보 없이 일반적인 상품 추천 요청 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-001",
+      "user_input": "강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_001_no_profile_B",
+    "description": "이미 추천받은 상품 외에 다른 카테고리(간식)를 추가로 요청하는 시나리오",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-002",
+      "user_input": "간식도 같이 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "간식",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_001_with_profile",
+    "description": "강아지 프로필이 있을 때 일반 사료 요청 시나리오",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-003",
+      "user_input": "우리 강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_002_no_profile",
+    "description": "특정 품종 및 카테고리에 맞는 상품 추천 시나리오 (프로필 미선택)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-004",
+      "user_input": "푸들 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "breed": "푸들"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "breed": "푸들",
+        "category": "사료"
+      },
+      "search_query": "강아지 푸들 사료",
+      "golden_products": [
+        {
+          "goods_id": "GS251035326",
+          "goods_name": "[12개세트] 로얄캐닌 독 푸들 어덜트 파우치 85g 피모관리",
+          "popularity_score": 18.77,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.63,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 40.35,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025376",
+          "goods_name": "로얄캐닌 독 푸들 어덜트 500g 피모관리",
+          "popularity_score": 18.08,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.44,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 39.13,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251040097",
+          "goods_name": "로얄캐닌 독 푸들 어덜트 7.5kg 피모관리",
+          "popularity_score": 17.15,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.42,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 39.08,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251125512",
+          "goods_name": "로얄캐닌 독 푸들 어덜트 8+ 1.5kg 피모관리",
+          "popularity_score": 6.24,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 0.67,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 37.11,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "푸들",
+        "사료",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_002_with_profile",
+    "description": "프로필의 품종(포메라니안) 정보를 활용한 상품 추천 시나리오 (사과)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-004-W",
+      "user_input": "우리 아이 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "사과",
+          "species": "강아지",
+          "breed": "포메라니안",
+          "active": true,
+          "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+          "species_en": "dog"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "사과",
+        "pet_type": "강아지",
+        "breed": "포메라니안",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 45.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018171",
+          "goods_name": "[12개세트] 로얄캐닌 독 포메라니안 어덜트 파우치 85g 관절건강",
+          "popularity_score": 19.89,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.7,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 41.62,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251034776",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 1.5kg 관절건강",
+          "popularity_score": 31.91,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.35,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 41.57,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025380",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 500g 관절건강",
+          "popularity_score": 32.16,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.07,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 39.02,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251131818",
+          "goods_name": "[첫구매전용] 로얄캐닌 독 포메라니안 어덜트 3kg 관절건강 + 간식증정",
+          "popularity_score": 32.57,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.0,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 38.47,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "사과",
+        "포메라니안",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+    }
+  },
+  {
+    "id": "case_003_with_profile",
+    "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-005-W",
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "포도",
+          "species": "고양이",
+          "health_concerns": [
+            "피부",
+            "헤어볼"
+          ],
+          "active": true,
+          "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+          "species_en": "cat",
+          "breed": "아비시니안"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ]
+      },
+      "search_query": "고양이 사료 피부 헤어볼",
+      "golden_products": [
+        {
+          "goods_id": "PI000006185",
+          "goods_name": "아보덤 인도어 헤어볼 캣 1kg",
+          "popularity_score": 19.24,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.72,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 36.96,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "popularity_score": 47.6,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.8,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 36.77,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251035046",
+          "goods_name": "로얄캐닌 캣 헤어볼 케어 400g 헤어볼 배출촉진",
+          "popularity_score": 26.94,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.48,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 36.48,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018152",
+          "goods_name": "[12개세트] 로얄캐닌 캣 헤어&스킨케어 파우치 85g 피모관리",
+          "popularity_score": 22.9,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.48,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.65,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251035044",
+          "goods_name": "로얄캐닌 캣 헤어&스킨케어 400g 피모관리",
+          "popularity_score": 22.06,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.41,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.2,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "포도",
+        "피부",
+        "헤어볼",
+        "건강",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+    }
+  },
+  {
+    "id": "case_004_with_profile",
+    "description": "대형견 프로필의 건강 고민(체중, 피부) 정보를 활용한 상품 추천 시나리오 (골드)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-006-W",
+      "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "골드",
+          "species": "강아지",
+          "breed": "골든 리트리버",
+          "active": true,
+          "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+          "species_en": "dog"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "breed": "골든 리트리버",
+        "category": "사료",
+        "health_concerns": [
+          "체중",
+          "피부"
+        ]
+      },
+      "search_query": "강아지 사료 체중 피부",
+      "golden_products": [
+        {
+          "goods_id": "GI251109045",
+          "goods_name": "로얄캐닌 독 골든 리트리버 어덜트 12kg",
+          "popularity_score": 11.05,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.44,
+          "breed_bonus": 10.0,
+          "health_bonus": 0.0,
+          "total_score": 37.25,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251034790",
+          "goods_name": "로얄캐닌 독 미니 더마컴포트 3kg 피부보호",
+          "popularity_score": 20.39,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.52,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.44,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251129314",
+          "goods_name": "윌로펫 헬시포뮬러 헬시웨이트 1.2kg",
+          "popularity_score": 9.44,
+          "sentiment_avg": 0.98,
+          "repeat_rate": 0.83,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.16,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "골드",
+        "체중",
+        "피부",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1"
+    }
+  },
+  {
+    "id": "case_003_with_profile",
+    "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-005-W",
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "포도",
+          "species": "고양이",
+          "health_concerns": [
+            "피부",
+            "헤어볼"
+          ],
+          "active": true,
+          "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+          "species_en": "cat",
+          "breed": "아비시니안"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ]
+      },
+      "search_query": "고양이 사료 피부 헤어볼",
+      "golden_products": [
+        {
+          "goods_id": "PI000006185",
+          "goods_name": "아보덤 인도어 헤어볼 캣 1kg",
+          "popularity_score": 19.24,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.72,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 36.96,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "popularity_score": 47.6,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.8,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 36.77,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251035046",
+          "goods_name": "로얄캐닌 캣 헤어볼 케어 400g 헤어볼 배출촉진",
+          "popularity_score": 26.94,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.48,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 36.48,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018152",
+          "goods_name": "[12개세트] 로얄캐닌 캣 헤어&스킨케어 파우치 85g 피모관리",
+          "popularity_score": 22.9,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.48,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.65,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251035044",
+          "goods_name": "로얄캐닌 캣 헤어&스킨케어 400g 피모관리",
+          "popularity_score": 22.06,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.41,
+          "breed_bonus": 0.0,
+          "health_bonus": 5.0,
+          "total_score": 35.2,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "포도",
+        "피부",
+        "헤어볼",
+        "건강",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+    }
+  },
+  {
+    "id": "case_004_no_profile_A",
+    "description": "다중 속성(나이, 카테고리) 기반 상품 요청 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-006",
+      "user_input": "6살 강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "age": "6살"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지"
+      },
+      "requires_clarification": false,
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_name": "시니어 사료"
+        },
+        {
+          "goods_name": "성견용 사료"
+        }
+      ],
+      "expected_response_contains": [
+        "6살",
+        "강아지",
+        "사료",
+        "추천"
+      ]
+    }
+  },
+  {
+    "id": "case_004_no_profile_B",
+    "description": "다중 속성 기반 요청 후 추가 상품 요청 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-007",
+      "user_input": "간식은 없어?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "6살 강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "6살 강아지를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지",
+        "age": "6살"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "age": "6살",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "간식",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_004_with_profile_A",
+    "description": "강아지 프로필 기반 연령 맞춤 사료 요청 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-008",
+      "user_input": "초코 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "age": "8살",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_004_with_profile_B",
+    "description": "프로필 대화 중 다중 카테고리 탐색 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-009",
+      "user_input": "간식도 같이 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "age": "8살",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_005_no_profile_A",
+    "description": "한 번에 여러 반려동물(강아지, 고양이) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010",
+      "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기",
+        "그리고",
+        "고양이",
+        "간식",
+        "보여드릴까요"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_005_no_profile_B",
+    "description": "복합 요청 중 두 번째 상품(고양이 간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-B",
+      "user_input": "응 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "PI000006085",
+          "goods_name": "런치 보니또 오리지널 참치 20g",
+          "popularity_score": 37.62,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.64,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.2,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000006087",
+          "goods_name": "런치 보니또 가쓰오부시맛 20g",
+          "popularity_score": 37.08,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.04,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005340",
+          "goods_name": "이나바 트윈컵 닭가슴살&조개관자 70g (IMC-216)",
+          "popularity_score": 27.5,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.8,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036317",
+          "goods_name": "이나바 챠오 츄르 가다랑어&날치 (SC-178)",
+          "popularity_score": 31.76,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.54,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000004991",
+          "goods_name": "이나바 챠오 츄르 구루메 버라이어티 60개입 (SC-138)",
+          "popularity_score": 32.56,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.42,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "고양이",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_005_with_profile_A",
+    "description": "다중 프로필(강아지 초코, 고양이 바나나) 기반 복합 상품 추천 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-W",
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "그다음",
+        "바나나",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_005_with_profile_B",
+    "description": "다중 프로필 복합 요청 중 두 번째 상품(바나나 간식) 순차 추천 시나리오 (후속 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-010-W-B",
+      "user_input": "응 바나나 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 영양 사료 리스트입니다! 그다음으로 바나나 간식도 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "바나나",
+          "pet_type": "고양이",
+          "category": "간식"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "PI000006085",
+          "goods_name": "런치 보니또 오리지널 참치 20g",
+          "popularity_score": 37.62,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.64,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.2,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000006087",
+          "goods_name": "런치 보니또 가쓰오부시맛 20g",
+          "popularity_score": 37.08,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.04,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005340",
+          "goods_name": "이나바 트윈컵 닭가슴살&조개관자 70g (IMC-216)",
+          "popularity_score": 27.5,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.8,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036317",
+          "goods_name": "이나바 챠오 츄르 가다랑어&날치 (SC-178)",
+          "popularity_score": 31.76,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.54,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000004991",
+          "goods_name": "이나바 챠오 츄르 구루메 버라이어티 60개입 (SC-138)",
+          "popularity_score": 32.56,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.42,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "간식",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+    }
+  },
+  {
+    "id": "case_006_no_profile_A",
+    "description": "특정 카테고리(장난감) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-011",
+      "user_input": "강아지 장난감 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감",
+      "golden_products": [
+        {
+          "goods_name": "강아지 고무 공 장난감"
+        },
+        {
+          "goods_name": "바스라기 소리 인형"
+        }
+      ],
+      "expected_response_contains": [
+        "장난감",
+        "추천",
+        "여기",
+        "어떤"
+      ]
+    }
+  },
+  {
+    "id": "case_006_no_profile_B",
+    "description": "추천 결과 중 특정 속성(재질, 성분) 추가 질문 시나리오 (프로필 미선택 - 후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-012",
+      "user_input": "면으로 된걸로 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 강아지 장난감들입니다! 고무 공이나 소리 나는 인형 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감 면",
+      "golden_products": [
+        {
+          "goods_name": "면 로프 토이"
+        }
+      ],
+      "expected_response_contains": [
+        "면",
+        "장난감",
+        "추천"
+      ]
+    }
+  },
+  {
+    "id": "case_006_with_profile_A",
+    "description": "프로필(초코) 정보에 맞춘 장난감 추천 시나리오 (초기 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-011-W",
+      "user_input": "우리 초코 장난감 좀 추천해줄래?",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감",
+      "golden_products": [
+        {
+          "goods_name": "초코를 위한 고무 치발기"
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "장난감",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_006_with_profile_B",
+    "description": "프로필(초코) 정보 기반 장난감 추천 중 재질 추가 필터링 시나리오 (후속 요청)",
+    "input": {
+      "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+      "user_id": 2,
+      "request_id": "req-012-W",
+      "user_input": "면으로 된 건 없어?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 초코 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "초코가 좋아할 만한 장난감들이에요! 치발기나 공 종류가 인기가 많아요."
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 장난감 면",
+      "golden_products": [
+        {
+          "goods_name": "초코용 면 로프 장난감"
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "면",
+        "장난감",
+        "추천"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_007_no_profile",
+    "description": "인기 상품 또는 특정 테마(가을, 외출 등)별 상품 추천 시나리오 (프로필 미선택)",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-012",
+      "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "popularity",
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "의류"
+      },
+      "search_query": "강아지 옷 인기",
+      "golden_products": [
+        {
+          "goods_name": "F/W 베스트셀러 후드티"
+        }
+      ],
+      "expected_response_contains": [
+        "인기",
+        "강아지",
+        "옷",
+        "추천"
+      ]
+    }
+  },
+  {
+    "id": "case_007_with_profile",
+    "description": "프로필(바나나) 정보에 맞춘 인기 상품(모래) 추천 시나리오",
+    "input": {
+      "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+      "user_id": 2,
+      "request_id": "req-013-W",
+      "user_input": "요즘 바나나한테 필요한 인기 있는 것 좀 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "popularity",
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "모래"
+      },
+      "search_query": "고양이 모래 인기",
+      "golden_products": [
+        {
+          "goods_id": "GS251098234",
+          "goods_name": "[6개세트] 바른벤토모래 6kg",
+          "popularity_score": 38.44,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.77,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.3,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251041644",
+          "goods_name": "[1박스] 모래혁명(중간입자) 6kg x 3개",
+          "popularity_score": 30.35,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.03,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251050135",
+          "goods_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+          "popularity_score": 28.9,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.67,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018389",
+          "goods_name": "[3개세트] 네꼬모리 두부국시 나노입자 무향 2.8kg",
+          "popularity_score": 26.6,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.5,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251091026",
+          "goods_name": "[1박스] 아메리칸솔루션 엣지 노메스(무향) 6kg x 3개",
+          "popularity_score": 27.72,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.52,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.4,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "인기",
+        "모래",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+    }
+  },
+  {
+    "id": "case_008_no_profile_A",
+    "description": "3가지 이상의 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 미선택 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014",
+      "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기",
+        "그다음",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_008_no_profile_B",
+    "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015",
+      "user_input": "간식도 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "간식",
+        "추천",
+        "여기",
+        "마지막으로",
+        "용품",
+        "보여줄까요"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_008_no_profile_C",
+    "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016",
+      "user_input": "마지막으로 용품도 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "GI251017631",
+          "goods_name": "원데이케어 뉴트리션 덴탈바 콤보 50개입",
+          "popularity_score": 21.7,
+          "sentiment_avg": 0.98,
+          "repeat_rate": 0.59,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.04,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005502",
+          "goods_name": "포켄스 덴티페어리 SS 124개입",
+          "popularity_score": 28.37,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.45,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.85,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251026279",
+          "goods_name": "자이목스 오라틴 투스페이스트 젤 70g",
+          "popularity_score": 33.08,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.24,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.61,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001285",
+          "goods_name": "굿프랜드 네츄럴 먼치껌 50p",
+          "popularity_score": 25.79,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.42,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.45,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005501",
+          "goods_name": "포켄스 덴티페어리 베트 S 50개입",
+          "popularity_score": 19.32,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.45,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "용품",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_008_with_profile_A",
+    "description": "다중 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 초코 - 초기 요청)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014-W",
+      "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "new_decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "사료"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "그다음",
+        "간식",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_008_with_profile_B",
+    "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 초코 - 후속 요청 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015-W",
+      "user_input": "응 간식도 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "간식"
+        },
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "간식",
+        "추천",
+        "마지막으로",
+        "용품",
+        "보여줄까요"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_008_with_profile_C",
+    "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 초코 - 후속 요청 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016-W",
+      "user_input": "마지막 용품도 추천해줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "pet_type": "강아지",
+          "category": "용품"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "is_next_request": true,
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "golden_products": [
+        {
+          "goods_id": "GI251017631",
+          "goods_name": "원데이케어 뉴트리션 덴탈바 콤보 50개입",
+          "popularity_score": 21.7,
+          "sentiment_avg": 0.98,
+          "repeat_rate": 0.59,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.04,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005502",
+          "goods_name": "포켄스 덴티페어리 SS 124개입",
+          "popularity_score": 28.37,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.45,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.85,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251026279",
+          "goods_name": "자이목스 오라틴 투스페이스트 젤 70g",
+          "popularity_score": 33.08,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.24,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.61,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001285",
+          "goods_name": "굿프랜드 네츄럴 먼치껌 50p",
+          "popularity_score": 25.79,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.42,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.45,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005501",
+          "goods_name": "포켄스 덴티페어리 베트 S 50개입",
+          "popularity_score": 19.32,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.45,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "용품",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_009_no_profile_A",
+    "description": "추천 요청이 불분명할 경우 안내 유도 시나리오 (비정형 질문 대응 1)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014",
+      "user_input": "오늘 날씨 되게 좋다",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "날씨",
+        "상품",
+        "찾으시는",
+        "정보"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_009_no_profile_B",
+    "description": "안내 유도 후에도 반복적인 비정형 질문 시 최종 전환 멘트 검증 (비정형 질문 대응 2)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015",
+      "user_input": "너는 주말에 보통 뭐해?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 반려동물과 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "지금까지 대화가 즐거웠습니다",
+        "본론으로 들어가 볼까요",
+        "어떤 상품을 찾으시나요"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_009_with_profile_A",
+    "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 1",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-014-W",
+      "user_input": "초코랑 놀러 가고 싶다",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "초코",
+        "산책",
+        "나들이",
+        "어떤",
+        "상품"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_009_with_profile_B",
+    "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 2",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-015-W",
+      "user_input": "너는 주말에 보통 뭐해?",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "초코랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "unclear"
+      ],
+      "decomposed_tasks": [],
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "초코",
+        "대화",
+        "본론",
+        "상품",
+        "찾으시는"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_010_no_profile_A",
+    "description": "펫 전환 테스트를 위한 초기 강아지 상품 요청 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-016",
+      "user_input": "강아지 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_010_no_profile_B",
+    "description": "대화 중 펫 전환(Pet Switch) 및 맥락 교정 테스트 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-017",
+      "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "is_pet_switched": true,
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "고양이",
+        "어떤",
+        "상품",
+        "사료",
+        "간식",
+        "용품",
+        "모래",
+        "습식관"
+      ]
+    }
+  },
+  {
+    "id": "case_010_no_profile_C",
+    "description": "펫 전환 후 카테고리 응답 및 최종 추천 (프로필 미선택)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-018",
+      "user_input": "사료",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 강아지 말고 고양이 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "popularity_score": 47.6,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.8,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 36.77,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025596",
+          "goods_name": " 오리젠 캣 6피쉬 5.4kg",
+          "popularity_score": 33.14,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.7,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.08,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251094382",
+          "goods_name": "케어캣 올라이프 고양이 건식사료 20kg",
+          "popularity_score": 31.43,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.72,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.92,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025585",
+          "goods_name": "아카나 캣 그래스랜드 1.8kg",
+          "popularity_score": 32.64,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.57,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.32,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018145",
+          "goods_name": "[12개세트] 로얄캐닌 캣 키튼 파우치 85g 면역기능 강화",
+          "popularity_score": 33.58,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.57,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.18,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "고양이",
+        "사료",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_010_with_profile_A",
+    "description": "펫 전환 테스트를 위한 초기 펫 상품 요청 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-019",
+      "user_input": "초코 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료 시니어",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "사료",
+        "추천",
+        "여기"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_010_with_profile_B",
+    "description": "이름 고지를 통한 펫 전환(Pet Switch) 테스트 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-020",
+      "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "pet_name": "바나나",
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "is_pet_switched": true,
+      "requires_clarification": true,
+      "expected_response_contains": [
+        "바나나",
+        "고양이",
+        "어떤",
+        "상품",
+        "사료",
+        "간식",
+        "용품",
+        "모래",
+        "습식관"
+      ]
+    }
+  },
+  {
+    "id": "case_010_with_profile_C",
+    "description": "이름 고지를 통한 펫 전환 후 최종 추천 (프로필 선택 시)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-021",
+      "user_input": "사료",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 초코 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나(고양이)를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        },
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_name": "바나나",
+        "pet_type": "고양이"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "PI000003245",
+          "goods_name": "캐츠랑 전연령 20kg",
+          "popularity_score": 47.6,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.8,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 36.77,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025596",
+          "goods_name": " 오리젠 캣 6피쉬 5.4kg",
+          "popularity_score": 33.14,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.7,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.08,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251094382",
+          "goods_name": "케어캣 올라이프 고양이 건식사료 20kg",
+          "popularity_score": 31.43,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.72,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.92,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025585",
+          "goods_name": "아카나 캣 그래스랜드 1.8kg",
+          "popularity_score": 32.64,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.57,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.32,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018145",
+          "goods_name": "[12개세트] 로얄캐닌 캣 키튼 파우치 85g 면역기능 강화",
+          "popularity_score": 33.58,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.57,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.18,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "사료",
+        "추천",
+        "여기"
+      ]
+    }
+  },
+  {
+    "id": "case_011_no_profile_A",
+    "description": "알러지 제외 조건 검증 - 초기 요청 (종 정보 확인 필요)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-022",
+      "user_input": "닭고기 알러지 없는 사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": null
+      },
+      "decomposed_tasks": [],
+      "allergies": [
+        "닭고기",
+        "치킨"
+      ],
+      "requires_clarification": true,
+      "clarification_target": "pet_type",
+      "expected_response_contains": [
+        "반려동물",
+        "강아지",
+        "고양이",
+        "어떤"
+      ]
+    }
+  },
+  {
+    "id": "case_011_no_profile_B",
+    "description": "알러지 제외 조건 검증 - 종 정보 획득 후 추천",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-023",
+      "user_input": "강아지",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "닭고기 알러지 없는 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 사료인가요? (강아지/고양이)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "allergies": [
+          "닭고기",
+          "치킨"
+        ]
+      },
+      "allergies": [
+        "닭고기",
+        "치킨"
+      ],
+      "search_query": "강아지 사료",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "강아지",
+        "닭고기",
+        "제외",
+        "추천"
+      ]
+    }
+  },
+  {
+    "id": "case_011_with_profile",
+    "description": "프로필 기반 알러지 자동 필터링 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-024",
+      "user_input": "사료 추천해줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "초코",
+          "species": "강아지",
+          "allergies": [
+            "닭고기"
+          ],
+          "active": true,
+          "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+          "species_en": "dog",
+          "breed": "말티즈"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료",
+        "allergies": [
+          "닭고기"
+        ]
+      },
+      "allergies": [
+        "닭고기"
+      ],
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000000729",
+          "goods_name": "지위픽 독 에어드라이 소고기 1kg",
+          "popularity_score": 29.1,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.64,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251119395",
+          "goods_name": "스몰배치 포크 슬라이더 396g",
+          "popularity_score": 19.17,
+          "sentiment_avg": 0.91,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.32,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251050759",
+          "goods_name": "로얄캐닌 독 에듁 50g 영양보조제",
+          "popularity_score": 24.74,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.4,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251062290",
+          "goods_name": "지위픽 독 에어드라이 트라이프&양고기 2.5Kg",
+          "popularity_score": 13.72,
+          "sentiment_avg": 0.94,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.48,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000003601",
+          "goods_name": "지위픽 독 에어드라이 트라이프&양고기 1kg",
+          "popularity_score": 24.67,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.39,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 30.19,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "초코",
+        "알러지",
+        "닭고기",
+        "제외",
+        "사료"
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+    }
+  },
+  {
+    "id": "case_012_no_profile_A",
+    "description": "특수 포뮬러 조건 검증 (그레인 프리) - 초기 요청 (종 정보 확인 필요)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-025",
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": null
+      },
+      "decomposed_tasks": [],
+      "allergies": [
+        "곡물",
+        "그레인"
+      ],
+      "requires_clarification": true,
+      "clarification_target": "pet_type",
+      "expected_response_contains": [
+        "어떤 반려동물",
+        "강아지",
+        "고양이"
+      ]
+    }
+  },
+  {
+    "id": "case_012_no_profile_B",
+    "description": "특수 포뮬러 조건 검증 (그레인 프리) - 종 정보 획득 후 추천",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-026",
+      "user_input": "강아지",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (강아지/고양이)"
+        }
+      ],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "pet_type": "강아지"
+      },
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식",
+        "allergies": [
+          "곡물",
+          "그레인"
+        ]
+      },
+      "allergies": [
+        "곡물",
+        "그레인"
+      ],
+      "search_query": "강아지 간식",
+      "requires_clarification": false,
+      "golden_products": [
+        {
+          "goods_id": "GS251070105",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.02,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.09,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036666",
+          "goods_name": "네츄럴코어 독 미트스틱 혼합 20개입",
+          "popularity_score": 30.55,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.93,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251070104",
+          "goods_name": "[1+1] 네츄럴코어 독 미트스틱 실꼬리돔&명태 1개입",
+          "popularity_score": 28.0,
+          "sentiment_avg": 0.95,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.6,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251034247",
+          "goods_name": "[1+1] 럭셔리독 소고기 캔 375g",
+          "popularity_score": 29.57,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.59,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251080576",
+          "goods_name": "[3+3] 네츄럴코어 독 미트스틱 닭가슴살&참치 1개입",
+          "popularity_score": 27.11,
+          "sentiment_avg": 0.93,
+          "repeat_rate": 0.58,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.51,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "곡물 제외",
+        "그레인 프리",
+        "간식",
+        "추천"
+      ]
+    }
+  },
+  {
+    "id": "case_012_with_profile",
+    "description": "프로필 기반 성분 선호도 반영 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-027",
+      "user_input": "간식 좀 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "food_preferences": [
+            "그레인프리"
+          ],
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식",
+        "allergies": [
+          "곡물"
+        ]
+      },
+      "allergies": [
+        "곡물"
+      ],
+      "search_query": "고양이 간식 그레인프리",
+      "golden_products": [
+        {
+          "goods_id": "PI000006085",
+          "goods_name": "런치 보니또 오리지널 참치 20g",
+          "popularity_score": 37.62,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.64,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.2,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000006087",
+          "goods_name": "런치 보니또 가쓰오부시맛 20g",
+          "popularity_score": 37.08,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.04,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000005340",
+          "goods_name": "이나바 트윈컵 닭가슴살&조개관자 70g (IMC-216)",
+          "popularity_score": 27.5,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.63,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.8,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251036317",
+          "goods_name": "이나바 챠오 츄르 가다랑어&날치 (SC-178)",
+          "popularity_score": 31.76,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.55,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.54,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000004991",
+          "goods_name": "이나바 챠오 츄르 구루메 버라이어티 60개입 (SC-138)",
+          "popularity_score": 32.56,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.42,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "바나나",
+        "그레인프리",
+        "간식",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+    }
+  },
+  {
+    "id": "case_013_no_profile",
+    "description": "비즈니스 로직 검증 (최저가 정렬)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-028",
+      "user_input": "제일 싼 고양이 모래 보여줘",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "sort": "price_asc"
+      },
+      "sort": "price_asc",
+      "search_query": "고양이 모래",
+      "golden_products": [
+        {
+          "goods_id": "GS251098234",
+          "goods_name": "[6개세트] 바른벤토모래 6kg",
+          "popularity_score": 38.44,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.77,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.3,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251041644",
+          "goods_name": "[1박스] 모래혁명(중간입자) 6kg x 3개",
+          "popularity_score": 30.35,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.03,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251050135",
+          "goods_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+          "popularity_score": 28.9,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.67,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018389",
+          "goods_name": "[3개세트] 네꼬모리 두부국시 나노입자 무향 2.8kg",
+          "popularity_score": 26.6,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.5,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251091026",
+          "goods_name": "[1박스] 아메리칸솔루션 엣지 노메스(무향) 6kg x 3개",
+          "popularity_score": 27.72,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.52,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.4,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "최저가",
+        "가장 저렴한",
+        "모래",
+        "추천"
+      ],
+      "target_pet_id": null
+    }
+  },
+  {
+    "id": "case_013_with_profile",
+    "description": "멀티턴 대화 중 가격 조건 추가 검증",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-029",
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "바나나 모래 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 벤토나이트 모래 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "current_pet_profiles": [
+        {
+          "name": "바나나",
+          "species": "고양이",
+          "active": true,
+          "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+          "species_en": "cat",
+          "breed": "러시안 블루"
+        }
+      ]
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "모래",
+        "sort": "price_asc"
+      },
+      "sort": "price_asc",
+      "search_query": "고양이 모래",
+      "golden_products": [
+        {
+          "goods_id": "GS251098234",
+          "goods_name": "[6개세트] 바른벤토모래 6kg",
+          "popularity_score": 38.44,
+          "sentiment_avg": 0.9,
+          "repeat_rate": 0.77,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.3,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251041644",
+          "goods_name": "[1박스] 모래혁명(중간입자) 6kg x 3개",
+          "popularity_score": 30.35,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 32.03,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251050135",
+          "goods_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+          "popularity_score": 28.9,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.51,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.67,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251018389",
+          "goods_name": "[3개세트] 네꼬모리 두부국시 나노입자 무향 2.8kg",
+          "popularity_score": 26.6,
+          "sentiment_avg": 0.88,
+          "repeat_rate": 0.54,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.5,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251091026",
+          "goods_name": "[1박스] 아메리칸솔루션 엣지 노메스(무향) 6kg x 3개",
+          "popularity_score": 27.72,
+          "sentiment_avg": 0.87,
+          "repeat_rate": 0.52,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 31.4,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "제일 저렴한",
+        "가격 낮은 순",
+        "추천"
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+    }
+  },
+  {
+    "id": "case_014_no_profile",
+    "description": "비즈니스 로직 검증 (특정 브랜드 제외)",
+    "input": {
+      "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+      "user_id": 2,
+      "request_id": "req-030",
+      "user_input": "로얄캐닌 말고 다른 사료 있어?",
+      "conversation_history": [],
+      "current_pet_profiles": []
+    },
+    "expected_output": {
+      "intents": [
+        "recommend"
+      ],
+      "decomposed_tasks": [],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "exclude_brands": [
+          "로얄캐닌"
+        ]
+      },
+      "exclude_brands": [
+        "로얄캐닌"
+      ],
+      "search_query": "강아지 사료",
+      "golden_products": [
+        {
+          "goods_id": "PI000006240",
+          "goods_name": "로얄캐닌 독 포메라니안 어덜트 3kg 관절건강",
+          "popularity_score": 32.6,
+          "sentiment_avg": 0.89,
+          "repeat_rate": 0.88,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 35.24,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251045398",
+          "goods_name": "윌로펫 뉴트리탑 면역 3kg",
+          "popularity_score": 19.07,
+          "sentiment_avg": 0.99,
+          "repeat_rate": 1,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.88,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GI251025399",
+          "goods_name": "로얄캐닌 독 라브라도리트리버 어덜트 12kg 관절건강",
+          "popularity_score": 26.11,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.82,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.56,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "PI000001675",
+          "goods_name": "로얄캐닌 독 미니 인도어 어덜트 3kg",
+          "popularity_score": 30.96,
+          "sentiment_avg": 0.96,
+          "repeat_rate": 0.71,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 34.55,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        },
+        {
+          "goods_id": "GS251020206",
+          "goods_name": "[12개세트] 로얄캐닌 독 미니 어덜트 파우치 85g 장건강",
+          "popularity_score": 27.6,
+          "sentiment_avg": 0.92,
+          "repeat_rate": 0.67,
+          "breed_bonus": 0.0,
+          "health_bonus": 0.0,
+          "total_score": 33.17,
+          "match_reason": "반려견의 특성과 기호도를 고려하여 선정된 베스트 상품입니다."
+        }
+      ],
+      "expected_response_contains": [
+        "로얄캐닌",
+        "브랜드 제외",
+        "다른 브랜드",
+        "추천"
+      ],
+      "target_pet_id": null
+    }
+  }
+]

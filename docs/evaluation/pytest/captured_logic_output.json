@@ -1,0 +1,4612 @@
+[
+  {
+    "case_id": "case_001_no_profile_A",
+    "captured_at": "2026-04-15T12:48:18.477054",
+    "logic": {
+      "user_input": "강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_001_no_profile_B",
+    "captured_at": "2026-04-15T12:48:21.990979",
+    "logic": {
+      "user_input": "간식도 같이 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있기 때문이에요. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_001_with_profile",
+    "captured_at": "2026-04-15T12:48:25.604941",
+    "logic": {
+      "user_input": "우리 강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 체중 관리에 적합한 사료를 기준으로 하여, 초코의 건강 관심사인 체중을 고려했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_002_no_profile",
+    "captured_at": "2026-04-15T12:48:28.898093",
+    "logic": {
+      "user_input": "푸들 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_002_with_profile",
+    "captured_at": "2026-04-15T12:48:39.471635",
+    "logic": {
+      "user_input": "우리 아이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "active": true,
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "species_en": "dog",
+        "age": "3세 0개월",
+        "weight": "5.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ]
+    },
+    "actual_response": "사과에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 건강 관심사인 눈물과 면역에 도움이 될 수 있을 것으로 판단했어요.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-15T12:48:48.923002",
+    "logic": {
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 포도의 건강 관심사인 치아에 맞춰 사료 조건이 적합하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile",
+    "captured_at": "2026-04-15T12:48:55.825326",
+    "logic": {
+      "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 골든 리트리버 사료 체중 피부",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+      "pet_profile": {
+        "name": "골드",
+        "species": "dog",
+        "breed": "골든 리트리버",
+        "active": true,
+        "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+        "species_en": "dog",
+        "age": "8세 0개월",
+        "weight": "12.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "체중",
+        "피부"
+      ],
+      "recommended_goods_ids": [
+        "GI251061044",
+        "GI251106577",
+        "GI251034788",
+        "GI251061050",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251061044",
+        "GI251106577",
+        "GI251034788",
+        "GI251061050",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "골드에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 골드의 건강 관심사인 피부와 체중 관리에 적합한 사료들이며, 각각의 제품이 피부 건강을 지원하는 성분을 포함하고 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-15T12:49:06.410141",
+    "logic": {
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 포도의 건강 관심사인 치아에 맞춰 사료 조건이 적합하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_no_profile_A",
+    "captured_at": "2026-04-15T12:49:10.355200",
+    "logic": {
+      "user_input": "6살 강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "subcategory": "어덜트(1~7세)"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료",
+        "subcategory": "어덜트(1~7세)"
+      },
+      "search_query": "강아지 사료 어덜트(1~7세)",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025399",
+        "GI251079641",
+        "GI251025541",
+        "GI251129312",
+        "GI251025545"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025399",
+        "GI251079641",
+        "GI251025541",
+        "GI251129312",
+        "GI251025545"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 6살 강아지에게 적합한 사료 조건을 충족하며, 높은 평점과 많은 리뷰를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_no_profile_B",
+    "captured_at": "2026-04-15T12:49:13.590015",
+    "logic": {
+      "user_input": "간식은 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "6살 강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "6살 강아지를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있기 때문입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile_A",
+    "captured_at": "2026-04-15T12:49:17.448417",
+    "logic": {
+      "user_input": "초코 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "age": "10세 0개월",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 체중 관리에 적합한 사료를 기준으로 선택했으며, 각 제품이 체중 조절에 도움을 줄 수 있는 성분을 포함하고 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile_B",
+    "captured_at": "2026-04-15T12:49:20.195323",
+    "logic": {
+      "user_input": "간식도 같이 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 말티즈 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "age": "10세 0개월",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251128208",
+        "GI251120646",
+        "GI251100753",
+        "GI251135674",
+        "GI251091591"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251128208",
+        "GI251120646",
+        "GI251100753",
+        "GI251135674",
+        "GI251091591"
+      ]
+    },
+    "actual_response": "초코에 어울리는 간식을 추천드릴게요.\n\n추천 이유는 체중 관리에 적합한 간식으로, 평점이 높고 리뷰 수가 많은 제품들을 선정했기 때문입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_005_no_profile_A",
+    "captured_at": "2026-04-15T12:49:22.495691",
+    "logic": {
+      "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [
+        {
+          "pet_name": null,
+          "category": "간식",
+          "pet_type": "고양이",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "사료를 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_005_no_profile_B",
+    "captured_at": "2026-04-15T12:49:23.964026",
+    "logic": {
+      "user_input": "응 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "간식을 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_005_with_profile_A",
+    "captured_at": "2026-04-15T12:49:29.132861",
+    "logic": {
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 체중 관리에 적합한 사료를 기준으로 선택했어요. 각 상품은 체중 조절에 도움을 줄 수 있는 성분을 포함하고 있습니다.\n\n추천 상품을 확인해 주세요! \n\n혹시 초코의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_005_with_profile_B",
+    "captured_at": "2026-04-15T12:49:30.190163",
+    "logic": {
+      "user_input": "응 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 영양 사료 리스트입니다! 그다음으로 바나나 간식도 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_A",
+    "captured_at": "2026-04-15T12:49:34.235056",
+    "logic": {
+      "user_input": "강아지 장난감 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251082619",
+        "GI251129079",
+        "GI251132388",
+        "GI251133385",
+        "GI251132667"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251082619",
+        "GI251129079",
+        "GI251132388",
+        "GI251133385",
+        "GI251132667"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 장난감을 추천드릴게요.\n\n추천 이유는 강아지 장난감으로 적합하며, KONG 콩 클래식 장난감은 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 선택입니다. 또한, 도그웨그 바우독 대나무 판다 장난감과 크레용펫 완두콩 노즈워크 인형도 장난감 조건에 잘 맞습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_no_profile_B",
+    "captured_at": "2026-04-15T12:49:38.007934",
+    "logic": {
+      "user_input": "면으로 된걸로 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "면으로 된걸로 강아지 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 강아지 장난감들입니다! 고무 공이나 소리 나는 인형 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251082619",
+        "GI251132383",
+        "GI251132388",
+        "GI251120175",
+        "GI251132672"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251082619",
+        "GI251132383",
+        "GI251132388",
+        "GI251120175",
+        "GI251132672"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n면으로 된 장난감을 찾으신다면, KONG 콩 클래식 장난감과 크레용펫 완두콩 노즈워크 바스락 인형 장난감을 추천합니다. 두 제품 모두 용품 조건에 맞으며, 특히 크레용펫 제품은 높은 평점과 긍정적인 리뷰를 가지고 있어 더욱 신뢰할 수 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_with_profile_A",
+    "captured_at": "2026-04-15T12:49:41.930372",
+    "logic": {
+      "user_input": "우리 초코 장난감 좀 추천해줄래?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 말티즈 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251082619",
+        "GI251135485",
+        "GI251129859",
+        "GI251133053",
+        "GI251133063"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251082619",
+        "GI251135485",
+        "GI251129859",
+        "GI251133053",
+        "GI251133063"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 장난감의 조건과 평점이 우수한 제품들을 바탕으로 선택했습니다. 초코가 즐겁게 놀 수 있는 장난감들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_with_profile_B",
+    "captured_at": "2026-04-15T12:49:44.623395",
+    "logic": {
+      "user_input": "면으로 된 건 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "강아지 말티즈 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 초코 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "초코가 좋아할 만한 장난감들이에요! 치발기나 공 종류가 인기가 많아요."
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251082619",
+        "GI251135485",
+        "GI251129859",
+        "GI251133053",
+        "GI251133063"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251082619",
+        "GI251135485",
+        "GI251129859",
+        "GI251133053",
+        "GI251133063"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 장난감 요청 조건을 바탕으로, 다양한 장난감 중에서 평점이 높고 리뷰가 좋은 제품들을 선정했습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_007_no_profile",
+    "captured_at": "2026-04-15T12:49:48.114856",
+    "logic": {
+      "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+      "intents": [
+        "recommend",
+        "popularity"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251026283",
+        "GI251103059",
+        "GI251082619",
+        "GI251054053",
+        "GI251080404"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251026283",
+        "GI251103059",
+        "GI251082619",
+        "GI251054053",
+        "GI251080404"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 용품 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있기 때문입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_007_with_profile",
+    "captured_at": "2026-04-15T12:49:54.162999",
+    "logic": {
+      "user_input": "요즘 바나나한테 필요한 인기 있는 모래 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "search_query": "고양이 러시안 블루 모래 벤토나이트",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251118289",
+        "GI251109485",
+        "GI251128392",
+        "GI251126098",
+        "GI251050135"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251118289",
+        "GI251109485",
+        "GI251128392",
+        "GI251126098",
+        "GI251050135"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 모두 고양이에게 적합한 모래로, 각각의 상품이 높은 평점과 리뷰 수를 보유하고 있어 품질이 우수하다는 점입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_008_no_profile_A",
+    "captured_at": "2026-04-15T12:50:02.189895",
+    "logic": {
+      "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        },
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 강아지 사료 조건에 맞는 제품들로, 각각 높은 평점과 긍정적인 리뷰를 바탕으로 선택했습니다. \n\n추천 상품을 확인해 주세요!\n\n혹시 현재 펫의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_no_profile_B",
+    "captured_at": "2026-04-15T12:50:08.358316",
+    "logic": {
+      "user_input": "간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있기 때문이에요. \n\n추천 상품을 확인해 주세요! \n\n혹시 현재 펫의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_no_profile_C",
+    "captured_at": "2026-04-15T12:50:13.567105",
+    "logic": {
+      "user_input": "마지막으로 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251026283",
+        "GI251110362",
+        "GO251132474",
+        "GI251134142",
+        "GI251082619"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251026283",
+        "GI251110362",
+        "GO251132474",
+        "GI251134142",
+        "GI251082619"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 용품 조건에 맞고, 평점이 높은 제품들을 바탕으로 선택했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_008_with_profile_A",
+    "captured_at": "2026-04-15T12:50:23.464071",
+    "logic": {
+      "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        },
+        {
+          "pet_name": "초코",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 체중 관리에 적합한 사료를 기준으로 선택했어요. 이 사료들은 체중 조절에 도움을 줄 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!\n\n혹시 초코의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_with_profile_B",
+    "captured_at": "2026-04-15T12:50:30.946626",
+    "logic": {
+      "user_input": "응 간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 말티즈 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251128208",
+        "GI251120646",
+        "GI251100753",
+        "GI251135674",
+        "GI251091591"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251128208",
+        "GI251120646",
+        "GI251100753",
+        "GI251135674",
+        "GI251091591"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 체중 관리에 적합한 간식으로, 평점이 높고 리뷰 수가 많은 제품들을 선정했어요. \n\n추천 상품을 확인해 주세요! \n\n혹시 초코의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_with_profile_C",
+    "captured_at": "2026-04-15T12:50:40.664069",
+    "logic": {
+      "user_input": "마지막 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 말티즈 용품",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251050354",
+        "GI251080404",
+        "GI251078934",
+        "GI251134142",
+        "GI251126722"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251050354",
+        "GI251080404",
+        "GI251078934",
+        "GI251134142",
+        "GI251126722"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 체중 관리와 관련된 용품을 고려하여 선택했으며, 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요! \n\n혹시 초코의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_009_no_profile_A",
+    "captured_at": "2026-04-15T12:50:44.977589",
+    "logic": {
+      "user_input": "오늘 날씨 되게 좋다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_no_profile_B",
+    "captured_at": "2026-04-15T12:50:48.250949",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 반려동물과 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_A",
+    "captured_at": "2026-04-15T12:50:51.689711",
+    "logic": {
+      "user_input": "초코랑 놀러 가고 싶다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "강아지"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_B",
+    "captured_at": "2026-04-15T12:50:55.271690",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "강아지"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "초코랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_A",
+    "captured_at": "2026-04-15T12:51:00.204284",
+    "logic": {
+      "user_input": "강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_B",
+    "captured_at": "2026-04-15T12:51:05.911971",
+    "logic": {
+      "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "아니 강아지 고양이 꺼 고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "죄송하지만, 현재 고양이를 위한 사료 추천 상품이 확인되지 않았습니다. 조건에 맞는 상품이 일부만 확인되어 해당 상품만 보여드릴 수 없는 점 양해 부탁드립니다. \n\n혹시 다른 카테고리의 추천이 필요하시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_C",
+    "captured_at": "2026-04-15T12:51:12.660561",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 강아지 말고 고양이 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 고양이 사료 조건에 맞고, 각각의 상품이 높은 평점과 리뷰 수를 보유하고 있어 신뢰할 수 있는 선택이기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_A",
+    "captured_at": "2026-04-15T12:51:19.539638",
+    "logic": {
+      "user_input": "초코 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251020213",
+        "GI251034797",
+        "GI251130705",
+        "GI251128220"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 초코의 체중 관리에 적합한 사료를 기준으로 선택했어요. 각 제품은 체중 조절에 도움을 줄 수 있는 성분을 포함하고 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_B",
+    "captured_at": "2026-04-15T12:51:25.866456",
+    "logic": {
+      "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료 키튼",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251076115",
+        "GI251035033",
+        "GI251135055"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251076115",
+        "GI251035033",
+        "GI251135055"
+      ]
+    },
+    "actual_response": "애칭 바나나의 정보를 바탕으로 다시 추천해 드릴게요!\n\n바나나에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 바나나의 체중 관리에 적합한 사료들로, 각각의 제품이 고양이 키튼에게 필요한 영양소를 잘 갖추고 있으며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 선택입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_C",
+    "captured_at": "2026-04-15T12:51:33.233653",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 초코 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나(고양이)를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251035043",
+        "GI251034742",
+        "GI251135753",
+        "GI251135748",
+        "PI000005464"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035043",
+        "GI251034742",
+        "GI251135753",
+        "GI251135748",
+        "PI000005464"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나의 체중 관리에 적합한 사료들이며, 모두 체중 관리에 초점을 맞춘 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_011_no_profile_A",
+    "captured_at": "2026-04-15T12:51:35.913160",
+    "logic": {
+      "user_input": "닭고기 알러지 없는 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "사료를 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_011_no_profile_B",
+    "captured_at": "2026-04-15T12:51:41.141818",
+    "logic": {
+      "user_input": "강아지",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "닭고기 알러지 없는 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 사료인가요? (강아지/고양이)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251129313",
+        "GI251017381",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251129313",
+        "GI251017381",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 닭고기 알러지가 없는 사료를 찾으시는 조건을 바탕으로, 알러지에 적합한 제품들을 선정했습니다. 각 제품은 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_011_with_profile",
+    "captured_at": "2026-04-15T12:51:47.763181",
+    "logic": {
+      "user_input": "사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "allergies": [
+          "닭고기"
+        ],
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251130705",
+        "GI251120779",
+        "GI251120783",
+        "GI251120782"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251130705",
+        "GI251120779",
+        "GI251120783",
+        "GI251120782"
+      ]
+    },
+    "actual_response": "초코에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 체중 관리에 적합한 사료를 기준으로 하여, 초코의 건강 관심사와 잘 맞는 제품들을 선정했습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_012_no_profile_A",
+    "captured_at": "2026-04-15T12:51:48.841398",
+    "logic": {
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "간식을 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_012_no_profile_B",
+    "captured_at": "2026-04-15T12:51:52.295914",
+    "logic": {
+      "user_input": "강아지",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (강아지/고양이)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 곡물 안 들어간 간식 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_012_with_profile",
+    "captured_at": "2026-04-15T12:51:56.379081",
+    "logic": {
+      "user_input": "간식 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 러시안 블루 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "food_preferences": [
+          "그레인프리"
+        ],
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251073355"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251073355"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있는 선택이기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_013_no_profile",
+    "captured_at": "2026-04-15T12:52:00.137749",
+    "logic": {
+      "user_input": "제일 싼 고양이 모래 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "search_query": "제일 싼 고양이 모래 고양이 모래 벤토나이트",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 가격이 저렴하면서도 고양이 모래로서의 기능을 잘 수행하는 제품들로, 각각의 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 선택지입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_013_with_profile",
+    "captured_at": "2026-04-15T12:52:05.027949",
+    "logic": {
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "search_query": "제일 저렴한 거로 알려줘 고양이 러시안 블루 모래 벤토나이트",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "바나나 모래 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 벤토나이트 모래 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나의 모래 조건에 맞는 제품들로, 각각의 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 선택지들입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_014_no_profile",
+    "captured_at": "2026-04-15T12:52:06.171379",
+    "logic": {
+      "user_input": "로얄캐닌 말고 다른 사료 있어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "사료를 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_001_no_profile_A",
+    "captured_at": "2026-04-15T12:52:09.101952",
+    "logic": {
+      "user_input": "고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_001_no_profile_B",
+    "captured_at": "2026-04-15T12:52:11.744107",
+    "logic": {
+      "user_input": "간식도 같이 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 간식을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 평점이 높아 많은 사용자들에게 긍정적인 평가를 받은 제품들입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_001_with_profile",
+    "captured_at": "2026-04-15T12:52:16.750692",
+    "logic": {
+      "user_input": "우리 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료 키튼",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251076115",
+        "GI251035033",
+        "GI251135055"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251076115",
+        "GI251035033",
+        "GI251135055"
+      ]
+    },
+    "actual_response": "애칭 바나나의 정보를 바탕으로 다시 추천해 드릴게요!\n\n바나나에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 바나나의 체중 관리에 적합한 사료를 기준으로 하였으며, 각 제품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_002_no_profile",
+    "captured_at": "2026-04-15T12:52:19.837207",
+    "logic": {
+      "user_input": "아비시니안 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_002_with_profile",
+    "captured_at": "2026-04-15T12:52:21.766312",
+    "logic": {
+      "user_input": "우리 아이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "search_query": "강아지 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-15T12:52:31.864604",
+    "logic": {
+      "user_input": "우리 사과 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "애칭 사과의 정보를 바탕으로 다시 추천해 드릴게요!\n\n사과에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞고, 평점이 높은 제품을 바탕으로 선택했습니다. 특히 면역과 눈물 건강에 도움이 될 수 있는 사료를 고려했습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile",
+    "captured_at": "2026-04-15T12:52:42.263890",
+    "logic": {
+      "user_input": "우리 바나나 체중, 피부 관리를 위한 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 러시안 블루 사료 키튼",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "체중",
+        "피부"
+      ],
+      "recommended_goods_ids": [
+        "GI251028677",
+        "GI251131995",
+        "GI251131997",
+        "GI251132002",
+        "GI251132001"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251028677",
+        "GI251131995",
+        "GI251131997",
+        "GI251132002",
+        "GI251132001"
+      ]
+    },
+    "actual_response": "애칭 바나나의 정보를 바탕으로 다시 추천해 드릴게요!\n\n바나나에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 체중과 피부 관리를 위한 사료 조건에 맞고, 평점이 높은 제품을 바탕으로 선택했어요. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-15T12:52:51.891222",
+    "logic": {
+      "user_input": "우리 사과 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "dog",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0,
+        "age": "3세 0개월",
+        "weight": "5.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ]
+    },
+    "actual_response": "사과에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 건강에 도움이 될 것으로 판단했어요.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_no_profile_A",
+    "captured_at": "2026-04-15T12:52:54.945274",
+    "logic": {
+      "user_input": "1살 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료",
+        "subcategory": "어덜트(1~7세)"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료",
+        "subcategory": "어덜트(1~7세)"
+      },
+      "search_query": "고양이 사료 어덜트(1~7세)",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251076112",
+        "GI251132633",
+        "GI251076113",
+        "GI251025602",
+        "GI251034752"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251076112",
+        "GI251132633",
+        "GI251076113",
+        "GI251025602",
+        "GI251034752"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 1살 고양이에게 적합한 사료 조건을 충족하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_no_profile_B",
+    "captured_at": "2026-04-15T12:52:57.432763",
+    "logic": {
+      "user_input": "간식은 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "1살 고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "키튼 고양이를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 평점이 높아 많은 사용자들에게 긍정적인 평가를 받은 제품들입니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile_A",
+    "captured_at": "2026-04-15T12:53:06.759383",
+    "logic": {
+      "user_input": "포도 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 포도의 건강 관심사인 치아에 맞춰 사료 조건이 적합하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_004_with_profile_B",
+    "captured_at": "2026-04-15T12:53:15.565330",
+    "logic": {
+      "user_input": "간식도 같이 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 아비시니안 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "포도에 어울리는 간식을 추천드릴게요.\n\n추천 이유는 치아 건강에 도움이 되는 간식으로, 높은 평점과 많은 리뷰를 바탕으로 선택했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_005_no_profile_A",
+    "captured_at": "2026-04-15T12:53:19.304282",
+    "logic": {
+      "user_input": "포도 사료랑 고양이 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": null,
+          "category": "간식",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞는 제품들로, 각각 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있는 선택입니다.\n\n추천 상품을 확인해 주세요!\n\n혹시 현재 펫의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_005_no_profile_B",
+    "captured_at": "2026-04-15T12:53:22.138783",
+    "logic": {
+      "user_input": "응 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 평점이 높은 제품들을 바탕으로 선택했습니다. 특히 면역력 강화에 도움을 줄 수 있는 제품도 포함되어 있어 건강에도 좋습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_005_with_profile_A",
+    "captured_at": "2026-04-15T12:53:26.202063",
+    "logic": {
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "바나나",
+          "category": "간식",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나의 사료 조건에 맞는 제품들로, 각각의 상품이 높은 평점과 리뷰 수를 보유하고 있어 신뢰할 수 있는 선택입니다.\n\n추천 상품을 확인해 주세요!\n\n혹시 바나나의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_005_with_profile_B",
+    "captured_at": "2026-04-15T12:53:27.314495",
+    "logic": {
+      "user_input": "응 사과 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 사료 리스트입니다! 그다음으로 사과 간식도 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_A",
+    "captured_at": "2026-04-15T12:53:31.167952",
+    "logic": {
+      "user_input": "고양이 장난감 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251133385",
+        "GI251134181",
+        "GI251051980",
+        "GI251136525",
+        "GI251132808"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251133385",
+        "GI251134181",
+        "GI251051980",
+        "GI251136525",
+        "GI251132808"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 고양이 장난감으로서의 조건을 충족하며, 특히 펫띵 냥설록 캣닢 장난감은 평점이 4.1로 높고 리뷰도 47건이 있어 많은 사용자들에게 긍정적인 반응을 얻고 있습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_no_profile_B",
+    "captured_at": "2026-04-15T12:53:36.729632",
+    "logic": {
+      "user_input": "면으로 된걸로 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "으로 된걸로 고양이 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 고양이 장난감들입니다! 깃털 막대나 레이저 포인터 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251136038",
+        "GI251107474",
+        "GI251107460",
+        "GI251136525",
+        "GI251107470"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136038",
+        "GI251107474",
+        "GI251107460",
+        "GI251136525",
+        "GI251107470"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n면으로 된 장난감을 원하신다는 조건을 바탕으로, 고양이가 좋아할 만한 다양한 장난감을 선택했습니다. 특히, 젤리히어로즈의 낚시대 리필 제품은 높은 평점과 많은 리뷰를 통해 인기를 얻고 있어 추천드립니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_with_profile_A",
+    "captured_at": "2026-04-15T12:53:41.214462",
+    "logic": {
+      "user_input": "우리 바나나 장난감 좀 추천해줄래?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 러시안 블루 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7,
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나의 장난감 요청에 맞춰 다양한 장난감 옵션을 고려했으며, 특히 젤리히어로즈 낚시대 리필은 높은 평점과 많은 리뷰를 바탕으로 추천합니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_006_with_profile_B",
+    "captured_at": "2026-04-15T12:53:45.215731",
+    "logic": {
+      "user_input": "면으로 된 건 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 러시안 블루 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 바나나 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나가 좋아할 만한 장난감들이에요! 공이나 스크래처 종류가 인기가 많아요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7,
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나가 좋아할 만한 장난감으로, 다양한 종류의 장난감이 포함되어 있어 고양이의 호기심을 자극할 수 있기 때문이에요. 특히, 젤리히어로즈 낚시대 리필은 높은 평점과 많은 리뷰를 바탕으로 인기가 많습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_007_no_profile",
+    "captured_at": "2026-04-15T12:53:49.291467",
+    "logic": {
+      "user_input": "요즘 인기 있는 고양이 옷 보여줘",
+      "intents": [
+        "recommend",
+        "popularity"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251134043",
+        "GI251102583",
+        "GI251104691",
+        "GI251111381",
+        "GI251129971"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251134043",
+        "GI251102583",
+        "GI251104691",
+        "GI251111381",
+        "GI251129971"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 고양이 용품으로서의 조건을 충족하며, 각각의 상품이 높은 평점과 리뷰 수를 기록하고 있어 인기가 많기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_007_with_profile",
+    "captured_at": "2026-04-15T12:54:02.644755",
+    "logic": {
+      "user_input": "요즘 사과한테 필요한 인기 있는 패드 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 포메라니안 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251120245",
+        "GI251120247",
+        "GI251102583",
+        "GI251120255",
+        "GI251120252"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251120245",
+        "GI251120247",
+        "GI251102583",
+        "GI251120255",
+        "GI251120252"
+      ]
+    },
+    "actual_response": "애칭 사과의 정보를 바탕으로 다시 추천해 드릴게요!\n\n사과에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 용품 조건과 맞는 제품들로, 특히 바른 바른 철벽 수직 스크래쳐는 높은 평점과 많은 리뷰를 바탕으로 신뢰할 수 있는 선택입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_008_no_profile_A",
+    "captured_at": "2026-04-15T12:54:07.161397",
+    "logic": {
+      "user_input": "고양이 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        },
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 고양이 사료 조건에 맞는 제품들을 바탕으로 평점과 리뷰 수를 고려하여 선택했습니다. \n\n추천 상품을 확인해 주세요! \n\n혹시 현재 펫의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_no_profile_B",
+    "captured_at": "2026-04-15T12:54:11.438664",
+    "logic": {
+      "user_input": "간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건에 맞고, 평점이 높은 제품들을 바탕으로 선택했습니다. 특히, 면역력 강화에 도움을 줄 수 있는 제품도 포함되어 있어 건강에도 좋습니다.\n\n추천 상품을 확인해 주세요! \n\n혹시 현재 펫의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_no_profile_C",
+    "captured_at": "2026-04-15T12:54:14.916667",
+    "logic": {
+      "user_input": "마지막으로 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251129709",
+        "GI251102583",
+        "GI251134043",
+        "GI251104154",
+        "GI251104691"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251129709",
+        "GI251102583",
+        "GI251134043",
+        "GI251104154",
+        "GI251104691"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 고양이 용품으로서 스크래쳐가 필요하다는 조건을 바탕으로, 다양한 제품을 확인해 보았습니다. 특히 평점이 높은 제품들을 중심으로 추천드리니, 만족스러운 선택이 될 거예요.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_008_with_profile_A",
+    "captured_at": "2026-04-15T12:54:25.897267",
+    "logic": {
+      "user_input": "포도 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "포도",
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        },
+        {
+          "pet_name": "포도",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 포도의 건강 관심사인 치아를 고려하여, 사료 조건에 맞고 높은 평점을 받은 제품들을 선택했습니다. \n\n추천 상품을 확인해 주세요!\n\n혹시 포도의 간식 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_with_profile_B",
+    "captured_at": "2026-04-15T12:54:36.196660",
+    "logic": {
+      "user_input": "응 간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 아비시니안 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "포도",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "포도에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 간식 조건과 맞고, 각각의 상품이 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있는 선택이기 때문이에요.\n\n추천 상품을 확인해 주세요! \n\n혹시 포도의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_008_with_profile_C",
+    "captured_at": "2026-04-15T12:54:43.086184",
+    "logic": {
+      "user_input": "마지막 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 아비시니안 용품 치아",
+      "decomposed_tasks": [
+        {
+          "pet_name": "포도",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251126889",
+        "GI251104381",
+        "GI251026277",
+        "GI251095255",
+        "GI251026279"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251126889",
+        "GI251104381",
+        "GI251026277",
+        "GI251095255",
+        "GI251026279"
+      ]
+    },
+    "actual_response": "포도에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 포도의 치아 건강 관심사와 관련된 용품을 바탕으로 선택했습니다. 이 제품들은 치아 관리에 도움을 줄 수 있는 아이템들입니다.\n\n추천 상품을 확인해 주세요! \n\n혹시 포도의 용품 추천 상품도 바로 보여드릴까요?"
+  },
+  {
+    "case_id": "case_009_no_profile_A",
+    "captured_at": "2026-04-15T12:54:44.181091",
+    "logic": {
+      "user_input": "오늘 날씨 되게 좋다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_no_profile_B",
+    "captured_at": "2026-04-15T12:54:45.301215",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 포도와 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_A",
+    "captured_at": "2026-04-15T12:54:46.384487",
+    "logic": {
+      "user_input": "포도랑 놀러 가고 싶다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_B",
+    "captured_at": "2026-04-15T12:54:47.197163",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "포도랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_A",
+    "captured_at": "2026-04-15T12:54:50.278901",
+    "logic": {
+      "user_input": "고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사료 조건에 맞고, 각각의 상품이 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_B",
+    "captured_at": "2026-04-15T12:54:59.586929",
+    "logic": {
+      "user_input": "아니 고양이 말고 사과 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "애칭 사과의 정보를 바탕으로 다시 추천해 드릴게요!\n\n사과에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 사과의 건강 관심사인 눈물과 면역을 고려하여, 알레르기 반응이 없는 성분으로 구성된 사료를 선택했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_C",
+    "captured_at": "2026-04-15T12:55:09.308587",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 고양이 말고 사과 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "사과를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+        }
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ]
+    },
+    "actual_response": "사과에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞고, 각각의 상품이 높은 평점과 긍정적인 리뷰를 보유하고 있어 신뢰할 수 있는 선택이기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_A",
+    "captured_at": "2026-04-15T12:55:20.390134",
+    "logic": {
+      "user_input": "포도 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도에 어울리는 사료를 추천드릴게요.\n\n추천 이유는 포도의 건강 관심사인 치아에 맞춰 사료 조건이 적합하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_B",
+    "captured_at": "2026-04-15T12:55:31.030611",
+    "logic": {
+      "user_input": "아니 포도 말고 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "아니 바나나 꺼 고양이 러시안 블루 사료 키튼",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251025585",
+        "GI251025596",
+        "GI251130103",
+        "GI251135741",
+        "GI251135746"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025585",
+        "GI251025596",
+        "GI251130103",
+        "GI251135741",
+        "GI251135746"
+      ]
+    },
+    "actual_response": "애칭 바나나의 정보를 바탕으로 다시 추천해 드릴게요!\n\n바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 치아 건강을 고려한 사료로, 평점이 높고 리뷰 수가 많은 제품들로 선정했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_010_with_profile_C",
+    "captured_at": "2026-04-15T12:55:40.858970",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 포도 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035168",
+        "GI251135541",
+        "GI251025596",
+        "GI251100479",
+        "GI251025585"
+      ]
+    },
+    "actual_response": "바나나에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 바나나의 치아 건강을 고려하여, 고양이 사료 중에서 평점이 높고 리뷰가 많은 제품들을 선택했습니다. \n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_011_no_profile",
+    "captured_at": "2026-04-15T12:55:44.030558",
+    "logic": {
+      "user_input": "닭고기 알러지 없는 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251131933",
+        "GI251051969"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251131933",
+        "GI251051969"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 닭고기 알러지 없는 사료 조건을 충족하며, 높은 평점과 리뷰 수를 바탕으로 신뢰할 수 있는 제품들입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_011_with_profile",
+    "captured_at": "2026-04-15T12:55:47.276530",
+    "logic": {
+      "user_input": "사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251130705",
+        "GI251120779",
+        "GI251120783",
+        "GI251120782"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251130705",
+        "GI251120779",
+        "GI251120783",
+        "GI251120782"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_012_no_profile_A",
+    "captured_at": "2026-04-15T12:55:48.269869",
+    "logic": {
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "간식을 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_012_no_profile_B",
+    "captured_at": "2026-04-15T12:55:51.682621",
+    "logic": {
+      "user_input": "고양이",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (고양이/강아지)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 곡물 안 들어간 간식 조건에 맞고, 평점이 높은 제품들을 바탕으로 선택했습니다. 특히 면역력 강화에 도움을 줄 수 있는 제품도 포함되어 있어 건강에도 좋습니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_012_with_profile",
+    "captured_at": "2026-04-15T12:55:53.246125",
+    "logic": {
+      "user_input": "그레인 프리 간식 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "고양이 러시안 블루 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251073355"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251073355"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_013_no_profile",
+    "captured_at": "2026-04-15T12:55:56.350942",
+    "logic": {
+      "user_input": "제일 싼 강아지 패드 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "배변용품"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "배변용품"
+      },
+      "search_query": "강아지 배변용품",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251054053",
+        "GI251054054",
+        "GI251050348",
+        "GI251120959",
+        "GI251080404"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251054053",
+        "GI251054054",
+        "GI251050348",
+        "GI251120959",
+        "GI251080404"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 배변용품 조건에 맞고, 각각의 상품이 좋은 평점과 리뷰를 가지고 있어 신뢰할 수 있기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  },
+  {
+    "case_id": "case_013_with_profile",
+    "captured_at": "2026-04-15T12:55:58.088627",
+    "logic": {
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "effective_filters": {},
+      "search_query": "제일 저렴한 거로 알려줘 고양이 러시안 블루 모래 벤토나이트",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "사과 패드 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "사과를 위한 강아지 패드 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_014_no_profile",
+    "captured_at": "2026-04-15T12:56:01.204787",
+    "logic": {
+      "user_input": "로얄캐닌 말고 다른 고양이 사료 있어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251051969",
+        "GI251025585",
+        "GI251076113",
+        "GI251099897"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251051969",
+        "GI251025585",
+        "GI251076113",
+        "GI251099897"
+      ]
+    },
+    "actual_response": "우리 아이에 어울리는 상품을 추천드릴게요.\n\n추천 이유는 사료 조건과 맞고, 각각의 상품이 높은 평점과 많은 리뷰를 보유하고 있어 신뢰할 수 있는 선택이기 때문입니다.\n\n추천 상품을 확인해 주세요!"
+  }
+]

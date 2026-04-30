@@ -1,0 +1,4598 @@
+[
+  {
+    "case_id": "case_001_no_profile_A",
+    "captured_at": "2026-04-21T11:32:55.414025",
+    "logic": {
+      "user_input": "강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 옵션을 고려했습니다. 예산 범위에 대한 정보가 없으니, 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_001_no_profile_B",
+    "captured_at": "2026-04-21T11:33:02.889413",
+    "logic": {
+      "user_input": "간식도 같이 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 건강 관리에 도움이 되며, 특별한 알러지 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_001_with_profile",
+    "captured_at": "2026-04-21T11:33:16.156807",
+    "logic": {
+      "user_input": "우리 강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135752",
+        "GI251034797",
+        "PI000005456",
+        "GI251128248",
+        "GI251126193"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135752",
+        "GI251034797",
+        "PI000005456",
+        "GI251128248",
+        "GI251126193"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 타입 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **아미오 풀무원아미오 강아지 날씬하개(1.5kg)**\n- 사료 조건과 체중 관심사에 잘 맞는 제품입니다.\n\n2. **로얄캐닌 로얄캐닌 독 미니 라이트 웨이트 케어 1kg**\n- 체중 조절에 효과적인 성분으로 구성되어 있습니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 독 알맞은 체중 3.4kg**\n- 체중 관리에 적합한 영양소가 포함되어 있습니다.\n\n4. **프로뉴트리션 프레스티지 독 미니 라이트 3kg**\n- 체중 조절을 위한 최적의 선택으로 추천드립니다.\n\n5. **위시본 위시본 강아지 소고기 1.8kg**\n- 체중 관리에 도움이 되는 성분으로 구성되어 있습니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_002_no_profile",
+    "captured_at": "2026-04-21T11:33:26.032682",
+    "logic": {
+      "user_input": "푸들 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 사료를 고려했습니다. 예산 범위에 대한 정보가 없으니, 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_002_with_profile",
+    "captured_at": "2026-04-21T11:33:39.042142",
+    "logic": {
+      "user_input": "우리 아이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "active": true,
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "species_en": "dog",
+        "age": "3세 0개월",
+        "weight": "5.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "사과를 위한 사료 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **퓨리나 퓨리나 캣 원 시니어 1.4kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **오리젠 오리젠 캣 6피쉬 1.8kg**\n- 다양한 생선이 포함되어 있어 영양가가 높습니다.\n\n3. **쉐지애 쉐지애 참치&도미 고양이 주식 파우치 85g**\n- 참치와 도미의 조화로 맛있고 영양가가 좋습니다.\n\n4. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 높은 평점을 받아 품질이 보장됩니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 참치로 만들어져 있어 맛있고 건강에 좋습니다.\n\n이 중에서 사과의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-21T11:33:50.825889",
+    "logic": {
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile",
+    "captured_at": "2026-04-21T11:33:59.817302",
+    "logic": {
+      "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 골든 리트리버 사료 피부",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+      "pet_profile": {
+        "name": "골드",
+        "species": "dog",
+        "breed": "골든 리트리버",
+        "active": true,
+        "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+        "species_en": "dog",
+        "age": "8세 0개월",
+        "weight": "12.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "피부"
+      ],
+      "recommended_goods_ids": [
+        "GI251106577",
+        "GI251061050",
+        "GI251061044",
+        "GI251034790",
+        "GI251128250"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106577",
+        "GI251061050",
+        "GI251061044",
+        "GI251034790",
+        "GI251128250"
+      ]
+    },
+    "actual_response": "골드를 위한 사료 추천을 드리겠습니다! 피부 관리에 도움이 되며, 양고기 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **트럼펫 트럼펫 소프트 클로버 스킨앤코트 1kg**\n- 사료 조건과 피부 관심사에 잘 맞는 제품입니다.\n\n2. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 피부 건강을 고려한 성분으로 구성되어 있습니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 피부&모질 1.2kg**\n- 피부와 모질 개선에 도움을 줄 수 있는 사료입니다.\n\n4. **로얄캐닌 로얄캐닌 독 미니 더마컴포트 3kg 피부보호**\n- 피부 보호에 특화된 성분이 포함되어 있습니다.\n\n5. **프로뉴트리션 프레스티지 독 어덜트 스킨케어 3kg**\n- 피부 관리에 적합한 영양소가 풍부한 제품입니다.\n\n이 중에서 골드의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-21T11:34:14.715671",
+    "logic": {
+      "user_input": "우리 포도 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_no_profile_A",
+    "captured_at": "2026-04-21T11:34:21.568202",
+    "logic": {
+      "user_input": "6살 강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 옵션을 고려했습니다. 예산 범위에 대한 정보가 없으니, 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 6살 강아지에게 적합합니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 소형견에게 적합한 선택입니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 알레르기 걱정 없이 안전하게 급여할 수 있는 사료입니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 피부와 모질 건강을 고려한 사료로, 강아지에게 좋은 선택입니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 다이어트식으로 건강한 체중 관리를 도와줄 수 있는 제품입니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_no_profile_B",
+    "captured_at": "2026-04-21T11:34:28.535765",
+    "logic": {
+      "user_input": "간식은 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "6살 강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "6살 강아지를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 강아지에게 적합한 간식 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **빅스비 빅스비 바크팝 고구마&사과 113g**\n- 간식 조건과 잘 맞아 강아지가 좋아할 만한 조합입니다.\n\n2. **올리브 올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g**\n- 건강한 재료로 만들어져 강아지에게 안전한 간식입니다.\n\n3. **올리브 올리브 콰삭콰삭 치킨&오트 강아지 간식 120g**\n- 맛있는 치킨과 오트의 조화로 강아지가 즐길 수 있는 간식입니다.\n\n4. **개이득 개이득 소 큐브 200g**\n- 높은 평점을 받은 제품으로, 강아지의 입맛을 사로잡을 수 있습니다.\n\n5. **개이득 개이득 연어 큐브 200g**\n- 연어의 풍미가 가득한 간식으로, 강아지에게 특별한 간식 경험을 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile_A",
+    "captured_at": "2026-04-21T11:34:42.149678",
+    "logic": {
+      "user_input": "초코 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "age": "10세 0개월",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 타입 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 체중 관리에 적합한 성분으로 구성되어 있어 초코에게 좋습니다.\n\n2. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 체중 관리에 도움을 주는 영양소가 포함되어 있어 추천합니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 체중 조절에 효과적인 성분으로 초코의 건강을 지켜줄 수 있습니다.\n\n4. **로얄캐닌 [12개세트] 로얄캐닌 캣 라이트 웨이트 케어 그레이비 파우치 85g**\n- 체중 관리에 적합한 제품으로 다양한 맛을 제공하여 초코의 입맛을 돋울 수 있습니다.\n\n5. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 체중 관리에 적합한 성분으로 초코의 건강을 고려한 제품입니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile_B",
+    "captured_at": "2026-04-21T11:34:53.455184",
+    "logic": {
+      "user_input": "간식도 같이 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 말티즈 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "age": "10세 0개월",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251048697",
+        "GI251120813",
+        "GI251101366",
+        "GI251106769",
+        "GI251102119"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048697",
+        "GI251120813",
+        "GI251101366",
+        "GI251106769",
+        "GI251102119"
+      ]
+    },
+    "actual_response": "초코를 위한 간식 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 dry 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오래오래프로젝트 자연산 명태 촉촉스틱 14개입 (280g)**\n- 간식 조건과 잘 맞아 초코에게 적합합니다.\n\n2. **촉촉트릿 포캣 닭가슴살 160g**\n- 간식 조건과 잘 맞아 초코가 좋아할 만한 제품입니다.\n\n3. **조공 프로바이오틱스 60g**\n- 체중 관리에 도움이 되는 간식으로 추천드립니다.\n\n4. **후디스펫 루테인케어 1박스**\n- 건강을 고려한 간식으로 초코에게 적합합니다.\n\n5. **마도로스펫 북어트릿 120g**\n- 간식 조건과 잘 맞아 초코가 즐길 수 있는 제품입니다.\n\n이 중에서 초코의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_no_profile_A",
+    "captured_at": "2026-04-21T11:35:02.129492",
+    "logic": {
+      "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": null,
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 건강 관심사는 없지만, 강아지에게 적합한 사료를 고려했습니다. 예산 범위는 명시되어 있지 않으니 다양한 옵션을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_no_profile_B",
+    "captured_at": "2026-04-21T11:35:09.631661",
+    "logic": {
+      "user_input": "응 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 맛의 간식을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **빅스비 빅스비 바크팝 고구마&사과 113g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n2. **올리브 올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g**\n- 다양한 맛을 제공하여 우리 아이의 입맛을 사로잡을 수 있습니다.\n\n3. **올리브 올리브 콰삭콰삭 치킨&오트 강아지 간식 120g**\n- 간식 조건에 적합하며, 많은 리뷰에서 좋은 평가를 받았습니다.\n\n4. **개이득 개이득 소 큐브 200g**\n- 높은 평점을 기록한 제품으로, 우리 아이가 좋아할 가능성이 높습니다.\n\n5. **개이득 개이득 연어 큐브 200g**\n- 맛과 품질 모두 뛰어난 간식으로 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_with_profile_A",
+    "captured_at": "2026-04-21T11:35:19.693926",
+    "logic": {
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 타입 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 체중 관리에 적합한 사료로, 초코의 건강을 지원합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 체중 관리에 도움을 주는 영양 성분이 포함되어 있습니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 체중 조절에 적합한 성분으로 구성되어 있어 초코에게 좋습니다.\n\n4. **로얄캐닌 [12개세트] 로얄캐닌 캣 라이트 웨이트 케어 그레이비 파우치 85g**\n- 체중 관리에 적합한 사료로, 다양한 맛을 제공하여 초코의 입맛을 돋웁니다.\n\n5. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 체중 관리에 적합한 성분으로, 초코의 건강을 고려한 선택입니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_with_profile_B",
+    "captured_at": "2026-04-21T11:35:20.792208",
+    "logic": {
+      "user_input": "응 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 영양 사료 리스트입니다! 그다음으로 바나나 간식도 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_A",
+    "captured_at": "2026-04-21T11:35:29.209716",
+    "logic": {
+      "user_input": "강아지 장난감 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감/훈련"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감/훈련"
+      },
+      "search_query": "강아지 용품 장난감/훈련 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251120167",
+        "GI251120172",
+        "GI251120175",
+        "GI251136445",
+        "GI251082619"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251120167",
+        "GI251120172",
+        "GI251120175",
+        "GI251136445",
+        "GI251082619"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 강아지에게 적합한 장난감을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **딩동펫 딩동펫 선물박스 노즈워크 장난감**\n- 다양한 장난감이 포함되어 있어 강아지의 호기심을 자극합니다.\n\n2. **딩동펫 딩동펫 도톰 초밥 라텍스 장난감 3종 세트**\n- 귀여운 초밥 모양으로 강아지의 놀이 시간을 더욱 즐겁게 만들어 줍니다.\n\n3. **딩동펫 딩동펫 체리 바스락 롤 노즈워크 장난감**\n- 바스락거리는 소리로 강아지의 흥미를 유도하는 장난감입니다.\n\n4. **레토 레토 강아지 노즈워크 장난감 플라워 딸기밭 당근밭 담요 매트 LDG-NW02 E**\n- 노즈워크 기능이 있어 강아지가 두뇌를 자극하며 놀 수 있습니다.\n\n5. **KONG KONG 콩 클래식 장난감 대**\n- 내구성이 뛰어나고 강아지의 씹는 본능을 만족시켜 줍니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_B",
+    "captured_at": "2026-04-21T11:35:36.705256",
+    "logic": {
+      "user_input": "면으로 된걸로 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감/훈련"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "장난감/훈련"
+      },
+      "search_query": "면으로 된걸로 강아지 용품 장난감/훈련",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 강아지 장난감들입니다! 고무 공이나 소리 나는 인형 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251082619",
+        "GI251120175",
+        "GI251120167",
+        "GI251132388",
+        "GI251120172"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251082619",
+        "GI251120175",
+        "GI251120167",
+        "GI251132388",
+        "GI251120172"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 면으로 된 장난감을 선호하신다고 하니 그에 맞춰 추천드립니다. 예산 범위는 명시되지 않았으니 다양한 제품을 아래와 같이 추천드립니다:\n\n1. **KONG KONG 콩 클래식 장난감 대**\n- 내구성이 뛰어나고 강아지가 좋아하는 고무 소재로 만들어져 있어 오랜 시간 놀이가 가능합니다.\n\n2. **딩동펫 딩동펫 체리 바스락 롤 노즈워크 장난감**\n- 바스락 소리가 나며 강아지의 호기심을 자극하는 디자인으로, 놀이와 인지 발달에 도움을 줍니다.\n\n3. **딩동펫 딩동펫 선물박스 노즈워크 장난감**\n- 다양한 텍스처와 색상으로 강아지의 흥미를 유도하며, 노즈워크 기능이 있어 재미를 더합니다.\n\n4. **크레용펫 크레용펫 완두콩 노즈워크 바스락 인형 장난감**\n- 부드러운 면 소재로 강아지가 물어도 안전하며, 바스락 소리가 나서 놀이에 재미를 더합니다.\n\n5. **딩동펫 딩동펫 도톰 초밥 라텍스 장난감 3종 세트**\n- 다양한 디자인으로 구성되어 있어 강아지가 지루해하지 않고 즐겁게 놀 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_with_profile_A",
+    "captured_at": "2026-04-21T11:35:51.737681",
+    "logic": {
+      "user_input": "우리 초코 장난감 좀 추천해줄래?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 말티즈 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251136446",
+        "GI251134823",
+        "GI251136333",
+        "GI251136529",
+        "GI251136521"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136446",
+        "GI251134823",
+        "GI251136333",
+        "GI251136529",
+        "GI251136521"
+      ]
+    },
+    "actual_response": "초코를 위한 장난감 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 dry 제형 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 대왕 마따따비 쥐돌이 옐로우**\n- 초코가 즐겁게 놀 수 있는 장난감으로, 체중 관리에 도움이 됩니다.\n\n2. **크레용펫 샐러리 마따따비 스틱 이갈이 장난감**\n- 이갈이에 적합한 장난감으로, 초코의 스트레스를 줄여줄 수 있습니다.\n\n3. **크레용펫 대파 마따따비(★대왕)**\n- 다양한 놀이를 제공하여 초코의 활동성을 높여줄 수 있습니다.\n\n4. **크레용펫 마따스틱 소형 20P**\n- 여러 개의 장난감으로 초코가 지루하지 않게 놀 수 있도록 도와줍니다.\n\n5. **크레용펫 매직팽팽이 리필 녹색**\n- 지속적으로 사용할 수 있는 장난감으로, 초코의 흥미를 유지할 수 있습니다.\n\n이 중에서 초코의 취향에 맞는 장난감을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_with_profile_B",
+    "captured_at": "2026-04-21T11:36:03.401583",
+    "logic": {
+      "user_input": "면으로 된 건 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 말티즈 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 초코 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "초코가 좋아할 만한 장난감들이에요! 치발기나 공 종류가 인기가 많아요."
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251136446",
+        "GI251134823",
+        "GI251136333",
+        "GI251136529",
+        "GI251136521"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136446",
+        "GI251134823",
+        "GI251136333",
+        "GI251136529",
+        "GI251136521"
+      ]
+    },
+    "actual_response": "초코를 위한 용품 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 타입 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 대왕 마따따비 쥐돌이**\n- 초코가 즐길 수 있는 재미있는 디자인으로 체중 관리에 도움이 됩니다.\n\n2. **크레용펫 샐러리 마따따비 스틱 이갈이 장난감**\n- 이갈이에 적합하며, 초코의 체중 관리에도 유용한 제품입니다.\n\n3. **크레용펫 대파 마따따비(★대왕)**\n- 다양한 놀이를 통해 초코의 활동성을 높여줄 수 있는 장난감입니다.\n\n4. **크레용펫 마따스틱 소형 20P**\n- 소형으로 초코가 쉽게 다룰 수 있으며, 체중 관리에 도움이 됩니다.\n\n5. **크레용펫 매직팽팽이 리필 녹색**\n- 초코의 호기심을 자극할 수 있는 장난감으로, 체중 관리에도 긍정적인 영향을 줄 수 있습니다.\n\n이 중에서 초코의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_007_no_profile",
+    "captured_at": "2026-04-21T11:36:10.782630",
+    "logic": {
+      "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "의류/악세사리"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품",
+        "subcategory": "의류/악세사리"
+      },
+      "search_query": "강아지 용품 의류/악세사리",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251101019",
+        "GI251134142",
+        "GO251101031",
+        "GI251133322",
+        "GI251136352"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251101019",
+        "GI251134142",
+        "GO251101031",
+        "GI251133322",
+        "GI251136352"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 강아지에게 적합한 제품을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **펫띵 펫띵 후리스 리버서블 패딩 핑크 3호**\n- 용품 조건과 잘 맞아 따뜻하고 스타일리시한 선택입니다.\n\n2. **이츠독 [무료배송] 이츠독 세아 배씨댕기**\n- 강아지에게 편안함을 제공하며, 귀여운 디자인이 매력적입니다.\n\n3. **펫띵 펫띵 후리스 리버서블 강아지 패딩 핑크/그레이 1호-6호**\n- 다양한 사이즈로 제공되어 우리 아이에게 딱 맞는 선택이 가능합니다.\n\n4. **도그웨그 도그웨그 바니베어 중성화복 강아지 환견복 올인원 바우베어 XL**\n- 올인원 디자인으로 편안함과 보호를 동시에 제공합니다.\n\n5. **이츠독 [무료배송] 이츠독 연화 노리개**\n- 강아지가 즐길 수 있는 재미있는 장난감으로, 놀이 시간을 더욱 즐겁게 만들어 줍니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_007_with_profile",
+    "captured_at": "2026-04-21T11:36:25.023904",
+    "logic": {
+      "user_input": "요즘 바나나한테 필요한 인기 있는 모래 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "모래"
+      },
+      "search_query": "고양이 러시안 블루 모래",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251118289",
+        "GI251109485",
+        "GI251128392",
+        "GI251092740",
+        "GI251098226"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251118289",
+        "GI251109485",
+        "GI251128392",
+        "GI251092740",
+        "GI251098226"
+      ]
+    },
+    "actual_response": "바나나를 위한 모래 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **에스클래스펫 에스클래스 블랙 벤토나이트 9kg**\n- 모래 조건과 잘 맞아 바나나에게 적합합니다.\n\n2. **WOOZOO 우주모래 벤토나이트 19kg**\n- 모래 조건과 잘 맞아 바나나에게 적합합니다.\n\n3. **바른 바른카사벤토모래 6kg**\n- 모래 조건과 잘 맞아 바나나에게 적합합니다.\n\n4. **카타리스트 카타리스트 친환경 잣나무 고양이모래 1.5kg**\n- 모래 조건과 잘 맞아 바나나에게 적합합니다.\n\n5. **바른 바른카사모래 라이트 6L (4.2kg) (가는입자)**\n- 모래 조건과 잘 맞아 바나나에게 적합합니다.\n\n이 중에서 바나나의 취향에 맞는 모래를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_A",
+    "captured_at": "2026-04-21T11:36:33.079715",
+    "logic": {
+      "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        },
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 사료 옵션을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_B",
+    "captured_at": "2026-04-21T11:36:40.235188",
+    "logic": {
+      "user_input": "간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 맛을 고려하여 추천드립니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **빅스비 빅스비 바크팝 고구마&사과 113g**\n- 간식 조건과 잘 맞아 맛있고 건강한 선택입니다.\n\n2. **올리브 올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g**\n- 다양한 맛의 조화로 우리 아이의 입맛을 사로잡을 수 있습니다.\n\n3. **올리브 올리브 콰삭콰삭 치킨&오트 강아지 간식 120g**\n- 영양가 높은 재료로 만들어져 건강한 간식으로 적합합니다.\n\n4. **개이득 개이득 소 큐브 200g**\n- 높은 평점을 자랑하며, 우리 아이가 좋아할 만한 맛입니다.\n\n5. **개이득 개이득 연어 큐브 200g**\n- 신선한 연어로 만들어져 맛과 영양을 동시에 챙길 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_C",
+    "captured_at": "2026-04-21T11:36:50.095990",
+    "logic": {
+      "user_input": "마지막으로 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "용품"
+      },
+      "search_query": "강아지 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251026283",
+        "GI251110362",
+        "GO251132474",
+        "GI251134142",
+        "GI251082619"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251026283",
+        "GI251110362",
+        "GO251132474",
+        "GI251134142",
+        "GI251082619"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 강아지에게 적합한 제품을 고려했습니다. 예산 범위에 대한 정보는 없지만, 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오로자임 오로자임 하이진겔 70g**\n- 용품 조건과 잘 맞아 강아지의 건강을 도울 수 있습니다.\n\n2. **분독 분독 G백 똥츄가방 라이트그린**\n- 강아지와 함께 외출할 때 유용한 제품입니다.\n\n3. **뽀시래기 뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)**\n- 치석 제거에 도움을 주는 장난감으로, 강아지의 구강 건강을 지킬 수 있습니다.\n\n4. **이츠독 [무료배송] 이츠독 세아 배씨댕기**\n- 강아지가 좋아할 만한 재미있는 장난감입니다.\n\n5. **KONG KONG 콩 클래식 장난감 대**\n- 내구성이 뛰어나고 강아지가 즐겁게 놀 수 있는 제품입니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_A",
+    "captured_at": "2026-04-21T11:37:02.811690",
+    "logic": {
+      "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        },
+        {
+          "pet_name": "초코",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 dry 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 체중 관리에 적합한 사료로, 초코의 건강을 지원합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 체중 관리에 도움을 주는 영양소가 포함되어 있어 추천합니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 체중 조절에 효과적인 성분으로 구성되어 있어 좋습니다.\n\n4. **로얄캐닌 [12개세트] 로얄캐닌 캣 라이트 웨이트 케어 그레이비 파우치 85g**\n- 다양한 맛을 제공하며 체중 관리에 도움을 줍니다.\n\n5. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 체중 관리에 적합한 성분으로 초코에게 알맞습니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_B",
+    "captured_at": "2026-04-21T11:37:15.405683",
+    "logic": {
+      "user_input": "응 간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 말티즈 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "초코",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251048697",
+        "GI251120813",
+        "GI251101366",
+        "GI251106769",
+        "GI251102119"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048697",
+        "GI251120813",
+        "GI251101366",
+        "GI251106769",
+        "GI251102119"
+      ]
+    },
+    "actual_response": "초코를 위한 간식 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 dry 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오래오래프로젝트 자연산 명태 촉촉스틱 14개입 (280g)**\n- 간식 조건과 잘 맞아 초코에게 적합합니다.\n\n2. **촉촉트릿 포캣 닭가슴살 160g**\n- 간식 조건에 부합하며, 높은 평점을 기록하고 있습니다.\n\n3. **조공 프로바이오틱스 60g**\n- 체중 관리에 도움이 되는 프로바이오틱스가 포함되어 있습니다.\n\n4. **후디스펫 루테인케어 1박스**\n- 건강을 고려한 간식으로, 체중 관리에 유용합니다.\n\n5. **마도로스펫 북어트릿 120g**\n- 간식 조건에 맞고, 많은 리뷰로 검증된 제품입니다.\n\n이 중에서 초코의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_C",
+    "captured_at": "2026-04-21T11:37:30.845599",
+    "logic": {
+      "user_input": "마지막 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 말티즈 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251080548",
+        "GI251120953",
+        "GI251104776",
+        "GI251124681",
+        "GI251120252"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251080548",
+        "GI251120953",
+        "GI251104776",
+        "GI251124681",
+        "GI251120252"
+      ]
+    },
+    "actual_response": "초코를 위한 용품 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 dry 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **코코넛즈 3-way 크로스 스트랩**\n- 용품 조건과 잘 맞아 초코의 외출 시 편리함을 제공합니다.\n\n2. **마이티펫 모래제로 매트 특대형 블랙**\n- 체중 관리에 도움이 되는 편안한 공간을 제공하며, 청소가 용이합니다.\n\n3. **가리가리 플레이스 슬로프**\n- 초코가 쉽게 오르내릴 수 있는 구조로, 활동성을 높여줍니다.\n\n4. **한큐뚝딱 스퀘어 평판형 고양이화장실 모래매트 세트 코코아베이지**\n- 깔끔한 디자인으로 초코의 화장실 공간을 세련되게 꾸며줍니다.\n\n5. **도그웨그 철벽 프렌즈 중성화복 애니멀즈S**\n- 체중 관리에 도움이 되는 편안한 착용감으로 초코의 활동성을 지원합니다.\n\n이 중에서 초코의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_009_no_profile_A",
+    "captured_at": "2026-04-21T11:37:31.418535",
+    "logic": {
+      "user_input": "오늘 날씨 되게 좋다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_no_profile_B",
+    "captured_at": "2026-04-21T11:37:32.051397",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 반려동물과 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_A",
+    "captured_at": "2026-04-21T11:37:32.843257",
+    "logic": {
+      "user_input": "초코랑 놀러 가고 싶다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_B",
+    "captured_at": "2026-04-21T11:37:33.428625",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "초코랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_A",
+    "captured_at": "2026-04-21T11:37:39.364573",
+    "logic": {
+      "user_input": "강아지 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 옵션을 고려하여 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_no_profile_B",
+    "captured_at": "2026-04-21T11:37:45.511527",
+    "logic": {
+      "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "아니 강아지 고양이 꺼 고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251017381",
+        "GI251129313",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 일반적인 고양이 사료를 고려했습니다. 예산이나 특정 성분에 대한 정보가 없으니, 다양한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 인도어 고양이 사료**\n- 실내 고양이를 위한 영양 밸런스가 잘 맞춰져 있어 건강 유지에 도움을 줍니다.\n\n2. **힐스 사이언스 다이어트 고양이 사료**\n- 소화가 잘 되는 성분으로 만들어져 있어 위장 건강에 좋습니다.\n\n3. **너리싱 푸드 고양이 사료**\n- 고양이의 면역력 강화를 위한 비타민과 미네랄이 풍부합니다.\n\n4. **웰니스 코어 고양이 사료**\n- 고단백 저탄수화물 식단으로 건강한 체중 유지를 도와줍니다.\n\n5. **퓨리나 프로플랜 고양이 사료**\n- 다양한 맛과 영양소가 조화를 이루어 고양이의 기호성을 높입니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_no_profile_C",
+    "captured_at": "2026-04-21T11:37:54.021294",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "강아지 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 강아지 말고 고양이 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 고양이 사료를 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 고양이의 영양을 균형 있게 제공합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 유리너리 건강을 지원하는 성분이 포함되어 있어 건강 관리에 도움이 됩니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 고려한 성분으로, 예민한 고양이에게 적합합니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 자연 친화적인 재료로 만들어져 고양이의 건강을 지켜줍니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이와 새끼 고양이 모두에게 적합한 영양이 풍부한 사료입니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_A",
+    "captured_at": "2026-04-21T11:38:03.511516",
+    "logic": {
+      "user_input": "초코 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 타입 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 체중 관리에 적합한 성분으로 구성되어 있어 초코에게 좋습니다.\n\n2. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 체중 관리에 도움을 주는 영양소가 포함되어 있어 추천합니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 체중 조절에 적합한 성분으로 초코의 건강을 지킬 수 있습니다.\n\n4. **로얄캐닌 [12개세트] 로얄캐닌 캣 라이트 웨이트 케어 그레이비 파우치 85g**\n- 체중 관리에 효과적인 성분으로 구성되어 있어 초코에게 적합합니다.\n\n5. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 체중 관리에 도움이 되는 성분으로 초코의 건강을 지원합니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_B",
+    "captured_at": "2026-04-21T11:38:24.536345",
+    "logic": {
+      "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "아니 바나나 꺼 고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251034742",
+        "GI251135753",
+        "GI251035043",
+        "PI000005464",
+        "GI251135747"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251034742",
+        "GI251135753",
+        "GI251035043",
+        "PI000005464",
+        "GI251135747"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 사료 조건과 잘 맞아 바나나의 소화 건강에 도움을 줄 수 있습니다.\n\n2. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 바나나의 소화 건강을 고려한 적합한 사료입니다.\n\n3. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 소화에 좋은 성분으로 구성되어 있어 바나나에게 적합합니다.\n\n4. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 바나나의 소화 건강을 지원하는 사료입니다.\n\n5. **아미오 풀무원아미오 고양이 건강담은식단 체중케어 400g(200g x 2입)**\n- 소화에 도움을 줄 수 있는 성분으로 구성되어 있습니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_C",
+    "captured_at": "2026-04-21T11:38:35.707718",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "초코 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 초코 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나(고양이)를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 습식 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 캣 얼리 레날 파우치 85g**\n- 소화 관심사에 맞춰 특별히 제조된 제품입니다.\n\n2. **쉐지애 참치&소고기 고양이 주식 파우치 85g**\n- 바나나의 입맛에 맞는 다양한 단백질이 포함되어 있습니다.\n\n3. **로얄캐닌 캣 브리티쉬 숏헤어 400g**\n- 소화에 도움을 줄 수 있는 성분이 포함되어 있습니다.\n\n4. **아카나 캣 그래스랜드 1.8kg**\n- 고품질 원료로 소화에 좋은 영양을 제공합니다.\n\n5. **나인케어 스마트하트 피부&피모 6kg**\n- 피부와 피모 건강을 고려한 영양이 포함되어 있습니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_011_no_profile_A",
+    "captured_at": "2026-04-21T11:38:36.555389",
+    "logic": {
+      "user_input": "닭고기 알러지 없는 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "사료를 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_011_no_profile_B",
+    "captured_at": "2026-04-21T11:38:44.817587",
+    "logic": {
+      "user_input": "강아지",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "닭고기 알러지 없는 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 사료인가요? (강아지/고양이)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251045395",
+        "GI251129313",
+        "GI251017381",
+        "GI251061050",
+        "GI251120779"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251045395",
+        "GI251129313",
+        "GI251017381",
+        "GI251061050",
+        "GI251120779"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 건강 관심사에 대한 특별한 데이터는 없지만, 알러지 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **윌로펫 윌로펫 헬시포뮬러 하이포알러제닉 3kg**\n- 사료 조건과 잘 맞아 알러지 걱정 없이 안전하게 급여할 수 있습니다.\n\n2. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 그레인프리로 알러지 유발 성분을 피할 수 있어 강아지에게 적합합니다.\n\n3. **윌로펫 윌로펫 뉴트리탑 시니어 3kg**\n- 사료 조건과 잘 맞아 영양을 균형 있게 공급할 수 있습니다.\n\n4. **윌로펫 윌로펫 헬시포뮬라 피부&모질 3kg**\n- 피부와 모질 건강을 고려한 성분으로 강아지에게 좋습니다.\n\n5. **원더랜드 원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g**\n- 다이어트식으로 건강한 체중 관리를 도와줄 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_011_with_profile",
+    "captured_at": "2026-04-21T11:38:54.553337",
+    "logic": {
+      "user_input": "사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 말티즈 사료 체중",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+      "pet_profile": {
+        "name": "초코",
+        "species": "dog",
+        "allergies": [
+          "닭고기"
+        ],
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈",
+        "age": "10세 0개월",
+        "weight": "6.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "체중"
+      ],
+      "recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251135753",
+        "GI251035043",
+        "GI251034742",
+        "PI000005464",
+        "GS251018163"
+      ]
+    },
+    "actual_response": "초코를 위한 사료 추천을 드리겠습니다! 체중 관리에 도움이 되며, 연어 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 라이트 웨이트 케어 400g**\n- 체중 관리에 적합한 성분으로 구성되어 있어 초코에게 좋습니다.\n\n2. **로얄캐닌 로얄캐닌 캣 FIT 피트 어덜트 1.2kg**\n- 체중 관리에 도움을 주는 영양소가 포함되어 있어 추천합니다.\n\n3. **하림펫푸드 하림펫푸드 밥이보약 캣 알맞은 체중 3.4kg**\n- 체중 조절에 효과적인 성분으로 초코의 건강을 지켜줄 수 있습니다.\n\n4. **로얄캐닌 [12개세트] 로얄캐닌 캣 라이트 웨이트 케어 그레이비 파우치 85g**\n- 체중 관리에 적합한 제품으로 다양한 맛을 제공하여 초코의 입맛을 사로잡을 수 있습니다.\n\n5. **아미오 풀무원아미오 고양이 날씬하냥(1.5kg)**\n- 체중 관리에 적합한 성분으로 초코의 건강을 고려한 선택입니다.\n\n이 중에서 초코의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_012_no_profile_A",
+    "captured_at": "2026-04-21T11:38:55.475827",
+    "logic": {
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "간식을 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_012_no_profile_B",
+    "captured_at": "2026-04-21T11:39:01.343284",
+    "logic": {
+      "user_input": "강아지",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      "search_query": "강아지 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (강아지/고양이)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251117905",
+        "GI251104332",
+        "GI251104331",
+        "GI251091601",
+        "GI251091603"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 곡물 성분이 포함되지 않은 제품을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **빅스비 빅스비 바크팝 고구마&사과 113g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n2. **올리브 올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g**\n- 간식 조건에 부합하여 추천합니다.\n\n3. **올리브 올리브 콰삭콰삭 치킨&오트 강아지 간식 120g**\n- 간식 조건을 충족하는 제품으로 추천드립니다.\n\n4. **개이득 개이득 소 큐브 200g**\n- 간식 조건에 적합하여 추천합니다.\n\n5. **개이득 개이득 연어 큐브 200g**\n- 간식 조건을 잘 만족하는 제품으로 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_012_with_profile",
+    "captured_at": "2026-04-21T11:39:13.231004",
+    "logic": {
+      "user_input": "간식 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 러시안 블루 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "food_preferences": [
+          "그레인프리"
+        ],
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251101366"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251101366"
+      ]
+    },
+    "actual_response": "바나나를 위한 간식 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **후디스펫 [스티커 증정] 후디스펫 루테인케어 1박스**\n- 간식 조건과 잘 맞아 소화에 도움을 줄 수 있습니다.\n\n2. **조공 rTG 퓨어 오메가-3 20g**\n- 소화에 좋은 성분이 포함되어 있어 추천드립니다.\n\n3. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 닭가슴살로 소화에 부담이 적고 맛있게 즐길 수 있습니다.\n\n4. **동해형씨 [무료배송] 동해형씨 레토르트 원물건조 대구 3팩 45g**\n- 대구로 만들어져 소화에 도움이 되는 간식입니다.\n\n5. **조공 프로바이오틱스 60g**\n- 프로바이오틱스가 포함되어 있어 소화 건강에 좋습니다.\n\n이 중에서 바나나의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_013_no_profile",
+    "captured_at": "2026-04-21T11:39:18.343745",
+    "logic": {
+      "user_input": "제일 싼 고양이 모래 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "모래",
+        "subcategory": "벤토나이트"
+      },
+      "search_query": "제일 싼 고양이 모래 고양이 모래 벤토나이트",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251048346",
+        "GI251062497",
+        "PI000003504",
+        "GI251075985",
+        "GI251120262"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 모래 추천을 드리겠습니다! 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **호랑이 호랑이 두부모래 참숯 7L**\n- 모래 조건과 잘 맞아 추천드립니다.\n\n2. **사니캣 사니캣 옥수수 모래 6L**\n- 모래 조건과 잘 맞아 추천드립니다.\n\n3. **벤토피아 벤토피아 더스트프리 무향 6.35kg**\n- 모래 조건과 잘 맞아 추천드립니다.\n\n4. **펫띵 펫띵 커피홀 모래 6L (3.25kg)**\n- 모래 조건과 잘 맞아 추천드립니다.\n\n5. **이나바 이나바 챠오샌드 벤토&편백 4kg**\n- 모래 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 모래를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_013_with_profile",
+    "captured_at": "2026-04-21T11:39:19.510904",
+    "logic": {
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "바나나 모래 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 벤토나이트 모래 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "어떤 제품을 찾으시나요?"
+  },
+  {
+    "case_id": "case_014_no_profile",
+    "captured_at": "2026-04-21T11:39:20.742516",
+    "logic": {
+      "user_input": "로얄캐닌 말고 다른 사료 있어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "사료를 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_001_no_profile_A",
+    "captured_at": "2026-04-21T11:39:26.439742",
+    "logic": {
+      "user_input": "고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 옵션을 고려했습니다. 예산 범위와 알러지 성분에 대한 정보가 없으니, 일반적으로 추천되는 제품을 아래와 같이 나열해 보겠습니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 고양이의 영양을 균형 있게 제공합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 유리너리 건강을 고려한 제품으로, 소변 건강에 도움을 줄 수 있습니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 지원하는 성분이 포함되어 있어 민감한 고양이에게 적합합니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 자연 친화적인 재료로 만들어져 고양이의 건강을 고려한 제품입니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이와 새끼 고양이 모두에게 적합한 영양을 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_001_no_profile_B",
+    "captured_at": "2026-04-21T11:39:33.191055",
+    "logic": {
+      "user_input": "간식도 같이 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 맛과 질감을 고려하여 추천드립니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 간식 조건과 잘 맞아 고양이가 좋아할 만한 제품입니다.\n\n2. **펫메이드 펫메이드 치킨그라스 면역력강화**\n- 면역력 강화에 도움을 줄 수 있는 간식으로 추천드립니다.\n\n3. **오래오래프로젝트 오래오래프로젝트 자연산 명태 촉촉스틱 7개입**\n- 자연산 재료로 만들어져 고양이에게 건강한 간식이 될 것입니다.\n\n4. **닥터페트라 닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g**\n- 이빨 건강을 고려한 간식으로, 고양이가 좋아하는 연어맛입니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 부드러운 질감의 닭가슴살 간식으로, 고양이가 쉽게 먹을 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_001_with_profile",
+    "captured_at": "2026-04-21T11:39:47.373785",
+    "logic": {
+      "user_input": "우리 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료 키튼",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251035033",
+        "GI251093273",
+        "GI251135055"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251093272",
+        "GI251063359",
+        "GI251035033",
+        "GI251093273",
+        "GI251135055"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 키튼 1.2kg**\n- 사료 조건과 잘 맞아 바나나의 소화 건강에 도움이 될 것입니다.\n\n2. **레오나르도 레오나르도 키튼 1.8kg**\n- 바나나의 소화 건강을 지원하며, 알레르기 성분이 포함되어 있지 않습니다.\n\n3. **로얄캐닌 로얄캐닌 캣 키튼 400g 면역기능 강화**\n- 소화 건강을 고려한 제품으로, 면역 기능 강화에도 도움을 줄 수 있습니다.\n\n4. **로얄캐닌 로얄캐닌 캣 마더&베이비 1.2kg**\n- 바나나의 성장과 소화 건강을 동시에 지원하는 사료입니다.\n\n5. **캐츠랑 캐츠랑 키튼앤주니어 8kg**\n- 소화에 좋은 성분으로 구성되어 있어 바나나에게 적합합니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_002_no_profile",
+    "captured_at": "2026-04-21T11:39:54.127802",
+    "logic": {
+      "user_input": "아비시니안 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로, 일반적인 고양이 사료를 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 영양이 풍부합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 사료 조건에 적합하여 건강한 배뇨를 지원합니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 고려한 사료로, 고양이에게 적합합니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 자연 재료를 사용하여 영양가가 높습니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이의 성장과 건강을 지원하는 사료입니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_002_with_profile",
+    "captured_at": "2026-04-21T11:40:07.791990",
+    "logic": {
+      "user_input": "우리 아이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "gender": "",
+        "weight": "4.00kg"
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 포도의 건강을 고려한 사료로, 알레르기 성분이 포함되지 않습니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 시니어 고양이를 위한 영양이 풍부한 사료로, 치아 건강에 도움을 줄 수 있습니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 맛과 영양을 동시에 챙길 수 있는 제품입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 참치로 만들어져 있어 맛있고, 포도의 기호에 맞을 가능성이 높습니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-21T11:40:20.710608",
+    "logic": {
+      "user_input": "우리 사과 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "사과를 위한 사료 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **퓨리나 퓨리나 캣 원 시니어 1.4kg**\n- 사료 조건과 잘 맞아 사과의 건강에 도움이 될 것입니다.\n\n2. **오리젠 오리젠 캣 6피쉬 1.8kg**\n- 다양한 생선 성분이 포함되어 있어 면역력 강화에 좋습니다.\n\n3. **쉐지애 쉐지애 참치&도미 고양이 주식 파우치 85g**\n- 사과의 기호에 맞는 해산물 성분으로 영양을 제공합니다.\n\n4. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 높은 평점을 가진 제품으로, 사과의 건강을 고려한 선택입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 참치 성분으로 맛있고 영양가 높은 사료입니다.\n\n이 중에서 사과의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile",
+    "captured_at": "2026-04-21T11:40:23.021150",
+    "logic": {
+      "user_input": "우리 바나나 체중, 피부 관리를 위한 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {},
+      "search_query": "강아지 골든 리트리버 사료 피부",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7
+      },
+      "health_concerns": [
+        "피부"
+      ],
+      "recommended_goods_ids": [
+        "GI251106577",
+        "GI251061050",
+        "GI251061044",
+        "GI251034790",
+        "GI251128250"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106577",
+        "GI251061050",
+        "GI251061044",
+        "GI251034790",
+        "GI251128250"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_003_with_profile",
+    "captured_at": "2026-04-21T11:40:38.101571",
+    "logic": {
+      "user_input": "우리 사과 건강 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "dog",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0,
+        "age": "3세 0개월",
+        "weight": "5.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "사과를 위한 사료 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **퓨리나 퓨리나 캣 원 시니어 1.4kg**\n- 사료 조건과 잘 맞아 사과의 건강에 도움이 될 것입니다.\n\n2. **오리젠 오리젠 캣 6피쉬 1.8kg**\n- 다양한 생선 성분이 포함되어 있어 면역력 강화에 좋습니다.\n\n3. **쉐지애 쉐지애 참치&도미 고양이 주식 파우치 85g**\n- 참치와 도미의 조화로 영양가가 높아 사과에게 적합합니다.\n\n4. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 고품질 성분으로 만들어져 사과의 건강을 지원합니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 참치가 주 성분으로 사과의 기호성을 높일 수 있습니다.\n\n이 중에서 사과의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_no_profile_A",
+    "captured_at": "2026-04-21T11:40:44.113545",
+    "logic": {
+      "user_input": "1살 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로, 일반적인 고양이 사료를 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_no_profile_B",
+    "captured_at": "2026-04-21T11:40:50.465872",
+    "logic": {
+      "user_input": "간식은 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "1살 고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "키튼 고양이를 위한 사료들입니다! 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 고양이에게 적합한 간식 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 간식 조건과 잘 맞아 고양이에게 적합합니다.\n\n2. **펫메이드 펫메이드 치킨그라스 면역력강화**\n- 면역력 강화에 도움을 줄 수 있는 간식입니다.\n\n3. **오래오래프로젝트 오래오래프로젝트 자연산 명태 촉촉스틱 7개입**\n- 자연산 재료로 만들어져 고양이에게 안전한 간식입니다.\n\n4. **닥터페트라 닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g**\n- 이빨 건강에 도움을 줄 수 있는 간식입니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 고양이가 좋아하는 닭가슴살로 만들어져 맛있게 즐길 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile_A",
+    "captured_at": "2026-04-21T11:41:05.522693",
+    "logic": {
+      "user_input": "포도 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 포도의 건강을 고려한 사료로, 알레르기 성분이 포함되지 않습니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 치아 건강에 좋은 성분이 포함되어 있어 추천드립니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선 성분으로 영양이 풍부하며, 알레르기 성분이 없습니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 맛있고 건강한 참치로 포도의 입맛을 사로잡을 수 있습니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_004_with_profile_B",
+    "captured_at": "2026-04-21T11:41:18.709146",
+    "logic": {
+      "user_input": "간식도 같이 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 아비시니안 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료 추천 리스트입니다!"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "포도를 위한 간식 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **이나바 이나바 야끼믹스 세가지맛 가다랑어・가리비・오징어풍미**\n- 간식 조건과 잘 맞아 포도의 기호에 맞을 것입니다.\n\n2. **이나바 이나바 야끼믹스 세가지맛 가다랑어・치킨・오징어풍미**\n- 다양한 맛이 있어 포도가 즐길 수 있는 간식입니다.\n\n3. **런치 런치 보니또 100% 통살간식 참치등살30g**\n- 고품질의 통살 간식으로 치아 건강에 도움을 줄 수 있습니다.\n\n4. **런치 런치 보니또 100% 통살간식 참치뱃살30g**\n- 부드러운 식감으로 포도가 쉽게 먹을 수 있는 간식입니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 촉촉한 식감으로 포도가 좋아할 만한 간식입니다.\n\n이 중에서 포도의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_no_profile_A",
+    "captured_at": "2026-04-21T11:41:26.533624",
+    "logic": {
+      "user_input": "포도 사료랑 고양이 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [
+        "과일"
+      ],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 과일 건강 관심사 관리에 도움이 되며, 특정 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 과일 건강에 도움이 될 수 있습니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 사료 조건과 잘 맞아 건강한 식단을 지원합니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 고려한 사료로, 과일 건강에도 긍정적인 영향을 줄 수 있습니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 사료 조건과 잘 맞아 영양가 높은 선택입니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 사료 조건과 잘 맞아 다양한 영양소를 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_no_profile_B",
+    "captured_at": "2026-04-21T11:41:33.825544",
+    "logic": {
+      "user_input": "응 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 고양이 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [
+        "과일"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 과일 건강 관심사 관리에 도움이 되며, 특별한 알러지 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n2. **펫메이드 펫메이드 치킨그라스 면역력강화**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n3. **오래오래프로젝트 오래오래프로젝트 자연산 명태 촉촉스틱 7개입**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n4. **닥터페트라 닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_with_profile_A",
+    "captured_at": "2026-04-21T11:41:45.848534",
+    "logic": {
+      "user_input": "우리 애들 사료랑 간식 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 얼리 레날 파우치 85g**\n- 소화 관심사에 맞춰 추천된 제품입니다.\n\n2. **쉐지애 쉐지애 참치&소고기 고양이 주식 파우치 85g**\n- 바나나의 선호 제형인 wet_can으로 적합합니다.\n\n3. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 소화에 좋은 성분으로 구성되어 있어 추천합니다.\n\n4. **로얄캐닌 로얄캐닌 캣 브리티쉬 숏헤어 400g**\n- 사료 조건과 잘 맞아 추천드립니다.\n\n5. **나인케어 스마트하트 나인케어 피부&피모 6kg**\n- 소화에 도움이 되는 성분으로 추천합니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_005_with_profile_B",
+    "captured_at": "2026-04-21T11:41:46.648083",
+    "logic": {
+      "user_input": "응 사과 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 애들 사료랑 간식 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 사료 리스트입니다! 그다음으로 사과 간식도 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_A",
+    "captured_at": "2026-04-21T11:41:54.851025",
+    "logic": {
+      "user_input": "고양이 장난감 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251133385",
+        "GI251134181",
+        "GI251051980",
+        "GI251136525",
+        "GI251132808"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251133385",
+        "GI251134181",
+        "GI251051980",
+        "GI251136525",
+        "GI251132808"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 장난감을 고려했습니다. 예산 범위에 대한 정보는 없지만, 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 바베큐 돌돌이 노즈워크 먹이퍼즐**\n- 고양이가 재미있게 놀면서 두뇌를 자극할 수 있는 퍼즐 장난감입니다.\n\n2. **크레용펫 레인보우 깃털 탱탱볼 공 장난감**\n- 깃털과 공이 결합되어 고양이의 사냥 본능을 자극하는 장난감입니다.\n\n3. **펫띵 냥설록 캣닢 장난감**\n- 캣닢이 포함되어 있어 고양이가 더욱 흥미를 느낄 수 있는 장난감입니다.\n\n4. **크레용펫 깃털 축구공 탱탱볼**\n- 축구공 형태로 고양이가 쫓아다니며 놀기에 적합한 장난감입니다.\n\n5. **크레용펫 치즈박스 펠트 공놀이 장난감**\n- 부드러운 재질로 안전하게 놀 수 있으며, 다양한 놀이가 가능합니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_no_profile_B",
+    "captured_at": "2026-04-21T11:42:02.411125",
+    "logic": {
+      "user_input": "면으로 된걸로 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "으로 된걸로 고양이 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 장난감 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "인기 있는 고양이 장난감들입니다! 깃털 막대나 레이저 포인터 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251136038",
+        "GI251134181",
+        "GI251136525",
+        "GI251107474",
+        "GI251107460"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136038",
+        "GI251134181",
+        "GI251136525",
+        "GI251107474",
+        "GI251107460"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 면으로 된 장난감을 고려하여 추천드립니다. 예산 범위는 명시되어 있지 않으니, 다양한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 크레용펫 불새 오렌지**\n- 면 소재로 제작되어 안전하게 사용할 수 있는 장난감입니다.\n\n2. **크레용펫 크레용펫 레인보우 깃털 탱탱볼 공 장난감**\n- 다양한 색상과 깃털이 있어 시각적으로도 매력적인 장난감입니다.\n\n3. **크레용펫 크레용펫 깃털 축구공 탱탱볼**\n- 면으로 만들어져 부드럽고, 고양이가 즐겁게 놀 수 있는 디자인입니다.\n\n4. **젤리히어로즈 젤리히어로즈 낚시대 리필(땡벌)**\n- 면 소재의 리필로, 고양이의 사냥 본능을 자극하는 재미있는 장난감입니다.\n\n5. **젤리히어로즈 젤리히어로즈 낚시대 리필(천연깃털)**\n- 천연 깃털로 만들어져 고양이가 더욱 흥미롭게 놀 수 있는 제품입니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_with_profile_A",
+    "captured_at": "2026-04-21T11:42:13.877441",
+    "logic": {
+      "user_input": "우리 바나나 장난감 좀 추천해줄래?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 러시안 블루 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7,
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ]
+    },
+    "actual_response": "바나나를 위한 장난감 추천을 드리겠습니다! 소화 건강을 고려하며, 연어 성분이 포함되지 않은 제품을 추천드립니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 크레용펫 매직팽팽이 리필**\n- 용품 조건과 잘 맞아 바나나가 즐겁게 놀 수 있습니다.\n\n2. **젤리히어로즈 젤리히어로즈 낚시대 리필(리필 버드)**\n- 바나나의 사냥 본능을 자극할 수 있는 재미있는 장난감입니다.\n\n3. **크레용펫 크레용펫 깃털 축구공 탱탱볼**\n- 바나나가 뛰어놀기 좋은 디자인으로 흥미를 유발합니다.\n\n4. **젤리히어로즈 젤리히어로즈 낚시대 리필(천연깃털)**\n- 천연 깃털로 만들어져 바나나의 호기심을 자극할 수 있습니다.\n\n5. **크레용펫 크레용펫 불새 오렌지**\n- 독특한 디자인으로 바나나의 관심을 끌 수 있는 장난감입니다.\n\n이 중에서 바나나의 취향에 맞는 장난감을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_006_with_profile_B",
+    "captured_at": "2026-04-21T11:42:25.429085",
+    "logic": {
+      "user_input": "면으로 된 건 없어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "장난감"
+      },
+      "search_query": "고양이 러시안 블루 용품 장난감",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "우리 바나나 장난감 좀 추천해줄래?"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나가 좋아할 만한 장난감들이에요! 공이나 스크래처 종류가 인기가 많아요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7,
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251136521",
+        "GI251107470",
+        "GI251136525",
+        "GI251107460",
+        "GI251136038"
+      ]
+    },
+    "actual_response": "바나나를 위한 용품 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **크레용펫 크레용펫 매직팽팽이 리필**\n- 바나나가 즐길 수 있는 다양한 놀이를 제공하는 제품입니다.\n\n2. **젤리히어로즈 젤리히어로즈 낚시대 리필(리필 버드)**\n- 바나나의 사냥 본능을 자극할 수 있는 재미있는 장난감입니다.\n\n3. **크레용펫 크레용펫 깃털 축구공 탱탱볼**\n- 바나나가 뛰어놀기 좋은 형태로, 에너지를 발산할 수 있습니다.\n\n4. **젤리히어로즈 젤리히어로즈 낚시대 리필(천연깃털)**\n- 천연 깃털로 만들어져 바나나의 흥미를 끌 수 있는 장난감입니다.\n\n5. **크레용펫 크레용펫 불새 오렌지**\n- 독특한 디자인으로 바나나의 호기심을 자극할 수 있는 제품입니다.\n\n이 중에서 바나나의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_007_no_profile",
+    "captured_at": "2026-04-21T11:42:33.330295",
+    "logic": {
+      "user_input": "요즘 인기 있는 고양이 옷 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "의류/악세사리"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품",
+        "subcategory": "의류/악세사리"
+      },
+      "search_query": "고양이 용품 의류/악세사리",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251101019",
+        "GI251118520",
+        "GI251104154",
+        "GO251109781",
+        "GI251094881"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251101019",
+        "GI251118520",
+        "GI251104154",
+        "GO251109781",
+        "GI251094881"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 고양이에게 적합한 제품을 고려했습니다. 예산 범위는 명시되어 있지 않으니 다양한 옵션을 아래와 같이 추천드립니다:\n\n1. **펫띵 펫띵 후리스 리버서블 패딩 핑크 3호**\n- 고양이에게 따뜻함과 스타일을 동시에 제공하는 패딩입니다.\n\n2. **크레용펫 크레용펫 고양이 손가락 마사지 촬영 소품 장난감**\n- 재미있고 유용한 촬영 소품으로, 고양이의 호기심을 자극합니다.\n\n3. **이츠독 [무료배송] 이츠독 은나래 배씨댕기**\n- 고양이에게 귀여운 스타일을 더해줄 수 있는 아이템입니다.\n\n4. **딩동펫 딩동펫 러블 후디 우비 고양이 S-L**\n- 비 오는 날에도 스타일을 잃지 않게 해주는 우비입니다.\n\n5. **로다XBYC 로다XBYC 개리야스 보디드라이 쿨런닝 화이트 4XL**\n- 여름철 시원하게 입힐 수 있는 쿨런닝으로, 고양이에게 편안함을 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_007_with_profile",
+    "captured_at": "2026-04-21T11:42:48.539716",
+    "logic": {
+      "user_input": "요즘 사과한테 필요한 인기 있는 패드 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 포메라니안 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251120245",
+        "GI251120247",
+        "GI251102583",
+        "GI251120255",
+        "GI251120252"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251120245",
+        "GI251120247",
+        "GI251102583",
+        "GI251120255",
+        "GI251120252"
+      ]
+    },
+    "actual_response": "사과를 위한 용품 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 dry 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **도그웨그 도그웨그 철벽 프렌즈 중성화복 포레스트S**\n- 용품 조건과 잘 맞아 사과에게 적합합니다.\n\n2. **도그웨그 도그웨그 철벽 프렌즈 중성화복 포레스트L**\n- 사과의 크기에 맞춰 선택할 수 있는 옵션입니다.\n\n3. **바른 바른 철벽 수직 스크래쳐**\n- 사과의 스트레스를 줄여줄 수 있는 좋은 선택입니다.\n\n4. **도그웨그 도그웨그 철벽 프렌즈 중성화복 호랑이S**\n- 다양한 디자인으로 사과의 취향을 고려한 제품입니다.\n\n5. **도그웨그 도그웨그 철벽 프렌즈 중성화복 애니멀즈S**\n- 귀여운 디자인으로 사과의 관심을 끌 수 있습니다.\n\n이 중에서 사과의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_A",
+    "captured_at": "2026-04-21T11:42:55.560409",
+    "logic": {
+      "user_input": "고양이 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [
+        {
+          "category": "간식",
+          "subcategory": null
+        },
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 건강 관심사는 특별히 없으시지만, 고양이에게 적합한 사료를 고려했습니다. 예산 범위는 명시되지 않았으니 다양한 선택지를 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 고양이에게 적합한 선택입니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 사료 조건에 부합하며, 유리너리 건강에 도움을 줄 수 있습니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 고려한 사료로, 고양이에게 적합합니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 고양이의 자연적인 식습관을 반영한 사료입니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이에게 필요한 영양소를 잘 갖춘 사료입니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_B",
+    "captured_at": "2026-04-21T11:43:01.769583",
+    "logic": {
+      "user_input": "간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [
+        {
+          "category": "용품",
+          "subcategory": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 간식 옵션을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 간식 조건과 잘 맞아 고양이에게 적합한 선택입니다.\n\n2. **펫메이드 펫메이드 치킨그라스 면역력강화**\n- 면역력 강화에 도움을 줄 수 있는 간식으로 추천합니다.\n\n3. **오래오래프로젝트 오래오래프로젝트 자연산 명태 촉촉스틱 7개입**\n- 자연산 재료로 만들어져 고양이에게 건강한 간식입니다.\n\n4. **닥터페트라 닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g**\n- 이빨 건강을 고려한 간식으로, 고양이의 치아 관리에 도움을 줍니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 고양이가 좋아하는 닭가슴살로 만들어져 맛있고 영양가 높은 간식입니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_no_profile_C",
+    "captured_at": "2026-04-21T11:43:09.941168",
+    "logic": {
+      "user_input": "마지막으로 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 용품",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251129709",
+        "GI251102583",
+        "GI251134043",
+        "GI251104154",
+        "GI251104691"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251129709",
+        "GI251102583",
+        "GI251134043",
+        "GI251104154",
+        "GI251104691"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 용품 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 고양이에게 적합한 용품을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **일이삶사 고양이 스크래쳐 체중계 묘키로**\n- 용품 조건과 잘 맞아 고양이의 스크래칭 욕구를 충족시켜 줄 수 있습니다.\n\n2. **바른 철벽 수직 스크래쳐**\n- 튼튼한 구조로 고양이가 마음껏 스크래칭할 수 있어 추천드립니다.\n\n3. **레토 고양이 스크래쳐 소파 대형 70x34cm LCH-ST07**\n- 넉넉한 사이즈로 여러 고양이가 함께 사용할 수 있어 좋습니다.\n\n4. **이츠독 은나래 배씨댕기**\n- 고양이의 호기심을 자극할 수 있는 재미있는 용품입니다.\n\n5. **레토 고양이 숨숨집 2단 하우스 스크래쳐 LCH-SF01**\n- 아늑한 공간을 제공하여 고양이가 편안하게 쉴 수 있는 장소를 만들어 줍니다.\n\n이 중에서 우리 아이의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_A",
+    "captured_at": "2026-04-21T11:43:23.702516",
+    "logic": {
+      "user_input": "포도 사료랑 간식이랑 용품 다 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [
+        {
+          "pet_name": "포도",
+          "category": "간식",
+          "subcategory": null,
+          "health_concern": null
+        },
+        {
+          "pet_name": "포도",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_B",
+    "captured_at": "2026-04-21T11:43:36.038866",
+    "logic": {
+      "user_input": "응 간식도 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 아비시니안 간식",
+      "decomposed_tasks": [
+        {
+          "pet_name": "포도",
+          "category": "용품",
+          "subcategory": null,
+          "health_concern": null
+        }
+      ],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251036355",
+        "GI251036356",
+        "GI251027710",
+        "GI251027709",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "포도를 위한 간식 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **이나바 이나바 야끼믹스 세가지맛 가다랑어・가리비・오징어풍미**\n- 간식 조건과 잘 맞아 포도의 취향에 적합할 것입니다.\n\n2. **이나바 이나바 야끼믹스 세가지맛 가다랑어・치킨・오징어풍미**\n- 다양한 맛이 있어 포도가 즐길 수 있는 간식입니다.\n\n3. **런치 런치 보니또 100% 통살간식 참치등살30g**\n- 고품질의 통살 간식으로, 치아 건강에 도움이 될 수 있습니다.\n\n4. **런치 런치 보니또 100% 통살간식 참치뱃살30g**\n- 부드러운 식감으로 포도가 쉽게 먹을 수 있는 간식입니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 촉촉한 질감으로 포도가 좋아할 만한 간식입니다.\n\n이 중에서 포도의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_008_with_profile_C",
+    "captured_at": "2026-04-21T11:43:45.109710",
+    "logic": {
+      "user_input": "마지막 용품도 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "용품"
+      },
+      "search_query": "고양이 아비시니안 용품 치아",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도 사료 리스트입니다!"
+        },
+        {
+          "role": "user",
+          "content": "응 간식도 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251126889",
+        "GI251104381",
+        "GI251026277",
+        "GI251095255",
+        "GI251026279"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251126889",
+        "GI251104381",
+        "GI251026277",
+        "GI251095255",
+        "GI251026279"
+      ]
+    },
+    "actual_response": "포도를 위한 용품 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **벳키퍼 벳키퍼 빅스 바르는 구강 치약 100ml**\n- 치아 건강을 위한 효과적인 구강 관리 제품입니다.\n\n2. **닥터페트라 닥터페트라 덴티치카 친환경 대나무칫솔**\n- 친환경 소재로 제작되어 안전하게 치아를 관리할 수 있습니다.\n\n3. **자이목스 자이목스 오라틴 안티셉틱 오랄 젤 28g**\n- 구강 내 세균을 효과적으로 제거하여 치아 건강을 지켜줍니다.\n\n4. **페피테일 페피테일 참 후코덴탈 겔 40g**\n- 치아와 잇몸을 동시에 관리할 수 있는 제품입니다.\n\n5. **자이목스 자이목스 오라틴 투스페이스트 젤 70g**\n- 맛있고 효과적인 치약으로, 포도의 치아 건강을 도와줍니다.\n\n이 중에서 포도의 취향에 맞는 용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_009_no_profile_A",
+    "captured_at": "2026-04-21T11:43:45.957803",
+    "logic": {
+      "user_input": "오늘 날씨 되게 좋다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_no_profile_B",
+    "captured_at": "2026-04-21T11:43:46.618904",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {},
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "오늘 날씨 되게 좋다"
+        },
+        {
+          "role": "assistant",
+          "content": "정말 좋은 날씨네요! 이런 날엔 포도와 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_A",
+    "captured_at": "2026-04-21T11:43:47.380131",
+    "logic": {
+      "user_input": "포도랑 놀러 가고 싶다",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_009_with_profile_B",
+    "captured_at": "2026-04-21T11:43:48.032181",
+    "logic": {
+      "user_input": "너는 주말에 보통 뭐해?",
+      "intents": [
+        "unclear"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도랑 놀러 가고 싶다"
+        },
+        {
+          "role": "assistant",
+          "content": "포도랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+        }
+      ],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "반려동물 상품 추천이나 건강 정보 상담을 도와드릴 수 있어요. 궁금한 점이 있으시면 말씀해 주세요!"
+  },
+  {
+    "case_id": "case_010_no_profile_A",
+    "captured_at": "2026-04-21T11:43:53.513601",
+    "logic": {
+      "user_input": "고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251025585",
+        "GI251076113"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사가 없으므로 다양한 옵션을 고려했습니다. 예산 범위와 알러지 성분에 대한 정보가 없으니, 일반적으로 추천되는 제품을 아래와 같이 나열해 보겠습니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 고양이의 영양을 균형 있게 제공합니다.\n\n2. **로얄캐닌 로얄캐닌 캣 유리너리S/O 3.5kg**\n- 유리너리 건강을 고려한 포뮬러로, 소변 건강에 도움을 줄 수 있습니다.\n\n3. **로얄캐닌 로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 지원하는 성분이 포함되어 있어 민감한 고양이에게 적합합니다.\n\n4. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 자연 재료를 사용하여 고양이의 건강을 고려한 제품입니다.\n\n5. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이와 새끼 고양이 모두에게 적합한 영양을 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_no_profile_B",
+    "captured_at": "2026-04-21T11:44:06.176424",
+    "logic": {
+      "user_input": "아니 고양이 말고 사과 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        }
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251053994",
+        "GI251025594",
+        "GI251135539",
+        "GI251099897",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "사과를 위한 사료 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 포메라니안 어덜트 1.5kg**\n- 포메라니안의 특성을 고려한 영양 성분으로 눈물과 면역 건강에 도움을 줍니다.\n\n2. **웰니스 코어 그레인프리 오리 1.8kg**\n- 고단백, 저탄수화물로 면역력 강화에 효과적이며, 닭고기를 사용하지 않습니다.\n\n3. **오리젠 오리 2kg**\n- 신선한 오리 고기를 사용하여 면역력 증진에 도움을 주며, 알레르기 유발 성분이 없습니다.\n\n4. **내추럴발란스 알레르기 포뮬라 1.5kg**\n- 알레르기 관리에 최적화된 성분으로 구성되어 있어 사과에게 안전합니다.\n\n5. **사이언스다이어트 퍼피 1.5kg**\n- 면역력과 눈물 관리에 도움을 주는 영양소가 포함되어 있어 건강한 성장에 기여합니다.\n\n이 중에서 사과의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_no_profile_C",
+    "captured_at": "2026-04-21T11:44:18.428160",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      "search_query": "강아지 포메라니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "고양이 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 고양이 말고 사과 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "사과를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+        }
+      ],
+      "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+      "pet_profile": {
+        "name": "사과",
+        "species": "dog",
+        "breed": "포메라니안",
+        "age": "3세 0개월",
+        "gender": "",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251103116",
+        "GI251103111",
+        "GI251017381",
+        "GI251129998",
+        "GI251135736"
+      ]
+    },
+    "actual_response": "사과를 위한 사료 추천을 드리겠습니다! 눈물과 면역 관리에 도움이 되며, 닭고기 성분이 포함되지 않은 드라이 사료 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **아더마스 아더마스 강아지 주식 플래닛 포크 360g**\n- 사료 조건과 잘 맞아 사과에게 적합합니다.\n\n2. **아더마스 아더마스 강아지 밋위드에그 포크앤스위트펌킨 180g**\n- 사료 조건과 잘 맞아 사과에게 적합합니다.\n\n3. **now now 그레인프리 스몰브리드 시니어 2.7kg**\n- 사료 조건과 잘 맞아 사과에게 적합합니다.\n\n4. **알로키친 알로키친 자연식 후코그린 16개입**\n- 사료 조건과 잘 맞아 사과에게 적합합니다.\n\n5. **아미오 풀무원아미오 강아지 시원하개(1.5kg)**\n- 사료 조건과 잘 맞아 사과에게 적합합니다.\n\n이 중에서 사과의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_A",
+    "captured_at": "2026-04-21T11:44:30.171094",
+    "logic": {
+      "user_input": "포도 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0,
+        "age": "6세 0개월",
+        "weight": "4.00kg",
+        "gender": ""
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_B",
+    "captured_at": "2026-04-21T11:44:47.571419",
+    "logic": {
+      "user_input": "아니 포도 말고 바나나 꺼 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "아니 바나나 꺼 고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "name": "바나나",
+        "species": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "gender": "male",
+        "weight": "5.00kg"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251025585",
+        "GI251038669",
+        "GI251099902",
+        "GI251099899",
+        "GI251053994"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025585",
+        "GI251038669",
+        "GI251099902",
+        "GI251099899",
+        "GI251053994"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 사료 조건과 맞아 소화에 도움을 줄 수 있습니다.\n\n2. **나인케어 스마트하트 나인케어 피부&피모 6kg**\n- 소화에 좋은 성분이 포함되어 있어 추천드립니다.\n\n3. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 소화에 적합한 성분으로 구성되어 있습니다.\n\n4. **시그니처바이 시그니처바이 고양이 A/a 스틱 10g 5개**\n- 소화에 도움이 되는 성분으로 추천합니다.\n\n5. **퓨리나 퓨리나 캣 원 시니어 1.4kg**\n- 소화에 유익한 성분이 포함되어 있어 적합합니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_010_with_profile_C",
+    "captured_at": "2026-04-21T11:44:59.827749",
+    "logic": {
+      "user_input": "사료",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 러시안 블루 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "포도 사료 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+        },
+        {
+          "role": "user",
+          "content": "아니 포도 말고 바나나 꺼 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "바나나를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "cat",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "age": "0세 7개월",
+        "weight": "5.00kg",
+        "gender": "male"
+      },
+      "health_concerns": [
+        "소화"
+      ],
+      "recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251035164",
+        "GI251025585",
+        "GI251135540",
+        "GI251131933",
+        "GI251038669"
+      ]
+    },
+    "actual_response": "바나나를 위한 사료 추천을 드리겠습니다! 소화 관리에 도움이 되며, 연어 성분이 포함되지 않은 wet_can 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **로얄캐닌 로얄캐닌 캣 얼리 레날 파우치 85g**\n- 소화 관심사에 맞춰 특별히 설계된 제품입니다.\n\n2. **쉐지애 쉐지애 참치&소고기 고양이 주식 파우치 85g**\n- 다양한 단백질을 제공하여 소화에 도움을 줄 수 있습니다.\n\n3. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 고품질 원료로 소화에 좋은 영양을 제공합니다.\n\n4. **로얄캐닌 로얄캐닌 캣 브리티쉬 숏헤어 400g**\n- 소화에 도움을 주는 성분이 포함되어 있습니다.\n\n5. **나인케어 스마트하트 나인케어 피부&피모 6kg**\n- 피부와 소화 건강을 동시에 고려한 제품입니다.\n\n이 중에서 바나나의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_011_no_profile",
+    "captured_at": "2026-04-21T11:45:05.326541",
+    "logic": {
+      "user_input": "닭고기 알러지 없는 고양이 사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251131933",
+        "GI251051969"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251131931",
+        "GI251034743",
+        "GI251131933",
+        "GI251051969"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 닭고기 알러지가 없는 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 고양이의 영양을 균형 있게 제공합니다.\n\n2. **로얄캐닌 캣 유리너리S/O 3.5kg**\n- 유리너리 건강을 지원하는 성분이 포함되어 있어 건강 관리에 도움이 됩니다.\n\n3. **로얄캐닌 캣 센서블 400g 소화기건강**\n- 소화기 건강을 고려한 성분으로, 예민한 고양이에게 적합합니다.\n\n4. **로얄캐닌 캣 얼리 레날 파우치 85g**\n- 신장 건강을 지원하는 제품으로, 특별한 관리가 필요한 고양이에게 좋습니다.\n\n5. **웰니스코어 시그니쳐셀렉트 파테 참치 79g**\n- 참치로 만들어져 있어 고양이가 좋아할 만한 맛과 영양을 제공합니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_011_with_profile",
+    "captured_at": "2026-04-21T11:45:18.955122",
+    "logic": {
+      "user_input": "사료 추천해줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 아비시니안 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+      "pet_profile": {
+        "name": "포도",
+        "species": "cat",
+        "breed": "아비시니안",
+        "age": "6세 0개월",
+        "gender": "",
+        "weight": "4.00kg"
+      },
+      "health_concerns": [
+        "치아"
+      ],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251099902",
+        "GI251128262",
+        "GI251025596",
+        "GI251135538"
+      ]
+    },
+    "actual_response": "포도를 위한 사료 추천을 드리겠습니다! 치아 관리에 도움이 되며, 고구마와 새우 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 사료 조건과 잘 맞아 포도의 건강에 도움이 될 것입니다.\n\n2. **시그니처바이 시그니처바이 고양이 A/a 대용량 10g 30개**\n- 포도의 건강을 고려한 사료로, 알레르기 유발 성분이 없습니다.\n\n3. **프로뉴트리션 프레스티지 캣 시니어 8+ 10kg**\n- 시니어 고양이를 위한 영양이 풍부한 사료로, 치아 건강에 도움을 줄 수 있습니다.\n\n4. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 맛과 영양을 동시에 챙길 수 있습니다.\n\n5. **쉐지애 쉐지애 참치 고양이 주식 파우치 85g**\n- 참치로 만들어져 있어 맛있고, 알레르기 성분이 포함되지 않아 안전합니다.\n\n이 중에서 포도의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_012_no_profile_A",
+    "captured_at": "2026-04-21T11:45:19.905158",
+    "logic": {
+      "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {},
+      "health_concerns": [],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "간식을 찾으시는군요! 어떤 반려동물(강아지/고양이)을 위한 상품인가요?"
+  },
+  {
+    "case_id": "case_012_no_profile_B",
+    "captured_at": "2026-04-21T11:45:27.284566",
+    "logic": {
+      "user_input": "고양이",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "search_query": "고양이 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+        },
+        {
+          "role": "assistant",
+          "content": "어떤 반려동물을 위한 간식인가요? (고양이/강아지)"
+        }
+      ],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099897",
+        "GI251132332",
+        "GI251129979",
+        "GI251104378",
+        "GI251120813"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 간식 추천을 드리겠습니다! 곡물 성분이 포함되지 않은 조건을 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n2. **펫메이드 펫메이드 치킨그라스 면역력강화**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n3. **오래오래프로젝트 오래오래프로젝트 자연산 명태 촉촉스틱 7개입**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n4. **닥터페트라 닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n5. **촉촉트릿 촉촉트릿 포캣 닭가슴살 160g**\n- 간식 조건과 잘 맞아 추천드립니다.\n\n이 중에서 우리 아이의 취향에 맞는 간식을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_012_with_profile",
+    "captured_at": "2026-04-21T11:45:28.826223",
+    "logic": {
+      "user_input": "그레인 프리 간식 좀 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      "effective_filters": {},
+      "search_query": "고양이 러시안 블루 간식",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251101366"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251106769",
+        "GI251101364",
+        "GI251120813",
+        "GI251053466",
+        "GI251101366"
+      ]
+    },
+    "actual_response": "펫 프로필과 다른 반려동물입니다. 펫 프로필 등록 먼저 해주세요."
+  },
+  {
+    "case_id": "case_013_no_profile",
+    "captured_at": "2026-04-21T11:45:35.877135",
+    "logic": {
+      "user_input": "제일 싼 강아지 패드 보여줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "강아지",
+        "category": "배변용품",
+        "subcategory": "배변패드"
+      },
+      "effective_filters": {
+        "pet_type": "강아지",
+        "category": "배변용품",
+        "subcategory": "배변패드"
+      },
+      "search_query": "제일 싼 강아지 패드 강아지 배변용품 배변패드 패드",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "dog"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251099461",
+        "GI251127556",
+        "GP251128186",
+        "GI251127555",
+        "GP251095016"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251099461",
+        "GI251127556",
+        "GP251128186",
+        "GI251127555",
+        "GP251095016"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 배변용품 추천을 드리겠습니다! 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **근본 근본 논슬립 패드 20매 20g (40x50cm)**\n- 배변용품 조건과 잘 맞아 안정적인 사용이 가능합니다.\n\n2. **에코스터프 에코스터프 친환경 쏙패드 50매 (25cm X 35cm)**\n- 친환경 소재로 제작되어 안전하게 사용할 수 있습니다.\n\n3. **에코스터프 에코스터프 친환경 쏙패드 (25cm X 35cm) 50매/100매 모아보기**\n- 다양한 수량 옵션으로 필요에 맞게 선택할 수 있습니다.\n\n4. **에코스터프 에코스터프 친환경 쏙패드 100매 (25cm X 35cm)**\n- 대량 구매로 경제적인 선택이 가능합니다.\n\n5. **우리아이 배변패드 우리아이 배변패드 절약형(15g) 100매 (40*50cm)**\n- 절약형으로 많은 양을 제공하여 실용적입니다.\n\n이 중에서 우리 아이의 취향에 맞는 배변용품을 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  },
+  {
+    "case_id": "case_013_with_profile",
+    "captured_at": "2026-04-21T11:45:37.734826",
+    "logic": {
+      "user_input": "그중에서 제일 저렴한 거로 알려줘",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이"
+      },
+      "effective_filters": {},
+      "decomposed_tasks": [],
+      "conversation_history": [
+        {
+          "role": "user",
+          "content": "사과 패드 추천해줘"
+        },
+        {
+          "role": "assistant",
+          "content": "사과를 위한 강아지 패드 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+        }
+      ],
+      "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+      "pet_profile": {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      },
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ],
+      "recommended_goods_ids": [],
+      "last_recommended_goods_ids": []
+    },
+    "actual_response": "어떤 제품을 찾으시나요?"
+  },
+  {
+    "case_id": "case_014_no_profile",
+    "captured_at": "2026-04-21T11:45:43.871914",
+    "logic": {
+      "user_input": "로얄캐닌 말고 다른 고양이 사료 있어?",
+      "intents": [
+        "recommend"
+      ],
+      "filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "effective_filters": {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      "search_query": "고양이 사료",
+      "decomposed_tasks": [],
+      "conversation_history": [],
+      "target_pet_id": null,
+      "pet_profile": {
+        "species": "cat"
+      },
+      "health_concerns": [],
+      "recommended_goods_ids": [
+        "GI251025596",
+        "GI251051969",
+        "GI251025585",
+        "GI251076113",
+        "GI251099897"
+      ],
+      "last_recommended_goods_ids": [
+        "GI251025596",
+        "GI251051969",
+        "GI251025585",
+        "GI251076113",
+        "GI251099897"
+      ]
+    },
+    "actual_response": "우리 아이를 위한 사료 추천을 드리겠습니다! 특별한 건강 관심사는 없으나, 다양한 고양이 사료를 고려했습니다. 예산 내에서 적합한 제품을 아래와 같이 추천드립니다:\n\n1. **오리젠 오리젠 캣 6피쉬 5.4kg**\n- 다양한 생선이 포함되어 있어 고양이의 영양을 균형 있게 제공합니다.\n\n2. **웰니스 웰니스코어 시그니쳐셀렉트 파테 참치 79g**\n- 참치가 주재료로 사용되어 고양이가 좋아할 만한 맛을 제공합니다.\n\n3. **아카나 아카나 캣 그래스랜드 1.8kg**\n- 자연 친화적인 재료로 만들어져 고양이의 건강을 고려한 사료입니다.\n\n4. **오리젠 오리젠 캣 오리지널 캣앤키튼 리뉴얼 5.4kg**\n- 고양이의 성장과 발달에 필요한 영양소가 풍부하게 포함되어 있습니다.\n\n5. **시그니처바이 시그니처바이 고양이 A/a 30g 8개**\n- 소량 포장으로 신선하게 제공되어 고양이가 쉽게 먹을 수 있습니다.\n\n이 중에서 우리 아이의 취향에 맞는 사료를 선택해 보세요! 추가적인 질문이 있으시면 언제든지 말씀해 주세요."
+  }
+]

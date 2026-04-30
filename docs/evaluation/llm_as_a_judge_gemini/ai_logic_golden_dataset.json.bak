@@ -1,0 +1,8164 @@
+[
+{
+  "id": "case_001_no_profile_A",
+  "description": "반려동물 정보 없이 일반적인 상품 추천 요청 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-001",
+    "user_input": "강아지 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_001_no_profile_B",
+  "description": "이미 추천받은 상품 외에 다른 카테고리(간식)를 추가로 요청하는 시나리오",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-002",
+    "user_input": "간식도 같이 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "간식"
+    },
+    "search_query": "강아지 간식",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "간식",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_001_with_profile",
+  "description": "강아지 프로필이 있을 때 일반 사료 요청 시나리오",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-003",
+    "user_input": "우리 강아지 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "말티즈 강아지 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251034777",
+        "product_name": "로얄캐닌 독 말티즈 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10900,
+        "rating": 4.7,
+        "reviews": 49,
+        "rerank_score": 0.8092
+      },
+      {
+        "goods_id": "GI251133797",
+        "product_name": "래핑찰리 독 기능성 사료 나이스 말티즈 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6687
+      },
+      {
+        "goods_id": "GI251028662",
+        "product_name": "스텔라앤츄이스 탄탈라이징 터키 밀믹서 510g",
+        "brand_name": "스텔라앤츄이스",
+        "price": 74000,
+        "discount_price": 74000,
+        "rating": 4.7,
+        "reviews": 160,
+        "rerank_score": 0.5394
+      },
+      {
+        "goods_id": "GS251131817",
+        "product_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 53090,
+        "discount_price": 47400,
+        "rating": 4.8,
+        "reviews": 224,
+        "rerank_score": 0.5213
+      },
+      {
+        "goods_id": "GI251025572",
+        "product_name": "오리젠 독 스몰브리드 4.5kg",
+        "brand_name": "오리젠",
+        "price": 89000,
+        "discount_price": 62000,
+        "rating": 4.9,
+        "reviews": 349,
+        "rerank_score": 0.5208
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_002_no_profile",
+  "description": "특정 품종 및 카테고리에 맞는 상품 추천 시나리오 (프로필 미선택)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-004",
+    "user_input": "푸들 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지",
+      "breed": "푸들"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "breed": "푸들",
+      "category": "사료"
+    },
+    "search_query": "강아지 푸들 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251025376",
+        "product_name": "로얄캐닌 독 푸들 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10680,
+        "rating": 4.8,
+        "reviews": 43,
+        "rerank_score": 0.8645
+      },
+      {
+        "goods_id": "GI251125512",
+        "product_name": "로얄캐닌 독 푸들 어덜트 8+ 1.5kg 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 30300,
+        "discount_price": 27900,
+        "rating": 4.5,
+        "reviews": 3,
+        "rerank_score": 0.7685
+      },
+      {
+        "goods_id": "GI251133798",
+        "product_name": "래핑찰리 독 기능성 사료 굿 푸들 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 2,
+        "rerank_score": 0.6712
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.5345
+      },
+      {
+        "goods_id": "GS251035326",
+        "product_name": "[12개세트] 로얄캐닌 독 푸들 어덜트 파우치 85g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 25200,
+        "discount_price": 21000,
+        "rating": 4.8,
+        "reviews": 51,
+        "rerank_score": 0.5169
+      }
+    ],
+    "expected_response_contains": [
+      "푸들",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_002_with_profile",
+  "description": "프로필의 품종(포메라니안) 정보를 활용한 상품 추천 시나리오 (사과)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-004-W",
+    "user_input": "우리 아이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "사과",
+        "species": "강아지",
+        "breed": "포메라니안",
+        "active": true,
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "species_en": "dog"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "breed": "포메라니안",
+      "category": "사료"
+    },
+    "search_query": "강아지 포메라니안 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251034776",
+        "product_name": "로얄캐닌 독 포메라니안 어덜트 1.5kg 관절건강",
+        "brand_name": "로얄캐닌",
+        "price": 30300,
+        "discount_price": 24900,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.8901
+      },
+      {
+        "goods_id": "GI251103116",
+        "product_name": "아더마스 강아지 주식 플래닛 포크 360g",
+        "brand_name": "아더마스",
+        "price": 32000,
+        "discount_price": 32000,
+        "rating": 4.9,
+        "reviews": 13,
+        "rerank_score": 0.7033
+      },
+      {
+        "goods_id": "GI251103111",
+        "product_name": "아더마스 강아지 밋위드에그 포크앤스위트펌킨 180g",
+        "brand_name": "아더마스",
+        "price": 17500,
+        "discount_price": 17500,
+        "rating": 4.5,
+        "reviews": 12,
+        "rerank_score": 0.6196
+      },
+      {
+        "goods_id": "GI251129998",
+        "product_name": "알로키친 자연식 후코그린 16개입",
+        "brand_name": "알로키친",
+        "price": 37500,
+        "discount_price": 26500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6062
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.5855
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "포메라니안",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_003_with_profile",
+  "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-005-W",
+    "user_input": "우리 포도 건강 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "포도",
+        "species": "고양이",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료",
+      "health_concerns": [
+        "피부",
+        "헤어볼"
+      ]
+    },
+    "search_query": "고양이 사료 피부 헤어볼",
+    "golden_products": [
+      {
+        "goods_id": "GI251035046",
+        "product_name": "로얄캐닌 캣 헤어볼 케어 400g 헤어볼 배출촉진",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 273,
+        "rerank_score": 1.1374
+      },
+      {
+        "goods_id": "GI251027985",
+        "product_name": "위스카스 포켓 헤어볼 닭고기와 참치 3kg",
+        "brand_name": "위스카스",
+        "price": 24900,
+        "discount_price": 24900,
+        "rating": 4.6,
+        "reviews": 16,
+        "rerank_score": 0.9562
+      },
+      {
+        "goods_id": "GI251048715",
+        "product_name": "로얄캐닌 캣 랙돌 어덜트 400g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 8900,
+        "discount_price": 8900,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.9229
+      },
+      {
+        "goods_id": "GI251129015",
+        "product_name": "후새 캣 헤어볼 컨트롤 1.36kg",
+        "brand_name": "후새",
+        "price": 37000,
+        "discount_price": 29600,
+        "rating": 5.0,
+        "reviews": 9,
+        "rerank_score": 0.9212
+      },
+      {
+        "goods_id": "GI251038669",
+        "product_name": "스마트하트 나인케어 피부&피모 6kg",
+        "brand_name": "나인케어",
+        "price": 60000,
+        "discount_price": 50000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.8913
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "피부",
+      "헤어볼",
+      "건강",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_004_with_profile",
+  "description": "대형견 프로필의 건강 고민(체중, 피부) 정보를 활용한 상품 추천 시나리오 (골드)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-006-W",
+    "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "골드",
+        "species": "강아지",
+        "breed": "골든 리트리버",
+        "active": true,
+        "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+        "species_en": "dog"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "골드",
+      "pet_type": "강아지",
+      "breed": "골든 리트리버",
+      "category": "사료",
+      "health_concerns": [
+        "체중",
+        "피부"
+      ]
+    },
+    "search_query": "강아지 골든 리트리버 사료 체중 피부",
+    "golden_products": [
+      {
+        "goods_id": "GI251061044",
+        "product_name": "윌로펫 헬시포뮬러 피부&모질 1.2kg",
+        "brand_name": "윌로펫",
+        "price": 25000,
+        "discount_price": 16940,
+        "rating": 4.9,
+        "reviews": 20,
+        "rerank_score": 0.9964
+      },
+      {
+        "goods_id": "GI251106577",
+        "product_name": "트럼펫 소프트 클로버 스킨앤코트 1kg",
+        "brand_name": "트럼펫",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 4.7,
+        "reviews": 3,
+        "rerank_score": 0.9916
+      },
+      {
+        "goods_id": "GI251126931",
+        "product_name": "나인케어 강아지 사료 피부관리 6kg",
+        "brand_name": "나인케어",
+        "price": 55000,
+        "discount_price": 31190,
+        "rating": 5.0,
+        "reviews": 2,
+        "rerank_score": 0.9435
+      },
+      {
+        "goods_id": "GI251034788",
+        "product_name": "로얄캐닌 독 미니 더마컴포트 1kg 피부보호",
+        "brand_name": "로얄캐닌",
+        "price": 20600,
+        "discount_price": 17350,
+        "rating": 4.8,
+        "reviews": 30,
+        "rerank_score": 0.905
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.9046
+      }
+    ],
+    "expected_response_contains": [
+      "골드",
+      "체중",
+      "피부",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1"
+  }
+},
+{
+  "id": "case_003_with_profile",
+  "description": "프로필의 건강 고민(피부, 헤어볼) 정보를 활용한 상품 추천 시나리오 (포도)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-005-W",
+    "user_input": "우리 포도 건강 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "포도",
+        "species": "고양이",
+        "health_concerns": [
+          "피부",
+          "헤어볼"
+        ],
+        "active": true,
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "species_en": "cat",
+        "breed": "아비시니안"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료",
+      "health_concerns": [
+        "피부",
+        "헤어볼"
+      ]
+    },
+    "search_query": "고양이 사료 피부 헤어볼",
+    "golden_products": [
+      {
+        "goods_id": "GI251035046",
+        "product_name": "로얄캐닌 캣 헤어볼 케어 400g 헤어볼 배출촉진",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 273,
+        "rerank_score": 1.1374
+      },
+      {
+        "goods_id": "GI251027985",
+        "product_name": "위스카스 포켓 헤어볼 닭고기와 참치 3kg",
+        "brand_name": "위스카스",
+        "price": 24900,
+        "discount_price": 24900,
+        "rating": 4.6,
+        "reviews": 16,
+        "rerank_score": 0.9562
+      },
+      {
+        "goods_id": "GI251048715",
+        "product_name": "로얄캐닌 캣 랙돌 어덜트 400g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 8900,
+        "discount_price": 8900,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.9229
+      },
+      {
+        "goods_id": "GI251129015",
+        "product_name": "후새 캣 헤어볼 컨트롤 1.36kg",
+        "brand_name": "후새",
+        "price": 37000,
+        "discount_price": 29600,
+        "rating": 5.0,
+        "reviews": 9,
+        "rerank_score": 0.9212
+      },
+      {
+        "goods_id": "GI251038669",
+        "product_name": "스마트하트 나인케어 피부&피모 6kg",
+        "brand_name": "나인케어",
+        "price": 60000,
+        "discount_price": 50000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.8913
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "피부",
+      "헤어볼",
+      "건강",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_004_no_profile_A",
+  "description": "다중 속성(나이, 카테고리) 기반 상품 요청 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-006",
+    "user_input": "6살 강아지 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지",
+      "age": "6살"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지"
+    },
+    "requires_clarification": false,
+    "search_query": "강아지 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7905
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.7373
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.7081
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5928
+      },
+      {
+        "goods_id": "GI251045379",
+        "product_name": "윌로펫 뉴트리탑 어덜트 1.2kg",
+        "brand_name": "윌로펫",
+        "price": 20000,
+        "discount_price": 18000,
+        "rating": 4.6,
+        "reviews": 20,
+        "rerank_score": 0.51
+      }
+    ],
+    "expected_response_contains": [
+      "6살",
+      "강아지",
+      "사료",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_004_no_profile_B",
+  "description": "다중 속성 기반 요청 후 추가 상품 요청 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-007",
+    "user_input": "간식은 없어?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "6살 강아지 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "6살 강아지를 위한 사료들입니다! 여기 목록을 확인해보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지",
+      "age": "6살"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "age": "6살",
+      "category": "간식"
+    },
+    "search_query": "강아지 간식",
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "간식",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_004_with_profile_A",
+  "description": "강아지 프로필 기반 연령 맞춤 사료 요청 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-008",
+    "user_input": "초코 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "age": "8살",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 말티즈 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251034777",
+        "product_name": "로얄캐닌 독 말티즈 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10900,
+        "rating": 4.7,
+        "reviews": 49,
+        "rerank_score": 0.8454
+      },
+      {
+        "goods_id": "GI251133797",
+        "product_name": "래핑찰리 독 기능성 사료 나이스 말티즈 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6687
+      },
+      {
+        "goods_id": "GI251025572",
+        "product_name": "오리젠 독 스몰브리드 4.5kg",
+        "brand_name": "오리젠",
+        "price": 89000,
+        "discount_price": 62000,
+        "rating": 4.9,
+        "reviews": 349,
+        "rerank_score": 0.5365
+      },
+      {
+        "goods_id": "GS251131817",
+        "product_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 53090,
+        "discount_price": 47400,
+        "rating": 4.8,
+        "reviews": 224,
+        "rerank_score": 0.5262
+      },
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.5161
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_004_with_profile_B",
+  "description": "프로필 대화 중 다중 카테고리 탐색 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-009",
+    "user_input": "간식도 같이 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코를 위한 사료 추천 리스트입니다!"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "age": "8살",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "간식"
+    },
+    "search_query": "강아지 말티즈 간식",
+    "golden_products": [
+      {
+        "goods_id": "GI251128208",
+        "product_name": "릴리스 키친 브레이크타임 비스킷 80g",
+        "brand_name": "릴리스키친",
+        "price": 11700,
+        "discount_price": 9000,
+        "rating": 4.6,
+        "reviews": 5,
+        "rerank_score": 0.742
+      },
+      {
+        "goods_id": "GI251120646",
+        "product_name": "조선강아지 비타민 말랑 닭가슴살 200g",
+        "brand_name": "조선강아지",
+        "price": 14000,
+        "discount_price": 10500,
+        "rating": 4.8,
+        "reviews": 77,
+        "rerank_score": 0.7142
+      },
+      {
+        "goods_id": "GI251100753",
+        "product_name": "그리니즈 애니타임 바이트 블루베리 65개입",
+        "brand_name": "그리니즈",
+        "price": 37000,
+        "discount_price": 37000,
+        "rating": 4.9,
+        "reviews": 20,
+        "rerank_score": 0.661
+      },
+      {
+        "goods_id": "GI251135674",
+        "product_name": "[유통기한] 말랑탱글 소간 눈건강 수제간식 90g exp2026.05.21",
+        "brand_name": "말랑탱글",
+        "price": 2800,
+        "discount_price": 1890,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.658
+      },
+      {
+        "goods_id": "GI251091591",
+        "product_name": "브리더랩 황태&연어 고구마말이 180g",
+        "brand_name": "브리더랩",
+        "price": 4500,
+        "discount_price": 4000,
+        "rating": 4.7,
+        "reviews": 16,
+        "rerank_score": 0.6373
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "간식",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_005_no_profile_A",
+  "description": "한 번에 여러 반려동물(강아지, 고양이) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010",
+    "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 사료",
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "사료",
+      "추천",
+      "여기",
+      "그리고",
+      "고양이",
+      "간식",
+      "보여드릴까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_005_no_profile_B",
+  "description": "복합 요청 중 두 번째 상품(고양이 간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-B",
+    "user_input": "응 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료랑 고양이 간식 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "간식",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_005_with_profile_A",
+  "description": "다중 프로필(강아지 초코, 고양이 바나나) 기반 복합 상품 추천 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-W",
+    "user_input": "우리 애들 사료랑 간식 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 말티즈 사료",
+    "decomposed_tasks": [
+      {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251034777",
+        "product_name": "로얄캐닌 독 말티즈 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10900,
+        "rating": 4.7,
+        "reviews": 49,
+        "rerank_score": 0.8454
+      },
+      {
+        "goods_id": "GI251133797",
+        "product_name": "래핑찰리 독 기능성 사료 나이스 말티즈 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6687
+      },
+      {
+        "goods_id": "GI251025572",
+        "product_name": "오리젠 독 스몰브리드 4.5kg",
+        "brand_name": "오리젠",
+        "price": 89000,
+        "discount_price": 62000,
+        "rating": 4.9,
+        "reviews": 349,
+        "rerank_score": 0.5365
+      },
+      {
+        "goods_id": "GS251131817",
+        "product_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 53090,
+        "discount_price": 47400,
+        "rating": 4.8,
+        "reviews": 224,
+        "rerank_score": 0.5262
+      },
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.5161
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "사료",
+      "추천",
+      "그다음",
+      "바나나",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_005_with_profile_B",
+  "description": "다중 프로필 복합 요청 중 두 번째 상품(바나나 간식) 순차 추천 시나리오 (후속 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-W-B",
+    "user_input": "응 바나나 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "우리 애들 사료랑 간식 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코를 위한 영양 사료 리스트입니다! 그다음으로 바나나 간식도 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "간식",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_006_no_profile_A",
+  "description": "특정 카테고리(장난감) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-011",
+    "user_input": "강아지 장난감 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "강아지 장난감",
+    "golden_products": [
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.7782
+      },
+      {
+        "goods_id": "GO251132474",
+        "product_name": "뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)",
+        "brand_name": "뽀시래기",
+        "price": 14900,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5332
+      },
+      {
+        "goods_id": "GI251129079",
+        "product_name": "바우독 대나무 판다 펫 토이 바스락 노즈워크 장난감 강아지 인형",
+        "brand_name": "도그웨그",
+        "price": 18900,
+        "discount_price": 18900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251132668",
+        "product_name": "펫토리아 강아지 노즈워크 장난감 소시지와 케찹 세트",
+        "brand_name": "펫토리아",
+        "price": 18900,
+        "discount_price": 11900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4721
+      },
+      {
+        "goods_id": "GI251132388",
+        "product_name": "크레용펫 완두콩 노즈워크 바스락 인형 장난감",
+        "brand_name": "크레용펫",
+        "price": 20400,
+        "discount_price": 8840,
+        "rating": 5.0,
+        "reviews": 2,
+        "rerank_score": 0.4661
+      }
+    ],
+    "expected_response_contains": [
+      "장난감",
+      "추천",
+      "여기",
+      "어떤"
+    ]
+  }
+},
+{
+  "id": "case_006_no_profile_B",
+  "description": "추천 결과 중 특정 속성(재질, 성분) 추가 질문 시나리오 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-012",
+    "user_input": "면으로 된걸로 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 장난감 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "인기 있는 강아지 장난감들입니다! 고무 공이나 소리 나는 인형 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "강아지 장난감 면",
+    "golden_products": [
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.8975
+      },
+      {
+        "goods_id": "GI251129854",
+        "product_name": "펫팀 새싹 노즈워크 매트 버터크림 L",
+        "brand_name": "펫팀",
+        "price": 50400,
+        "discount_price": 26900,
+        "rating": 4.9,
+        "reviews": 28,
+        "rerank_score": 0.823
+      },
+      {
+        "goods_id": "GI251132383",
+        "product_name": "두잇 야미볼",
+        "brand_name": "두잇",
+        "price": 69000,
+        "discount_price": 49000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.799
+      },
+      {
+        "goods_id": "GI251120175",
+        "product_name": "딩동펫 체리 바스락 롤 노즈워크 장난감",
+        "brand_name": "딩동펫",
+        "price": 23000,
+        "discount_price": 12900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.7397
+      },
+      {
+        "goods_id": "GI251120167",
+        "product_name": "딩동펫 선물박스 노즈워크 장난감",
+        "brand_name": "딩동펫",
+        "price": 31800,
+        "discount_price": 15900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6056
+      }
+    ],
+    "expected_response_contains": [
+      "면",
+      "장난감",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_006_with_profile_A",
+  "description": "프로필(초코) 정보에 맞춘 장난감 추천 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-011-W",
+    "user_input": "우리 초코 장난감 좀 추천해줄래?",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "강아지 장난감",
+    "golden_products": [
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.7782
+      },
+      {
+        "goods_id": "GO251132474",
+        "product_name": "뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)",
+        "brand_name": "뽀시래기",
+        "price": 14900,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5332
+      },
+      {
+        "goods_id": "GI251129079",
+        "product_name": "바우독 대나무 판다 펫 토이 바스락 노즈워크 장난감 강아지 인형",
+        "brand_name": "도그웨그",
+        "price": 18900,
+        "discount_price": 18900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251132668",
+        "product_name": "펫토리아 강아지 노즈워크 장난감 소시지와 케찹 세트",
+        "brand_name": "펫토리아",
+        "price": 18900,
+        "discount_price": 11900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4721
+      },
+      {
+        "goods_id": "GI251132388",
+        "product_name": "크레용펫 완두콩 노즈워크 바스락 인형 장난감",
+        "brand_name": "크레용펫",
+        "price": 20400,
+        "discount_price": 8840,
+        "rating": 5.0,
+        "reviews": 2,
+        "rerank_score": 0.4661
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "장난감",
+      "추천"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_006_with_profile_B",
+  "description": "프로필(초코) 정보 기반 장난감 추천 중 재질 추가 필터링 시나리오 (후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-012-W",
+    "user_input": "면으로 된 건 없어?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "우리 초코 장난감 좀 추천해줄래?"
+      },
+      {
+        "role": "assistant",
+        "content": "초코가 좋아할 만한 장난감들이에요! 치발기나 공 종류가 인기가 많아요."
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "강아지 장난감 면",
+    "golden_products": [
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.8975
+      },
+      {
+        "goods_id": "GI251129854",
+        "product_name": "펫팀 새싹 노즈워크 매트 버터크림 L",
+        "brand_name": "펫팀",
+        "price": 50400,
+        "discount_price": 26900,
+        "rating": 4.9,
+        "reviews": 28,
+        "rerank_score": 0.823
+      },
+      {
+        "goods_id": "GI251132383",
+        "product_name": "두잇 야미볼",
+        "brand_name": "두잇",
+        "price": 69000,
+        "discount_price": 49000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.799
+      },
+      {
+        "goods_id": "GI251120175",
+        "product_name": "딩동펫 체리 바스락 롤 노즈워크 장난감",
+        "brand_name": "딩동펫",
+        "price": 23000,
+        "discount_price": 12900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.7397
+      },
+      {
+        "goods_id": "GI251120167",
+        "product_name": "딩동펫 선물박스 노즈워크 장난감",
+        "brand_name": "딩동펫",
+        "price": 31800,
+        "discount_price": 15900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6056
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "면",
+      "장난감",
+      "추천"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_007_no_profile",
+  "description": "인기 상품 또는 특정 테마(가을, 외출 등)별 상품 추천 시나리오 (프로필 미선택)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-012",
+    "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "popularity",
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "용품",
+      "subcategory": "의류"
+    },
+    "search_query": "강아지 옷 인기",
+    "golden_products": [
+      {
+        "goods_id": "GI251101019",
+        "product_name": "펫띵 후리스 리버서블 패딩 핑크 3호",
+        "brand_name": "펫띵",
+        "price": 34900,
+        "discount_price": 14900,
+        "rating": 4.8,
+        "reviews": 40,
+        "rerank_score": 0.8822
+      },
+      {
+        "goods_id": "GO251097029",
+        "product_name": "펫띵 훈민정음 한복 남아/여아 1호~6호",
+        "brand_name": "펫띵",
+        "price": 29900,
+        "discount_price": 13900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.7502
+      },
+      {
+        "goods_id": "GI251135465",
+        "product_name": "[첫구매전용] 펫띵 후리스 리버서블 패딩 베이지 3호",
+        "brand_name": "펫띵",
+        "price": 34900,
+        "discount_price": 18900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5783
+      },
+      {
+        "goods_id": "GI251134807",
+        "product_name": "[무료배송] 이츠독 할로윈 거미핀 오렌지&퍼플",
+        "brand_name": "이츠독",
+        "price": 13000,
+        "discount_price": 13000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.26
+      },
+      {
+        "goods_id": "GI251133318",
+        "product_name": "도그웨그 바니베어 중성화복 강아지 환견복 올인원 바니래빗 XL",
+        "brand_name": "도그웨그",
+        "price": 17900,
+        "discount_price": 17900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.2596
+      }
+    ],
+    "expected_response_contains": [
+      "인기",
+      "강아지",
+      "옷",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_007_with_profile",
+  "description": "프로필(바나나) 정보에 맞춘 인기 상품(모래) 추천 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-013-W",
+    "user_input": "요즘 바나나한테 필요한 인기 있는 모래 좀 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "popularity",
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "모래"
+    },
+    "search_query": "고양이 모래 인기",
+    "golden_products": [
+      {
+        "goods_id": "GI251050135",
+        "product_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+        "brand_name": "ROMA",
+        "price": 59900,
+        "discount_price": 45900,
+        "rating": 4.8,
+        "reviews": 406,
+        "rerank_score": 0.8946
+      },
+      {
+        "goods_id": "GI251109485",
+        "product_name": "우주모래 벤토나이트 19kg",
+        "brand_name": "WOOZOO",
+        "price": 40000,
+        "discount_price": 30900,
+        "rating": 4.6,
+        "reviews": 117,
+        "rerank_score": 0.7508
+      },
+      {
+        "goods_id": "GI251118289",
+        "product_name": "에스클래스펫 에스클래스 블랙 벤토나이트 9kg",
+        "brand_name": "에스클래스펫",
+        "price": 36000,
+        "discount_price": 27000,
+        "rating": 4.6,
+        "reviews": 61,
+        "rerank_score": 0.7499
+      },
+      {
+        "goods_id": "GI251098226",
+        "product_name": "바른카사모래 라이트 6L (4.2kg) (가는입자)",
+        "brand_name": "바른",
+        "price": 21900,
+        "discount_price": 16900,
+        "rating": 4.7,
+        "reviews": 167,
+        "rerank_score": 0.7111
+      },
+      {
+        "goods_id": "GI251025699",
+        "product_name": "두부콩콩 초극세입자 두부모래 오리지널 2.8kg",
+        "brand_name": "두부콩콩",
+        "price": 6800,
+        "discount_price": 4370,
+        "rating": 4.7,
+        "reviews": 34,
+        "rerank_score": 0.6607
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "인기",
+      "모래",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_008_no_profile_A",
+  "description": "3가지 이상의 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014",
+    "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 사료",
+    "decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "사료",
+      "추천",
+      "여기",
+      "그다음",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_no_profile_B",
+  "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015",
+    "user_input": "간식도 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "강아지",
+      "category": "간식"
+    },
+    "search_query": "강아지 간식",
+    "decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "간식",
+      "추천",
+      "여기",
+      "마지막으로",
+      "용품",
+      "보여줄까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_no_profile_C",
+  "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016",
+    "user_input": "마지막으로 용품도 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지 사료 리스트입니다!"
+      },
+      {
+        "role": "user",
+        "content": "간식도 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "강아지",
+      "category": "용품"
+    },
+    "search_query": "강아지 용품",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251026283",
+        "product_name": "오로자임 하이진겔 70g",
+        "brand_name": "오로자임",
+        "price": 25000,
+        "discount_price": 18500,
+        "rating": 4.9,
+        "reviews": 51,
+        "rerank_score": 0.6324
+      },
+      {
+        "goods_id": "GI251110362",
+        "product_name": "분독 G백 똥츄가방 라이트그린",
+        "brand_name": "분독",
+        "price": 36000,
+        "discount_price": 36000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GO251132474",
+        "product_name": "뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)",
+        "brand_name": "뽀시래기",
+        "price": 14900,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4435
+      },
+      {
+        "goods_id": "GI251134142",
+        "product_name": "[무료배송] 이츠독 세아 배씨댕기",
+        "brand_name": "이츠독",
+        "price": 13000,
+        "discount_price": 13000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4085
+      },
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.382
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "용품",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_with_profile_A",
+  "description": "다중 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 초코 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014-W",
+    "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 말티즈 사료",
+    "decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251034777",
+        "product_name": "로얄캐닌 독 말티즈 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10900,
+        "rating": 4.7,
+        "reviews": 49,
+        "rerank_score": 0.8454
+      },
+      {
+        "goods_id": "GI251133797",
+        "product_name": "래핑찰리 독 기능성 사료 나이스 말티즈 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6687
+      },
+      {
+        "goods_id": "GI251025572",
+        "product_name": "오리젠 독 스몰브리드 4.5kg",
+        "brand_name": "오리젠",
+        "price": 89000,
+        "discount_price": 62000,
+        "rating": 4.9,
+        "reviews": 349,
+        "rerank_score": 0.5365
+      },
+      {
+        "goods_id": "GS251131817",
+        "product_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 53090,
+        "discount_price": 47400,
+        "rating": 4.8,
+        "reviews": 224,
+        "rerank_score": 0.5262
+      },
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.5161
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "사료",
+      "추천",
+      "그다음",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_008_with_profile_B",
+  "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 초코 - 후속 요청 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015-W",
+    "user_input": "응 간식도 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "간식"
+    },
+    "search_query": "강아지 간식",
+    "decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "간식",
+      "추천",
+      "마지막으로",
+      "용품",
+      "보여줄까요"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_008_with_profile_C",
+  "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 초코 - 후속 요청 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016-W",
+    "user_input": "마지막 용품도 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코 사료 리스트입니다!"
+      },
+      {
+        "role": "user",
+        "content": "응 간식도 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "용품"
+    },
+    "search_query": "강아지 용품",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251026283",
+        "product_name": "오로자임 하이진겔 70g",
+        "brand_name": "오로자임",
+        "price": 25000,
+        "discount_price": 18500,
+        "rating": 4.9,
+        "reviews": 51,
+        "rerank_score": 0.6324
+      },
+      {
+        "goods_id": "GI251110362",
+        "product_name": "분독 G백 똥츄가방 라이트그린",
+        "brand_name": "분독",
+        "price": 36000,
+        "discount_price": 36000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GO251132474",
+        "product_name": "뽀시래기 강아지 치석제거 오링 치실장난감 (S/M)",
+        "brand_name": "뽀시래기",
+        "price": 14900,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4435
+      },
+      {
+        "goods_id": "GI251134142",
+        "product_name": "[무료배송] 이츠독 세아 배씨댕기",
+        "brand_name": "이츠독",
+        "price": 13000,
+        "discount_price": 13000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4085
+      },
+      {
+        "goods_id": "GI251082619",
+        "product_name": "KONG 콩 클래식 장난감 대",
+        "brand_name": "KONG",
+        "price": 22000,
+        "discount_price": 15400,
+        "rating": 4.9,
+        "reviews": 8,
+        "rerank_score": 0.382
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "용품",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_009_no_profile_A",
+  "description": "추천 요청이 불분명할 경우 안내 유도 시나리오 (비정형 질문 대응 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014",
+    "user_input": "오늘 날씨 되게 좋다",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "날씨",
+      "상품",
+      "찾으시는",
+      "정보"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_009_no_profile_B",
+  "description": "안내 유도 후에도 반복적인 비정형 질문 시 최종 전환 멘트 검증 (비정형 질문 대응 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "오늘 날씨 되게 좋다"
+      },
+      {
+        "role": "assistant",
+        "content": "정말 좋은 날씨네요! 이런 날엔 반려동물과 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "지금까지 대화가 즐거웠습니다",
+      "본론으로 들어가 볼까요",
+      "어떤 상품을 찾으시나요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_009_with_profile_A",
+  "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 1",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014-W",
+    "user_input": "초코랑 놀러 가고 싶다",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "초코",
+      "산책",
+      "나들이",
+      "어떤",
+      "상품"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_009_with_profile_B",
+  "description": "프로필(초코) 활성화 상태에서의 비정형 질문 대응 시나리오 2",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015-W",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코랑 놀러 가고 싶다"
+      },
+      {
+        "role": "assistant",
+        "content": "초코랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "초코",
+      "대화",
+      "본론",
+      "상품",
+      "찾으시는"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_010_no_profile_A",
+  "description": "펫 전환 테스트를 위한 초기 강아지 상품 요청 (프로필 미선택)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016",
+    "user_input": "강아지 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_010_no_profile_B",
+  "description": "대화 중 펫 전환(Pet Switch) 및 맥락 교정 테스트 (프로필 미선택)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-017",
+    "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "is_pet_switched": true,
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "고양이",
+      "어떤",
+      "상품",
+      "사료",
+      "간식",
+      "용품",
+      "모래",
+      "습식관"
+    ]
+  }
+},
+{
+  "id": "case_010_no_profile_C",
+  "description": "펫 전환 후 카테고리 응답 및 최종 추천 (프로필 미선택)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-018",
+    "user_input": "사료",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "강아지 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "강아지를 위한 사료들입니다. 여기 목록을 확인해보세요."
+      },
+      {
+        "role": "user",
+        "content": "아니 강아지 말고 고양이 꺼 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_010_with_profile_A",
+  "description": "펫 전환 테스트를 위한 초기 펫 상품 요청 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-019",
+    "user_input": "초코 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 말티즈 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251034777",
+        "product_name": "로얄캐닌 독 말티즈 어덜트 500g 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 10900,
+        "discount_price": 10900,
+        "rating": 4.7,
+        "reviews": 49,
+        "rerank_score": 0.8454
+      },
+      {
+        "goods_id": "GI251133797",
+        "product_name": "래핑찰리 독 기능성 사료 나이스 말티즈 2kg",
+        "brand_name": "래핑찰리",
+        "price": 22000,
+        "discount_price": 22000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6687
+      },
+      {
+        "goods_id": "GI251025572",
+        "product_name": "오리젠 독 스몰브리드 4.5kg",
+        "brand_name": "오리젠",
+        "price": 89000,
+        "discount_price": 62000,
+        "rating": 4.9,
+        "reviews": 349,
+        "rerank_score": 0.5365
+      },
+      {
+        "goods_id": "GS251131817",
+        "product_name": "[첫구매전용] 로얄캐닌 독 말티즈 어덜트 3kg 피모관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 53090,
+        "discount_price": 47400,
+        "rating": 4.8,
+        "reviews": 224,
+        "rerank_score": 0.5262
+      },
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.5161
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_010_with_profile_B",
+  "description": "이름 고지를 통한 펫 전환(Pet Switch) 테스트 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-020",
+    "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+    "pet_profile": {
+      "pet_name": "바나나",
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "is_pet_switched": true,
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "바나나",
+      "고양이",
+      "어떤",
+      "상품",
+      "사료",
+      "간식",
+      "용품",
+      "모래",
+      "습식관"
+    ]
+  }
+},
+{
+  "id": "case_010_with_profile_C",
+  "description": "이름 고지를 통한 펫 전환 후 최종 추천 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-021",
+    "user_input": "사료",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "초코 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "초코를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+      },
+      {
+        "role": "user",
+        "content": "아니 초코 말고 바나나 꺼 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "바나나(고양이)를 위한 어떤 상품을 찾으시나요? (사료/간식/용품/모래/습식관)"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      },
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+    "pet_profile": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "age": "0살"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 키튼 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251038669",
+        "product_name": "스마트하트 나인케어 피부&피모 6kg",
+        "brand_name": "나인케어",
+        "price": 60000,
+        "discount_price": 50000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.8458
+      },
+      {
+        "goods_id": "GI251129499",
+        "product_name": "힐스 캣 kd 1.81kg",
+        "brand_name": "힐스",
+        "price": 45000,
+        "discount_price": 45000,
+        "rating": 4.9,
+        "reviews": 4,
+        "rerank_score": 0.7031
+      },
+      {
+        "goods_id": "GI251128262",
+        "product_name": "프레스티지 캣 시니어 8+ 10kg",
+        "brand_name": "프로뉴트리션",
+        "price": 149500,
+        "discount_price": 99000,
+        "rating": 4.8,
+        "reviews": 3,
+        "rerank_score": 0.6913
+      },
+      {
+        "goods_id": "GI251037554",
+        "product_name": "후새 캣 링크스 시니어 7kg",
+        "brand_name": "후새",
+        "price": 145000,
+        "discount_price": 116000,
+        "rating": 4.7,
+        "reviews": 26,
+        "rerank_score": 0.6907
+      },
+      {
+        "goods_id": "GI251035164",
+        "product_name": "로얄캐닌 캣 브리티쉬 숏헤어 400g 관절건강",
+        "brand_name": "로얄캐닌",
+        "price": 8900,
+        "discount_price": 8900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.6745
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_011_no_profile_A",
+  "description": "알러지 제외 조건 검증 - 초기 요청 (종 정보 확인 필요)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-022",
+    "user_input": "닭고기 알러지 없는 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": null
+    },
+    "decomposed_tasks": [],
+    "allergies": [
+      "닭고기",
+      "치킨"
+    ],
+    "requires_clarification": true,
+    "clarification_target": "pet_type",
+    "expected_response_contains": [
+      "반려동물",
+      "강아지",
+      "고양이",
+      "어떤"
+    ]
+  }
+},
+{
+  "id": "case_011_no_profile_B",
+  "description": "알러지 제외 조건 검증 - 종 정보 획득 후 추천",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-023",
+    "user_input": "강아지",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "닭고기 알러지 없는 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "어떤 반려동물을 위한 사료인가요? (강아지/고양이)"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료",
+      "allergies": [
+        "닭고기",
+        "치킨"
+      ]
+    },
+    "allergies": [
+      "닭고기",
+      "치킨"
+    ],
+    "search_query": "강아지 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "강아지",
+      "닭고기",
+      "제외",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_011_with_profile",
+  "description": "프로필 기반 알러지 자동 필터링 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-024",
+    "user_input": "사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "초코",
+        "species": "강아지",
+        "allergies": [
+          "닭고기"
+        ],
+        "active": true,
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "초코",
+      "pet_type": "강아지",
+      "category": "사료",
+      "allergies": [
+        "닭고기"
+      ]
+    },
+    "allergies": [
+      "닭고기"
+    ],
+    "search_query": "강아지 말티즈 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.875
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.792
+      },
+      {
+        "goods_id": "GI251028662",
+        "product_name": "스텔라앤츄이스 탄탈라이징 터키 밀믹서 510g",
+        "brand_name": "스텔라앤츄이스",
+        "price": 74000,
+        "discount_price": 74000,
+        "rating": 4.7,
+        "reviews": 160,
+        "rerank_score": 0.7583
+      },
+      {
+        "goods_id": "GI251035026",
+        "product_name": "디어니스트키친 부처블럭 파테 칠면조&가을채소 298g",
+        "brand_name": "디어니스트키친",
+        "price": 6800,
+        "discount_price": 6500,
+        "rating": 4.9,
+        "reviews": 46,
+        "rerank_score": 0.7335
+      },
+      {
+        "goods_id": "GI251103116",
+        "product_name": "아더마스 강아지 주식 플래닛 포크 360g",
+        "brand_name": "아더마스",
+        "price": 32000,
+        "discount_price": 32000,
+        "rating": 4.9,
+        "reviews": 13,
+        "rerank_score": 0.6868
+      }
+    ],
+    "expected_response_contains": [
+      "초코",
+      "알러지",
+      "닭고기",
+      "제외",
+      "사료"
+    ],
+    "target_pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3"
+  }
+},
+{
+  "id": "case_012_no_profile_A",
+  "description": "특수 포뮬러 조건 검증 (그레인 프리) - 초기 요청 (종 정보 확인 필요)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-025",
+    "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": null
+    },
+    "decomposed_tasks": [],
+    "allergies": [
+      "곡물",
+      "그레인"
+    ],
+    "requires_clarification": true,
+    "clarification_target": "pet_type",
+    "expected_response_contains": [
+      "어떤 반려동물",
+      "강아지",
+      "고양이"
+    ]
+  }
+},
+{
+  "id": "case_012_no_profile_B",
+  "description": "특수 포뮬러 조건 검증 (그레인 프리) - 종 정보 획득 후 추천",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-026",
+    "user_input": "강아지",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "어떤 반려동물을 위한 간식인가요? (강아지/고양이)"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "간식",
+      "allergies": [
+        "곡물",
+        "그레인"
+      ]
+    },
+    "allergies": [
+      "곡물",
+      "그레인"
+    ],
+    "search_query": "강아지 간식",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "곡물 제외",
+      "그레인 프리",
+      "간식",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_012_with_profile",
+  "description": "프로필 기반 성분 선호도 반영 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-027",
+    "user_input": "간식 좀 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "food_preferences": [
+          "그레인프리"
+        ],
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "간식",
+      "allergies": [
+        "곡물"
+      ]
+    },
+    "allergies": [
+      "곡물"
+    ],
+    "search_query": "고양이 간식 그레인프리",
+    "golden_products": [
+      {
+        "goods_id": "GI251101366",
+        "product_name": "조공 프로바이오틱스 60g",
+        "brand_name": "조공",
+        "price": 38000,
+        "discount_price": 28000,
+        "rating": 4.9,
+        "reviews": 11,
+        "rerank_score": 0.8571
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.8308
+      },
+      {
+        "goods_id": "GI251058083",
+        "product_name": "칸타나 동결건조 치킨텐더 50g",
+        "brand_name": "칸타나",
+        "price": 3000,
+        "discount_price": 2500,
+        "rating": 4.6,
+        "reviews": 65,
+        "rerank_score": 0.72
+      },
+      {
+        "goods_id": "GI251106769",
+        "product_name": "[스티커 증정] 후디스펫 루테인케어 1박스",
+        "brand_name": "후디스펫",
+        "price": 39000,
+        "discount_price": 23000,
+        "rating": 5.0,
+        "reviews": 39,
+        "rerank_score": 0.7125
+      },
+      {
+        "goods_id": "GI251119463",
+        "product_name": "닥터펠리스 데일리 솔루션 올인원 북어 30g",
+        "brand_name": "닥터펠리스",
+        "price": 23000,
+        "discount_price": 16000,
+        "rating": 4.7,
+        "reviews": 10,
+        "rerank_score": 0.688
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "그레인프리",
+      "간식",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_013_no_profile",
+  "description": "비즈니스 로직 검증 (최저가 정렬)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-028",
+    "user_input": "제일 싼 고양이 모래 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "모래",
+      "sort": "price_asc"
+    },
+    "sort": "price_asc",
+    "search_query": "고양이 모래",
+    "golden_products": [
+      {
+        "goods_id": "GI251048346",
+        "product_name": "호랑이 두부모래 참숯 7L",
+        "brand_name": "호랑이",
+        "price": 10000,
+        "discount_price": 4830,
+        "rating": 4.7,
+        "reviews": 28,
+        "rerank_score": 0.8514
+      },
+      {
+        "goods_id": "GI251050135",
+        "product_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+        "brand_name": "ROMA",
+        "price": 59900,
+        "discount_price": 45900,
+        "rating": 4.8,
+        "reviews": 406,
+        "rerank_score": 0.7052
+      },
+      {
+        "goods_id": "GI251062497",
+        "product_name": "사니캣 옥수수 모래 6L",
+        "brand_name": "사니캣",
+        "price": 14900,
+        "discount_price": 5950,
+        "rating": 4.4,
+        "reviews": 119,
+        "rerank_score": 0.6774
+      },
+      {
+        "goods_id": "GI251109485",
+        "product_name": "우주모래 벤토나이트 19kg",
+        "brand_name": "WOOZOO",
+        "price": 40000,
+        "discount_price": 30900,
+        "rating": 4.6,
+        "reviews": 117,
+        "rerank_score": 0.6452
+      },
+      {
+        "goods_id": "GI251075985",
+        "product_name": "펫띵 커피홀 모래 6L (3.25kg)",
+        "brand_name": "펫띵",
+        "price": 15900,
+        "discount_price": 6930,
+        "rating": 3.9,
+        "reviews": 53,
+        "rerank_score": 0.6322
+      }
+    ],
+    "expected_response_contains": [
+      "최저가",
+      "가장 저렴한",
+      "모래",
+      "추천"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_013_with_profile",
+  "description": "멀티턴 대화 중 가격 조건 추가 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-029",
+    "user_input": "그중에서 제일 저렴한 거로 알려줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "바나나 모래 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "바나나를 위한 벤토나이트 모래 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "name": "바나나",
+        "species": "고양이",
+        "active": true,
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "모래",
+      "sort": "price_asc"
+    },
+    "sort": "price_asc",
+    "search_query": "고양이 모래",
+    "golden_products": [
+      {
+        "goods_id": "GI251048346",
+        "product_name": "호랑이 두부모래 참숯 7L",
+        "brand_name": "호랑이",
+        "price": 10000,
+        "discount_price": 4830,
+        "rating": 4.7,
+        "reviews": 28,
+        "rerank_score": 0.8514
+      },
+      {
+        "goods_id": "GI251050135",
+        "product_name": "로마샌드 보스(혼합입자) 프리미엄 12.6kg 대용량 고양이모래",
+        "brand_name": "ROMA",
+        "price": 59900,
+        "discount_price": 45900,
+        "rating": 4.8,
+        "reviews": 406,
+        "rerank_score": 0.7052
+      },
+      {
+        "goods_id": "GI251062497",
+        "product_name": "사니캣 옥수수 모래 6L",
+        "brand_name": "사니캣",
+        "price": 14900,
+        "discount_price": 5950,
+        "rating": 4.4,
+        "reviews": 119,
+        "rerank_score": 0.6774
+      },
+      {
+        "goods_id": "GI251109485",
+        "product_name": "우주모래 벤토나이트 19kg",
+        "brand_name": "WOOZOO",
+        "price": 40000,
+        "discount_price": 30900,
+        "rating": 4.6,
+        "reviews": 117,
+        "rerank_score": 0.6452
+      },
+      {
+        "goods_id": "GI251075985",
+        "product_name": "펫띵 커피홀 모래 6L (3.25kg)",
+        "brand_name": "펫띵",
+        "price": 15900,
+        "discount_price": 6930,
+        "rating": 3.9,
+        "reviews": 53,
+        "rerank_score": 0.6322
+      }
+    ],
+    "expected_response_contains": [
+      "제일 저렴한",
+      "가격 낮은 순",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_014_no_profile",
+  "description": "비즈니스 로직 검증 (특정 브랜드 제외)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-030",
+    "user_input": "로얄캐닌 말고 다른 사료 있어?",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "사료",
+      "exclude_brands": [
+        "로얄캐닌"
+      ]
+    },
+    "exclude_brands": [
+      "로얄캐닌"
+    ],
+    "search_query": "강아지 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251028677",
+        "product_name": "스텔라앤츄이스 로우 코티드 키블 포 스몰브리드 케이즈 프리 치킨 1.6kg",
+        "brand_name": "스텔라앤츄이스",
+        "price": 50000,
+        "discount_price": 50000,
+        "rating": 4.9,
+        "reviews": 58,
+        "rerank_score": 0.8274
+      },
+      {
+        "goods_id": "GI251045382",
+        "product_name": "윌로펫 뉴트리탑 시니어 1.2kg",
+        "brand_name": "윌로펫",
+        "price": 20000,
+        "discount_price": 18000,
+        "rating": 4.7,
+        "reviews": 31,
+        "rerank_score": 0.7472
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.7274
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6582
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.615
+      }
+    ],
+    "expected_response_contains": [
+      "로얄캐닌",
+      "브랜드 제외",
+      "다른 브랜드",
+      "추천"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_001_no_profile_A",
+  "description": "반려동물 정보 없이 일반적인 상품 추천 요청 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-001",
+    "user_input": "고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_001_no_profile_B",
+  "description": "이미 추천받은 상품 외에 다른 카테고리(간식)를 추가로 요청하는 시나리오",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-002",
+    "user_input": "간식도 같이 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 건강한 사료들을 추천해 드릴게요! 여기 목록을 확인해 보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "간식",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_001_with_profile",
+  "description": "고양이 프로필이 있을 때 일반 사료 요청 시나리오",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-003",
+    "user_input": "우리 고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "사료",
+      "age_group": "키튼"
+    },
+    "search_query": "고양이 키튼 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251035033",
+        "product_name": "로얄캐닌 캣 키튼 400g 면역기능 강화",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 511,
+        "rerank_score": 0.9291
+      },
+      {
+        "goods_id": "GI251076116",
+        "product_name": "오리젠 캣 키튼 5.4kg",
+        "brand_name": "오리젠",
+        "price": 107500,
+        "discount_price": 78000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.8614
+      },
+      {
+        "goods_id": "GI251063359",
+        "product_name": "레오나르도 키튼 1.8kg",
+        "brand_name": "레오나르도",
+        "price": 38000,
+        "discount_price": 38000,
+        "rating": 4.9,
+        "reviews": 36,
+        "rerank_score": 0.8322
+      },
+      {
+        "goods_id": "GI251093272",
+        "product_name": "로얄캐닌 캣 키튼 1.2kg",
+        "brand_name": "로얄캐닌",
+        "price": 23600,
+        "discount_price": 18500,
+        "rating": 4.9,
+        "reviews": 176,
+        "rerank_score": 0.8301
+      },
+      {
+        "goods_id": "GI251035036",
+        "product_name": "로얄캐닌 캣 마더&베이비 400g 면역증진",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.7,
+        "reviews": 315,
+        "rerank_score": 0.7682
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_002_no_profile",
+  "description": "특정 품종 및 카테고리에 맞는 상품 추천 시나리오 (프로필 미선택)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-004",
+    "user_input": "아비시니안 고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이",
+      "breed": "아비시니안"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "breed": "아비시니안",
+      "category": "사료"
+    },
+    "search_query": "고양이 아비시니안 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.7629
+      },
+      {
+        "goods_id": "GI251076662",
+        "product_name": "이즈칸 캣 퍼포먼스 시니어 2.5kg",
+        "brand_name": "이즈칸",
+        "price": 27000,
+        "discount_price": 27000,
+        "rating": 4.7,
+        "reviews": 9,
+        "rerank_score": 0.6862
+      },
+      {
+        "goods_id": "GI251099902",
+        "product_name": "시그니처바이 고양이 A/a 대용량 10g 30개",
+        "brand_name": "시그니처바이",
+        "price": 30000,
+        "discount_price": 30000,
+        "rating": 4.8,
+        "reviews": 12,
+        "rerank_score": 0.6768
+      },
+      {
+        "goods_id": "GI251128262",
+        "product_name": "프레스티지 캣 시니어 8+ 10kg",
+        "brand_name": "프로뉴트리션",
+        "price": 149500,
+        "discount_price": 99000,
+        "rating": 4.8,
+        "reviews": 3,
+        "rerank_score": 0.6761
+      },
+      {
+        "goods_id": "GI251135538",
+        "product_name": "쉐지애 참치 고양이 주식 파우치 85g",
+        "brand_name": "쉐지애",
+        "price": 2800,
+        "discount_price": 2800,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.657
+      }
+    ],
+    "expected_response_contains": [
+      "아비시니안",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_002_with_profile",
+  "description": "프로필의 품종(아비시니안) 정보를 활용한 상품 추천 시나리오 (포도)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-004-W",
+    "user_input": "우리 아이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "breed": "아비시니안",
+      "category": "사료"
+    },
+    "search_query": "고양이 아비시니안 치아 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251048727",
+        "product_name": "로얄캐닌 캣 덴탈 케어 400g 치아관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 258,
+        "rerank_score": 1.1964
+      },
+      {
+        "goods_id": "GS251136060",
+        "product_name": "[첫구매전용] 로얄캐닌 캣 덴탈 케어 3.5kg 치아관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 61300,
+        "discount_price": 54400,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5435
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "아비시니안",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_003_with_profile",
+  "description": "프로필의 건강 고민(눈물, 면역) 정보를 활용한 상품 추천 시나리오 (사과)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-005-W",
+    "user_input": "우리 사과 건강 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "사료",
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ]
+    },
+    "search_query": "강아지 사료 눈물 면역",
+    "golden_products": [
+      {
+        "goods_id": "GI251128579",
+        "product_name": "[무료배송] 누터스가든 독사료 연어앤대구 독 8kg 눈건강 하이포알러제닉 연어 기호성",
+        "brand_name": "누터스가든",
+        "price": 180000,
+        "discount_price": 114900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 1.05
+      },
+      {
+        "goods_id": "GI251120782",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 그레인프리덕 (저탄수화물식) 100g*5개",
+        "brand_name": "원더랜드",
+        "price": 28000,
+        "discount_price": 28000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.55
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "눈물",
+      "면역",
+      "건강",
+      "닭성분",
+      "없는",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_004_with_profile",
+  "description": "고양이 프로필의 건강 고민(체중, 피부) 정보를 활용한 상품 추천 시나리오 (바나나)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-006-W",
+    "user_input": "우리 바나나 체중, 피부 관리를 위한 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "breed": "러시안 블루",
+      "category": "사료",
+      "health_concerns": [
+        "체중",
+        "피부"
+      ]
+    },
+    "search_query": "고양이 사료 체중 피부",
+    "golden_products": [
+      {
+        "goods_id": "GI251038669",
+        "product_name": "스마트하트 나인케어 피부&피모 6kg",
+        "brand_name": "나인케어",
+        "price": 60000,
+        "discount_price": 50000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 1.0677
+      },
+      {
+        "goods_id": "GI251034742",
+        "product_name": "로얄캐닌 캣 FIT 피트 어덜트 1.2kg 체중관리",
+        "brand_name": "로얄캐닌",
+        "price": 22000,
+        "discount_price": 18900,
+        "rating": 5.0,
+        "reviews": 63,
+        "rerank_score": 1.0337
+      },
+      {
+        "goods_id": "GI251035052",
+        "product_name": "로얄캐닌 캣 노르웨이 숲 10kg 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 143200,
+        "discount_price": 143200,
+        "rating": 4.9,
+        "reviews": 27,
+        "rerank_score": 1.0259
+      },
+      {
+        "goods_id": "GI251035043",
+        "product_name": "로얄캐닌 캣 라이트 웨이트 케어 400g 체중관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.9,
+        "reviews": 200,
+        "rerank_score": 1.0252
+      },
+      {
+        "goods_id": "GI251035170",
+        "product_name": "로얄캐닌 캣 뱅갈 10kg 피모관리",
+        "brand_name": "로얄캐닌",
+        "price": 143200,
+        "discount_price": 143200,
+        "rating": 4.6,
+        "reviews": 32,
+        "rerank_score": 0.9774
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "체중",
+      "피부",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_003_with_profile",
+  "description": "프로필의 건강 고민(눈물, 면역) 정보를 활용한 상품 추천 시나리오 (사과)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-005-W",
+    "user_input": "우리 사과 건강 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "사료",
+      "health_concerns": [
+        "눈물",
+        "면역"
+      ]
+    },
+    "search_query": "강아지 사료 눈물 면역",
+    "golden_products": [
+      {
+        "goods_id": "GI251128579",
+        "product_name": "[무료배송] 누터스가든 독사료 연어앤대구 독 8kg 눈건강 하이포알러제닉 연어 기호성",
+        "brand_name": "누터스가든",
+        "price": 180000,
+        "discount_price": 114900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 1.05
+      },
+      {
+        "goods_id": "GI251120782",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 그레인프리덕 (저탄수화물식) 100g*5개",
+        "brand_name": "원더랜드",
+        "price": 28000,
+        "discount_price": 28000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.55
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "눈물",
+      "면역",
+      "건강",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_004_no_profile_A",
+  "description": "다중 속성(나이, 카테고리) 기반 상품 요청 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-006",
+    "user_input": "1살 고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이",
+      "age": "1살"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "age_group": "키튼"
+    },
+    "requires_clarification": false,
+    "search_query": "고양이 키튼 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251035033",
+        "product_name": "로얄캐닌 캣 키튼 400g 면역기능 강화",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 511,
+        "rerank_score": 0.9221
+      },
+      {
+        "goods_id": "GI251076116",
+        "product_name": "오리젠 캣 키튼 5.4kg",
+        "brand_name": "오리젠",
+        "price": 107500,
+        "discount_price": 78000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.8545
+      },
+      {
+        "goods_id": "GI251063359",
+        "product_name": "레오나르도 키튼 1.8kg",
+        "brand_name": "레오나르도",
+        "price": 38000,
+        "discount_price": 38000,
+        "rating": 4.9,
+        "reviews": 36,
+        "rerank_score": 0.8313
+      },
+      {
+        "goods_id": "GI251093272",
+        "product_name": "로얄캐닌 캣 키튼 1.2kg",
+        "brand_name": "로얄캐닌",
+        "price": 23600,
+        "discount_price": 18500,
+        "rating": 4.9,
+        "reviews": 176,
+        "rerank_score": 0.8183
+      },
+      {
+        "goods_id": "GI251135055",
+        "product_name": "캐츠랑 키튼앤주니어 8kg",
+        "brand_name": "캐츠랑",
+        "price": 44000,
+        "discount_price": 30800,
+        "rating": 5.0,
+        "reviews": 8,
+        "rerank_score": 0.7527
+      }
+    ],
+    "expected_response_contains": [
+      "키튼",
+      "고양이",
+      "사료",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_004_no_profile_B",
+  "description": "다중 속성 기반 요청 후 추가 상품 요청 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-007",
+    "user_input": "간식은 없어?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "1살 고양이 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "키튼 고양이를 위한 사료들입니다! 여기 목록을 확인해보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이",
+      "age": "1살"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "age": "1살",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "간식",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_004_with_profile_A",
+  "description": "고양이 프로필 기반 연령 맞춤 사료 요청 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-008",
+    "user_input": "포도 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료 치아",
+    "golden_products": [
+      {
+        "goods_id": "GI251048727",
+        "product_name": "로얄캐닌 캣 덴탈 케어 400g 치아관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 258,
+        "rerank_score": 1.1964
+      },
+      {
+        "goods_id": "GS251136060",
+        "product_name": "[첫구매전용] 로얄캐닌 캣 덴탈 케어 3.5kg 치아관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 61300,
+        "discount_price": 54400,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6267
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "치아",
+      "사료",
+      "추천"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_004_with_profile_B",
+  "description": "프로필 대화 중 다중 카테고리 탐색 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-009",
+    "user_input": "간식도 같이 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도를 위한 사료 추천 리스트입니다!"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 치아 간식",
+    "golden_products": [
+      {
+        "goods_name": "[무료배송] 동해형씨 원물건조 잡어 85g"
+      },
+      {
+        "goods_name": "런치 보니또 오리지널 참치 20g"
+      },
+      {
+        "goods_name": "런치 보니또 가쓰오부시맛 20g"
+      },
+      {
+        "goods_name": "이나바 토비츠쿠야끼가다랑어 가다랑어포맛 (QSC-215)"
+      },
+      {
+        "goods_name": "이나바 토비츠쿠 치킨스프맛 (QSC-213)"
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "치아",
+      "간식",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_005_no_profile_A",
+  "description": "한 번에 여러 반려동물(고양이) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010",
+    "user_input": "포도 사료랑 고양이 간식 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "사료",
+      "추천",
+      "여기",
+      "그리고",
+      "고양이",
+      "간식",
+      "보여드릴까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_005_no_profile_B",
+  "description": "복합 요청 중 두 번째 상품(강아지 간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-B",
+    "user_input": "응 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료랑 고양이 간식 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 고양이 간식도 지금 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "간식",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_005_with_profile_A",
+  "description": "다중 반려동물(5종) 복합 상품 추천 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-W",
+    "user_input": "우리 애들 사료랑 간식 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      },
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안"
+      },
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안"
+      },
+      {
+        "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+        "name": "골드",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "골든 리트리버"
+      },
+      {
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "name": "초코",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "말티즈"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_name": "바나나",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "사과",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      }
+    ],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "decomposed_tasks": [
+      {
+        "pet_name": "사과",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "사료",
+      "추천",
+      "그다음",
+      "사과",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_005_with_profile_B",
+  "description": "다중 프로필 복합 요청 중 두 번째 상품(사과 간식) 순차 추천 시나리오 (후속 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-010-W-B",
+    "user_input": "응 사과 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "우리 애들 사료랑 간식 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "바나나를 위한 사료 리스트입니다! 그다음으로 사과 간식도 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "사과",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이"
+      },
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지"
+      },
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이"
+      },
+      {
+        "pet_id": "ccb3f94a-2840-42c4-bdc9-7e6f49eee2e1",
+        "name": "골드",
+        "species": "강아지"
+      },
+      {
+        "pet_id": "84a2e3cc-e9e2-4ec2-81c1-45b2a136c2e3",
+        "name": "초코",
+        "species": "강아지"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "간식"
+    },
+    "search_query": "강아지 간식",
+    "decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "골드",
+        "pet_type": "강아지",
+        "category": "간식"
+      },
+      {
+        "pet_name": "초코",
+        "pet_type": "강아지",
+        "category": "사료"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251117905",
+        "product_name": "빅스비 바크팝 고구마&사과 113g",
+        "brand_name": "빅스비",
+        "price": 16000,
+        "discount_price": 14400,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.8649
+      },
+      {
+        "goods_id": "GI251104332",
+        "product_name": "올리브 콰삭콰삭 펌킨&코코넛 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 8,
+        "rerank_score": 0.7708
+      },
+      {
+        "goods_id": "GI251104331",
+        "product_name": "올리브 콰삭콰삭 치킨&오트 강아지 간식 120g",
+        "brand_name": "올리브",
+        "price": 5000,
+        "discount_price": 4200,
+        "rating": 4.6,
+        "reviews": 23,
+        "rerank_score": 0.7408
+      },
+      {
+        "goods_id": "GI251091601",
+        "product_name": "개이득 소 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 33,
+        "rerank_score": 0.6063
+      },
+      {
+        "goods_id": "GI251091603",
+        "product_name": "개이득 연어 큐브 200g",
+        "brand_name": "개이득",
+        "price": 4500,
+        "discount_price": 4500,
+        "rating": 4.9,
+        "reviews": 31,
+        "rerank_score": 0.5594
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "간식",
+      "추천",
+      "여기",
+      "그다음",
+      "포도",
+      "보여줄까요"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_006_no_profile_A",
+  "description": "특정 카테고리(장난감) 상품 추천 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-011",
+    "user_input": "고양이 장난감 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "고양이 장난감",
+    "golden_products": [
+      {
+        "goods_id": "GI251134181",
+        "product_name": "크레용펫 레인보우 깃털 탱탱볼 공 장난감",
+        "brand_name": "크레용펫",
+        "price": 1900,
+        "discount_price": 765,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.8357
+      },
+      {
+        "goods_id": "GI251132808",
+        "product_name": "크레용펫 치즈박스 펠트 공놀이 장난감",
+        "brand_name": "크레용펫",
+        "price": 21500,
+        "discount_price": 9775,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.7993
+      },
+      {
+        "goods_id": "GI251051980",
+        "product_name": "펫띵 냥설록 캣닢 장난감",
+        "brand_name": "펫띵",
+        "price": 12900,
+        "discount_price": 9900,
+        "rating": 4.1,
+        "reviews": 47,
+        "rerank_score": 0.7753
+      },
+      {
+        "goods_id": "GI251136450",
+        "product_name": "레토 2in1 고양이 낚시대 장난감 흡착판 깃털 세트 LPT-FT03 깃털 화이트",
+        "brand_name": "레토",
+        "price": 9200,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6626
+      },
+      {
+        "goods_id": "GI251133385",
+        "product_name": "크레용펫 바베큐 돌돌이 노즈워크 먹이퍼즐",
+        "brand_name": "크레용펫",
+        "price": 32500,
+        "discount_price": 19125,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6428
+      }
+    ],
+    "expected_response_contains": [
+      "장난감",
+      "추천",
+      "여기",
+      "어떤"
+    ]
+  }
+},
+{
+  "id": "case_006_no_profile_B",
+  "description": "추천 결과 중 특정 속성(재질, 성분) 추가 질문 시나리오 (프로필 미선택 - 후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-012",
+    "user_input": "면으로 된걸로 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 장난감 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "인기 있는 고양이 장난감들입니다! 깃털 막대나 레이저 포인터 등이 있어요. 찾으시는 특별한 종류가 있나요?"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "고양이 장난감 면",
+    "golden_products": [
+      {
+        "goods_id": "GI251136525",
+        "product_name": "크레용펫 깃털 축구공 탱탱볼",
+        "brand_name": "크레용펫",
+        "price": 1000,
+        "discount_price": 425,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.8948
+      },
+      {
+        "goods_id": "GI251051980",
+        "product_name": "펫띵 냥설록 캣닢 장난감",
+        "brand_name": "펫띵",
+        "price": 12900,
+        "discount_price": 9900,
+        "rating": 4.1,
+        "reviews": 47,
+        "rerank_score": 0.7012
+      },
+      {
+        "goods_id": "GI251107460",
+        "product_name": "젤리히어로즈 낚시대 리필(천연깃털)",
+        "brand_name": "젤리히어로즈",
+        "price": 2400,
+        "discount_price": 1200,
+        "rating": 4.6,
+        "reviews": 51,
+        "rerank_score": 0.7011
+      },
+      {
+        "goods_id": "GI251107474",
+        "product_name": "젤리히어로즈 낚시대 리필(땡벌)",
+        "brand_name": "젤리히어로즈",
+        "price": 3800,
+        "discount_price": 1900,
+        "rating": 4.6,
+        "reviews": 83,
+        "rerank_score": 0.6879
+      },
+      {
+        "goods_id": "GI251134181",
+        "product_name": "크레용펫 레인보우 깃털 탱탱볼 공 장난감",
+        "brand_name": "크레용펫",
+        "price": 1900,
+        "discount_price": 765,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.657
+      }
+    ],
+    "expected_response_contains": [
+      "면",
+      "장난감",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_006_with_profile_A",
+  "description": "프로필(바나나) 정보에 맞춘 장난감 추천 시나리오 (초기 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-011-W",
+    "user_input": "우리 바나나 장난감 좀 추천해줄래?",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "고양이 장난감",
+    "golden_products": [
+      {
+        "goods_id": "GI251134181",
+        "product_name": "크레용펫 레인보우 깃털 탱탱볼 공 장난감",
+        "brand_name": "크레용펫",
+        "price": 1900,
+        "discount_price": 765,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.8357
+      },
+      {
+        "goods_id": "GI251132808",
+        "product_name": "크레용펫 치즈박스 펠트 공놀이 장난감",
+        "brand_name": "크레용펫",
+        "price": 21500,
+        "discount_price": 9775,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.7993
+      },
+      {
+        "goods_id": "GI251051980",
+        "product_name": "펫띵 냥설록 캣닢 장난감",
+        "brand_name": "펫띵",
+        "price": 12900,
+        "discount_price": 9900,
+        "rating": 4.1,
+        "reviews": 47,
+        "rerank_score": 0.7753
+      },
+      {
+        "goods_id": "GI251136450",
+        "product_name": "레토 2in1 고양이 낚시대 장난감 흡착판 깃털 세트 LPT-FT03 깃털 화이트",
+        "brand_name": "레토",
+        "price": 9200,
+        "discount_price": 7700,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6626
+      },
+      {
+        "goods_id": "GI251133385",
+        "product_name": "크레용펫 바베큐 돌돌이 노즈워크 먹이퍼즐",
+        "brand_name": "크레용펫",
+        "price": 32500,
+        "discount_price": 19125,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.6428
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "장난감",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_006_with_profile_B",
+  "description": "프로필(바나나) 정보 기반 장난감 추천 중 재질 추가 필터링 시나리오 (후속 요청)",
+  "input": {
+    "session_id": "cd070459-7700-4176-b8c5-47a0e4c5ebd0",
+    "user_id": 2,
+    "request_id": "req-012-W",
+    "user_input": "면으로 된 건 없어?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "우리 바나나 장난감 좀 추천해줄래?"
+      },
+      {
+        "role": "assistant",
+        "content": "바나나가 좋아할 만한 장난감들이에요! 공이나 스크래처 종류가 인기가 많아요."
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루",
+        "health_concerns": [],
+        "allergies": [],
+        "age_years": 0,
+        "age_months": 7
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "용품",
+      "subcategory": "장난감"
+    },
+    "search_query": "고양이 장난감 면",
+    "golden_products": [
+      {
+        "goods_id": "GI251136525",
+        "product_name": "크레용펫 깃털 축구공 탱탱볼",
+        "brand_name": "크레용펫",
+        "price": 1000,
+        "discount_price": 425,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.8948
+      },
+      {
+        "goods_id": "GI251051980",
+        "product_name": "펫띵 냥설록 캣닢 장난감",
+        "brand_name": "펫띵",
+        "price": 12900,
+        "discount_price": 9900,
+        "rating": 4.1,
+        "reviews": 47,
+        "rerank_score": 0.7012
+      },
+      {
+        "goods_id": "GI251107460",
+        "product_name": "젤리히어로즈 낚시대 리필(천연깃털)",
+        "brand_name": "젤리히어로즈",
+        "price": 2400,
+        "discount_price": 1200,
+        "rating": 4.6,
+        "reviews": 51,
+        "rerank_score": 0.7011
+      },
+      {
+        "goods_id": "GI251107474",
+        "product_name": "젤리히어로즈 낚시대 리필(땡벌)",
+        "brand_name": "젤리히어로즈",
+        "price": 3800,
+        "discount_price": 1900,
+        "rating": 4.6,
+        "reviews": 83,
+        "rerank_score": 0.6879
+      },
+      {
+        "goods_id": "GI251134181",
+        "product_name": "크레용펫 레인보우 깃털 탱탱볼 공 장난감",
+        "brand_name": "크레용펫",
+        "price": 1900,
+        "discount_price": 765,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.657
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "면",
+      "장난감",
+      "추천"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd"
+  }
+},
+{
+  "id": "case_007_no_profile",
+  "description": "인기 상품 또는 특정 테마(가을, 외출 등)별 상품 추천 시나리오 (프로필 미선택)",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-012",
+    "user_input": "요즘 인기 있는 고양이 옷 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "popularity",
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "용품",
+      "subcategory": "의류"
+    },
+    "search_query": "고양이 옷 인기",
+    "golden_products": [
+      {
+        "goods_id": "GI251101019",
+        "product_name": "펫띵 후리스 리버서블 패딩 핑크 3호",
+        "brand_name": "펫띵",
+        "price": 34900,
+        "discount_price": 14900,
+        "rating": 4.8,
+        "reviews": 40,
+        "rerank_score": 0.989
+      },
+      {
+        "goods_id": "GI251118520",
+        "product_name": "크레용펫 고양이 손가락 마사지 촬영 소품 장난감",
+        "brand_name": "크레용펫",
+        "price": 2400,
+        "discount_price": 1400,
+        "rating": 5.0,
+        "reviews": 2,
+        "rerank_score": 0.6525
+      },
+      {
+        "goods_id": "GI251094881",
+        "product_name": "로다XBYC 개리야스 보디드라이 쿨런닝 화이트 4XL",
+        "brand_name": "로다XBYC",
+        "price": 20000,
+        "discount_price": 13640,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6023
+      },
+      {
+        "goods_id": "GO251110107",
+        "product_name": "딩동펫 투톤 단가라 티셔츠 3color S-XXL",
+        "brand_name": "딩동펫",
+        "price": 14000,
+        "discount_price": 7900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4765
+      },
+      {
+        "goods_id": "GO251105561",
+        "product_name": "딩동펫 제임 베어 반팔 티셔츠 3color XS-XL",
+        "brand_name": "딩동펫",
+        "price": 15800,
+        "discount_price": 9900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.4512
+      }
+    ],
+    "expected_response_contains": [
+      "인기",
+      "고양이",
+      "옷",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_007_with_profile",
+  "description": "프로필(사과) 정보에 맞춘 인기 상품(패드) 추천 시나리오",
+  "input": {
+    "session_id": "bedc9e88-4969-4c1e-b906-a79d1617a04a",
+    "user_id": 2,
+    "request_id": "req-013-W",
+    "user_input": "요즘 사과한테 필요한 인기 있는 패드 좀 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "popularity",
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "패드"
+    },
+    "search_query": "강아지 패드 인기",
+    "golden_products": [],
+    "expected_response_contains": [
+      "사과",
+      "인기",
+      "패드",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_008_no_profile_A",
+  "description": "3가지 이상의 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 미선택 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014",
+    "user_input": "고양이 사료랑 간식이랑 용품 다 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "사료",
+      "추천",
+      "여기",
+      "그다음",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_no_profile_B",
+  "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015",
+    "user_input": "간식도 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 사료들입니다! 여기 목록을 확인해보세요. 그다음으로 간식도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "간식",
+      "추천",
+      "여기",
+      "마지막으로",
+      "용품",
+      "보여줄까요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_no_profile_C",
+  "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 미선택 - 후속 요청 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016",
+    "user_input": "마지막으로 용품도 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이 사료 리스트입니다!"
+      },
+      {
+        "role": "user",
+        "content": "간식도 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_type": "고양이",
+      "category": "용품"
+    },
+    "search_query": "고양이 용품",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251129709",
+        "product_name": "일이삶사 고양이 스크래쳐 체중계 묘키로",
+        "brand_name": "일이삶사",
+        "price": 40000,
+        "discount_price": 38900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251102583",
+        "product_name": "바른 철벽 수직 스크래쳐",
+        "brand_name": "바른",
+        "price": 30900,
+        "discount_price": 9900,
+        "rating": 4.4,
+        "reviews": 292,
+        "rerank_score": 0.4587
+      },
+      {
+        "goods_id": "GI251134043",
+        "product_name": "레토 고양이 스크래쳐 소파 대형 70x34cm LCH-ST07",
+        "brand_name": "레토",
+        "price": 25400,
+        "discount_price": 15580,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.3708
+      },
+      {
+        "goods_id": "GI251104154",
+        "product_name": "[무료배송] 이츠독 은나래 배씨댕기",
+        "brand_name": "이츠독",
+        "price": 12000,
+        "discount_price": 12000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.3619
+      },
+      {
+        "goods_id": "GI251104691",
+        "product_name": "[무료배송] 레토 고양이 숨숨집 2단 하우스 스크래쳐 LCH-SF01",
+        "brand_name": "레토",
+        "price": 26900,
+        "discount_price": 17480,
+        "rating": 4.9,
+        "reviews": 14,
+        "rerank_score": 0.3448
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "용품",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_008_with_profile_A",
+  "description": "다중 카테고리(사료, 간식, 용품) 복합 요청 시나리오 (프로필 포도 - 초기 요청)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014-W",
+    "user_input": "포도 사료랑 간식이랑 용품 다 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "new_decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "사료"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_id": "GI251048727",
+        "product_name": "로얄캐닌 캣 덴탈 케어 400g 치아관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 258,
+        "rerank_score": 1.1964
+      },
+      {
+        "goods_id": "GS251136060",
+        "product_name": "[첫구매전용] 로얄캐닌 캣 덴탈 케어 3.5kg 치아관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 61300,
+        "discount_price": 54400,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5776
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "사료",
+      "추천",
+      "그다음",
+      "간식",
+      "보여줄까요"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_008_with_profile_B",
+  "description": "3가지 복합 요청 중 두 번째 카테고리(간식) 순차 추천 시나리오 (프로필 포도 - 후속 요청 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015-W",
+    "user_input": "응 간식도 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도를 위한 사료 리스트입니다! 그다음으로 간식도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "간식"
+      },
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "간식"
+    },
+    "search_query": "고양이 간식",
+    "decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "golden_products": [
+      {
+        "goods_name": "[무료배송] 동해형씨 원물건조 잡어 85g"
+      },
+      {
+        "goods_name": "런치 보니또 오리지널 참치 20g"
+      },
+      {
+        "goods_name": "런치 보니또 가쓰오부시맛 20g"
+      },
+      {
+        "goods_name": "이나바 토비츠쿠야끼가다랑어 가다랑어포맛 (QSC-215)"
+      },
+      {
+        "goods_name": "이나바 토비츠쿠 치킨스프맛 (QSC-213)"
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "간식",
+      "추천",
+      "마지막으로",
+      "용품",
+      "보여줄까요"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_008_with_profile_C",
+  "description": "3가지 복합 요청 중 마지막 카테고리(용품) 순차 추천 시나리오 (프로필 포도 - 후속 요청 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016-W",
+    "user_input": "마지막 용품도 추천해줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료랑 간식이랑 용품 다 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도 사료 리스트입니다!"
+      },
+      {
+        "role": "user",
+        "content": "응 간식도 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도 간식 리스트입니다! 마지막으로 용품도 바로 보여드릴까요?"
+      }
+    ],
+    "decomposed_tasks": [
+      {
+        "pet_name": "포도",
+        "pet_type": "고양이",
+        "category": "용품"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "is_next_request": true,
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "용품"
+    },
+    "search_query": "고양이 용품",
+    "decomposed_tasks": [],
+    "golden_products": [
+      {
+        "goods_id": "GI251126889",
+        "product_name": "벳키퍼 빅스 바르는 구강 치약 100ml",
+        "brand_name": "벳키퍼",
+        "price": 24000,
+        "discount_price": 24000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 1.1599
+      },
+      {
+        "goods_id": "GI251129993",
+        "product_name": "리스펫 강아지 고양이 초미세모 만모칫솔 1세트",
+        "brand_name": "리스펫",
+        "price": 5900,
+        "discount_price": 5900,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 1.0413
+      },
+      {
+        "goods_id": "PI000000588",
+        "product_name": "버박 C.E.T. 닭고기맛 치약 70g",
+        "brand_name": "버박",
+        "price": 19800,
+        "discount_price": 19800,
+        "rating": 4.7,
+        "reviews": 1070,
+        "rerank_score": 0.8577
+      },
+      {
+        "goods_id": "GI251026283",
+        "product_name": "오로자임 하이진겔 70g",
+        "brand_name": "오로자임",
+        "price": 25000,
+        "discount_price": 18500,
+        "rating": 4.9,
+        "reviews": 51,
+        "rerank_score": 0.8562
+      },
+      {
+        "goods_id": "GI251055394",
+        "product_name": "도기맨 덴탈 소프트 칫솔 롱타입",
+        "brand_name": "도기맨",
+        "price": 5500,
+        "discount_price": 3620,
+        "rating": 4.8,
+        "reviews": 6,
+        "rerank_score": 0.8347
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "용품",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_009_no_profile_A",
+  "description": "추천 요청이 불분명할 경우 안내 유도 시나리오 (비정형 질문 대응 1)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014",
+    "user_input": "오늘 날씨 되게 좋다",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "날씨",
+      "상품",
+      "찾으시는",
+      "정보"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_009_no_profile_B",
+  "description": "안내 유도 후에도 반복적인 비정형 질문 시 최종 전환 멘트 검증 (비정형 질문 대응 2)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "오늘 날씨 되게 좋다"
+      },
+      {
+        "role": "assistant",
+        "content": "정말 좋은 날씨네요! 이런 날엔 포도와 산책하기에도 좋겠어요. 찾으시는 상품이 있으신가요?"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "지금까지 대화가 즐거웠습니다",
+      "본론으로 들어가 볼까요",
+      "어떤 상품을 찾으시나요"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_009_with_profile_A",
+  "description": "프로필(포도) 활성화 상태에서의 비정형 질문 대응 시나리오 1",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-014-W",
+    "user_input": "포도랑 놀러 가고 싶다",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "포도",
+      "산책",
+      "나들이",
+      "어떤",
+      "상품"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_009_with_profile_B",
+  "description": "프로필(포도) 활성화 상태에서의 비정형 질문 대응 시나리오 2",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-015-W",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도랑 놀러 가고 싶다"
+      },
+      {
+        "role": "assistant",
+        "content": "포도랑 나들이 가면 정말 좋겠네요! 산책할 때 필요한 용품이나 간식을 준비해보는 건 어떨까요?"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "unclear"
+    ],
+    "decomposed_tasks": [],
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "포도",
+      "대화",
+      "본론",
+      "상품",
+      "찾으시는"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_010_no_profile_A",
+  "description": "펫 전환 테스트를 위한 초기 고양이 상품 요청 (프로필 미선택)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-016",
+    "user_input": "고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "고양이",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_010_no_profile_B",
+  "description": "대화 중 펫 전환 및 맥락 교정 테스트 (프로필 미선택, 고양이)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-017",
+    "user_input": "아니 고양이 말고 사과 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+    "pet_profile": {
+      "pet_name": "사과",
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "is_pet_switched": true,
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "사과",
+      "강아지",
+      "상품",
+      "사료",
+      "간식",
+      "용품"
+    ],
+    "search_query": null,
+    "filters": {},
+    "golden_products": []
+  }
+},
+{
+  "id": "case_010_no_profile_C",
+  "description": "펫 전환 후 카테고리 응답 및 최종 추천 (프로필 미선택)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-018",
+    "user_input": "사료",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "고양이 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "고양이를 위한 사료들입니다. 여기 목록을 확인해보세요."
+      },
+      {
+        "role": "user",
+        "content": "아니 고양이 말고 사과 꺼 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "사과를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+    "pet_profile": {
+      "pet_name": "사과",
+      "pet_type": "강아지"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "사료"
+    },
+    "search_query": "강아지 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251045395",
+        "product_name": "윌로펫 뉴트리탑 시니어 3kg",
+        "brand_name": "윌로펫",
+        "price": 41000,
+        "discount_price": 32900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.7174
+      },
+      {
+        "goods_id": "GI251017381",
+        "product_name": "now 그레인프리 스몰브리드 시니어 2.7kg",
+        "brand_name": "now",
+        "price": 53000,
+        "discount_price": 38160,
+        "rating": 4.9,
+        "reviews": 75,
+        "rerank_score": 0.6673
+      },
+      {
+        "goods_id": "GI251129313",
+        "product_name": "윌로펫 헬시포뮬러 하이포알러제닉 3kg",
+        "brand_name": "윌로펫",
+        "price": 66000,
+        "discount_price": 52800,
+        "rating": 4.9,
+        "reviews": 7,
+        "rerank_score": 0.6645
+      },
+      {
+        "goods_id": "GI251061050",
+        "product_name": "윌로펫 헬시포뮬라 피부&모질 3kg",
+        "brand_name": "윌로펫",
+        "price": 55000,
+        "discount_price": 33270,
+        "rating": 4.8,
+        "reviews": 15,
+        "rerank_score": 0.5237
+      },
+      {
+        "goods_id": "GI251120779",
+        "product_name": "원더랜드 촵촵촵 강아지 화식 현미러버덕 (다이어트식) 500g",
+        "brand_name": "원더랜드",
+        "price": 25000,
+        "discount_price": 25000,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5129
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "강아지",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_010_with_profile_A",
+  "description": "펫 전환 테스트를 위한 초기 펫 상품 요청 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-019",
+    "user_input": "포도 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251048727",
+        "product_name": "로얄캐닌 캣 덴탈 케어 400g 치아관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 258,
+        "rerank_score": 1.1964
+      },
+      {
+        "goods_id": "GS251136060",
+        "product_name": "[첫구매전용] 로얄캐닌 캣 덴탈 케어 3.5kg 치아관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 61300,
+        "discount_price": 54400,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5776
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "사료",
+      "추천",
+      "여기"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_010_with_profile_B",
+  "description": "이름 고지를 통한 반려묘 전환 테스트 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-020",
+    "user_input": "아니 포도 말고 바나나 꺼 보여줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+    "pet_profile": {
+      "pet_name": "바나나",
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "is_pet_switched": true,
+    "requires_clarification": true,
+    "expected_response_contains": [
+      "바나나",
+      "고양이",
+      "상품",
+      "사료",
+      "간식",
+      "용품",
+      "모래",
+      "습식관"
+    ],
+    "search_query": null,
+    "filters": {},
+    "golden_products": []
+  }
+},
+{
+  "id": "case_010_with_profile_C",
+  "description": "이름 고지를 통한 펫 전환 후 최종 추천 (프로필 선택 시)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-021",
+    "user_input": "사료",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "포도 사료 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "포도를 위한 사료들입니다! 여기 목록을 확인해 보세요."
+      },
+      {
+        "role": "user",
+        "content": "아니 포도 말고 바나나 꺼 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "바나나를 위한 어떤 상품을 찾으시나요? (사료/간식/용품)"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+        "name": "바나나",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "러시안 블루"
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": "509e0947-4c97-4337-98cb-fc3a1bd17bbd",
+    "pet_profile": {
+      "pet_name": "바나나",
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "바나나",
+      "pet_type": "고양이",
+      "category": "사료"
+    },
+    "search_query": "고양이 사료",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.8025
+      },
+      {
+        "goods_id": "GI251034743",
+        "product_name": "로얄캐닌 캣 센서블 400g 소화기건강",
+        "brand_name": "로얄캐닌",
+        "price": 8200,
+        "discount_price": 8200,
+        "rating": 4.8,
+        "reviews": 178,
+        "rerank_score": 0.726
+      },
+      {
+        "goods_id": "GI251131933",
+        "product_name": "로얄캐닌 캣 얼리 레날 파우치 85g",
+        "brand_name": "로얄캐닌",
+        "price": 2800,
+        "discount_price": 2500,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.6382
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.5735
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.5563
+      }
+    ],
+    "expected_response_contains": [
+      "바나나",
+      "사료",
+      "추천",
+      "여기"
+    ]
+  }
+},
+{
+  "id": "case_011_no_profile",
+  "description": "알러지 제외 조건 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-022",
+    "user_input": "닭고기 알러지 없는 고양이 사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "allergies": [
+      "닭고기",
+      "치킨"
+    ],
+    "requires_clarification": true,
+    "clarification_target": "pet_type",
+    "expected_response_contains": [
+      "반려동물",
+      "고양이",
+      "포도"
+    ],
+    "search_query": "닭고기 알러지 없는 고양이 사료",
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료",
+      "allergy": "닭고기",
+      "health_concern": "치아"
+    },
+    "golden_products": [
+      {
+        "goods_id": "GI251035164",
+        "product_name": "로얄캐닌 캣 브리티쉬 숏헤어 400g 관절건강",
+        "brand_name": "로얄캐닌",
+        "price": 8900,
+        "discount_price": 8900,
+        "rating": 4.8,
+        "reviews": 109,
+        "rerank_score": 0.8702
+      },
+      {
+        "goods_id": "GI251123411",
+        "product_name": "지위픽 스팀드라이 닭고기&고등어 캣 800G",
+        "brand_name": "지위픽",
+        "price": 54000,
+        "discount_price": 45900,
+        "rating": 4.9,
+        "reviews": 34,
+        "rerank_score": 0.8585
+      },
+      {
+        "goods_id": "GI251027985",
+        "product_name": "위스카스 포켓 헤어볼 닭고기와 참치 3kg",
+        "brand_name": "위스카스",
+        "price": 24900,
+        "discount_price": 24900,
+        "rating": 4.6,
+        "reviews": 16,
+        "rerank_score": 0.7992
+      },
+      {
+        "goods_id": "GI251038669",
+        "product_name": "스마트하트 나인케어 피부&피모 6kg",
+        "brand_name": "나인케어",
+        "price": 60000,
+        "discount_price": 50000,
+        "rating": 4.8,
+        "reviews": 48,
+        "rerank_score": 0.7686
+      },
+      {
+        "goods_id": "GI251119789",
+        "product_name": "네이처스버라이어티 인스팅트 동결건조 캣 소화믹서 21g",
+        "brand_name": "생식본능",
+        "price": 7900,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 6,
+        "rerank_score": 0.6744
+      }
+    ]
+  }
+},
+{
+  "id": "case_011_with_profile",
+  "description": "프로필 기반 알러지 자동 필터링 검증-(포도, 고양이)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-024",
+    "user_input": "사료 추천해줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6",
+        "name": "포도",
+        "species": "고양이",
+        "species_en": "cat",
+        "breed": "아비시니안",
+        "health_concerns": [
+          "치아"
+        ],
+        "allergies": [
+          "고구마",
+          "새우"
+        ],
+        "age_years": 6,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "포도",
+      "pet_type": "고양이",
+      "category": "사료",
+      "allergies": [
+        "고구마",
+        "새우"
+      ]
+    },
+    "allergies": [
+      "고구마",
+      "새우"
+    ],
+    "search_query": "고양이 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251048727",
+        "product_name": "로얄캐닌 캣 덴탈 케어 400g 치아관리",
+        "brand_name": "로얄캐닌",
+        "price": 8300,
+        "discount_price": 8300,
+        "rating": 4.8,
+        "reviews": 258,
+        "rerank_score": 1.1964
+      },
+      {
+        "goods_id": "GS251136060",
+        "product_name": "[첫구매전용] 로얄캐닌 캣 덴탈 케어 3.5kg 치아관리 + 간식증정",
+        "brand_name": "로얄캐닌",
+        "price": 61300,
+        "discount_price": 54400,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5776
+      }
+    ],
+    "expected_response_contains": [
+      "포도",
+      "알러지",
+      "고구마",
+      "새우",
+      "제외",
+      "사료"
+    ],
+    "target_pet_id": "3984461c-82fa-4420-ab99-8a14d4b920a6"
+  }
+},
+{
+  "id": "case_012_no_profile_A",
+  "description": "특수 포뮬러 조건 검증 (그레인 프리) - 초기 요청 (종 정보 확인 필요)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-025",
+    "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {},
+    "decomposed_tasks": [],
+    "allergies": [
+      "곡물",
+      "그레인"
+    ],
+    "requires_clarification": true,
+    "clarification_target": "pet_type",
+    "expected_response_contains": [
+      "어떤 반려동물",
+      "강아지",
+      "고양이"
+    ],
+    "search_query": null,
+    "filters": {},
+    "golden_products": []
+  }
+},
+{
+  "id": "case_012_no_profile_B",
+  "description": "특수 포뮬러 조건 검증 (그레인 프리) - 종 정보 획득 후 추천",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-026",
+    "user_input": "고양이",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "곡물 안 들어간(Grain-free) 간식 보여줘"
+      },
+      {
+        "role": "assistant",
+        "content": "어떤 반려동물을 위한 간식인가요? (고양이/강아지)"
+      }
+    ],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "target_pet_id": null,
+    "pet_profile": {
+      "pet_type": "고양이"
+    },
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "간식",
+      "allergies": [
+        "곡물",
+        "그레인"
+      ]
+    },
+    "allergies": [
+      "곡물",
+      "그레인"
+    ],
+    "search_query": "고양이 간식",
+    "requires_clarification": false,
+    "golden_products": [
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.8264
+      },
+      {
+        "goods_id": "GI251132332",
+        "product_name": "펫메이드 치킨그라스 면역력강화",
+        "brand_name": "펫메이드",
+        "price": 8900,
+        "discount_price": 7900,
+        "rating": 5.0,
+        "reviews": 1,
+        "rerank_score": 0.5079
+      },
+      {
+        "goods_id": "GI251129979",
+        "product_name": "오래오래프로젝트 자연산 명태 촉촉스틱 7개입",
+        "brand_name": "오래오래프로젝트",
+        "price": 20000,
+        "discount_price": 14000,
+        "rating": null,
+        "reviews": 0,
+        "rerank_score": 0.5
+      },
+      {
+        "goods_id": "GI251104378",
+        "product_name": "닥터페트라 덴티치카 덴탈트릿 이빨과자 연어맛 70g",
+        "brand_name": "닥터페트라",
+        "price": 9000,
+        "discount_price": 5900,
+        "rating": 4.4,
+        "reviews": 24,
+        "rerank_score": 0.4972
+      },
+      {
+        "goods_id": "GI251120813",
+        "product_name": "촉촉트릿 포캣 닭가슴살 160g",
+        "brand_name": "촉촉트릿",
+        "price": 19900,
+        "discount_price": 19900,
+        "rating": 4.9,
+        "reviews": 25,
+        "rerank_score": 0.4826
+      }
+    ],
+    "expected_response_contains": [
+      "곡물 제외",
+      "그레인 프리",
+      "간식",
+      "추천"
+    ]
+  }
+},
+{
+  "id": "case_012_with_profile",
+  "description": "입력 기반 성분 선호도 반영 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-027",
+    "user_input": "그레인 프리 간식 좀 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": [
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "간식",
+      "allergies": [
+        "곡물"
+      ]
+    },
+    "allergies": [
+      "곡물"
+    ],
+    "search_query": "강아지 간식 그레인프리",
+    "golden_products": [
+      {
+        "goods_name": "[6개 세트] 풀무원아미오 강아지 소프트큐브 저키 닭고기맛100g"
+      },
+      {
+        "goods_name": "정관장지니펫 강아지 연어맛 저키 80g"
+      },
+      {
+        "goods_name": "리스펫 강아지 노령견 노견 간식 견양갱 7gx30p"
+      },
+      {
+        "goods_name": "정관장 지니펫 더케어 홍삼함유 지니츄 구강건강 강아지 개껌 210g"
+      },
+      {
+        "goods_name": "풀무원아미오 강아지 건강담은트릿 눈&눈물 80g"
+      }
+    ],
+    "expected_response_contains": [
+      "사과",
+      "그레인프리",
+      "간식",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_013_no_profile",
+  "description": "비즈니스 로직 검증 (최저가 정렬)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-028",
+    "user_input": "제일 싼 강아지 패드 보여줘",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "강아지",
+      "category": "패드",
+      "sort": "price_asc"
+    },
+    "sort": "price_asc",
+    "search_query": "강아지 패드",
+    "golden_products": [
+      {
+        "goods_id": "GI251099461",
+        "product_name": "근본 논슬립 패드 20매 20g (40x50cm)",
+        "brand_name": "근본",
+        "price": 4900,
+        "discount_price": 1730,
+        "rating": 4.5,
+        "reviews": 18,
+        "rerank_score": 0.7616
+      },
+      {
+        "goods_id": "GI251099439",
+        "product_name": "근본실속형패드 400매 15g (40x50cm)",
+        "brand_name": "근본",
+        "price": 30900,
+        "discount_price": 21910,
+        "rating": 4.8,
+        "reviews": 12,
+        "rerank_score": 0.7074
+      },
+      {
+        "goods_id": "GS251099551",
+        "product_name": "[6개 세트] 요요쉬 프리미엄 패드 50매 (40x48cm)",
+        "brand_name": "요요쉬",
+        "price": 95400,
+        "discount_price": 74400,
+        "rating": 4.9,
+        "reviews": 13,
+        "rerank_score": 0.6571
+      },
+      {
+        "goods_id": "GI251082572",
+        "product_name": "우리아이 배변패드 실속형 100매 (40*50cm)",
+        "brand_name": "우리아이 배변패드",
+        "price": 12000,
+        "discount_price": 6740,
+        "rating": 3.7,
+        "reviews": 3,
+        "rerank_score": 0.633
+      },
+      {
+        "goods_id": "GI251084520",
+        "product_name": "위드어스 담다 표준형 담다패드 초대형 15p",
+        "brand_name": "위드어스",
+        "price": 15000,
+        "discount_price": 14800,
+        "rating": 4.0,
+        "reviews": 1,
+        "rerank_score": 0.6298
+      }
+    ],
+    "expected_response_contains": [
+      "최저가",
+      "가장 저렴한",
+      "패드",
+      "추천"
+    ],
+    "target_pet_id": null
+  }
+},
+{
+  "id": "case_013_with_profile",
+  "description": "멀티턴 대화 중 가격 조건 추가 검증",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-029",
+    "user_input": "그중에서 제일 저렴한 거로 알려줘",
+    "conversation_history": [
+      {
+        "role": "user",
+        "content": "사과 패드 추천해줘"
+      },
+      {
+        "role": "assistant",
+        "content": "사과를 위한 강아지 패드 추천 리스트입니다. 어떤 제품이 마음에 드시나요?"
+      }
+    ],
+    "current_pet_profiles": [
+      {
+        "pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8",
+        "name": "사과",
+        "species": "강아지",
+        "species_en": "dog",
+        "breed": "포메라니안",
+        "health_concerns": [
+          "눈물",
+          "면역"
+        ],
+        "allergies": [
+          "닭고기"
+        ],
+        "age_years": 3,
+        "age_months": 0
+      }
+    ]
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_name": "사과",
+      "pet_type": "강아지",
+      "category": "패드",
+      "sort": "price_asc"
+    },
+    "sort": "price_asc",
+    "search_query": "강아지 패드",
+    "golden_products": [],
+    "expected_response_contains": [
+      "제일 저렴한",
+      "가격 낮은 순",
+      "추천"
+    ],
+    "target_pet_id": "834537f4-7650-4e13-b714-6bac0d9db0f8"
+  }
+},
+{
+  "id": "case_014_no_profile",
+  "description": "비즈니스 로직 검증 (특정 브랜드 제외)",
+  "input": {
+    "session_id": "5e3150ff-30f9-438a-a68b-1a15afdef70e",
+    "user_id": 2,
+    "request_id": "req-030",
+    "user_input": "로얄캐닌 말고 다른 고양이 사료 있어?",
+    "conversation_history": [],
+    "current_pet_profiles": []
+  },
+  "expected_output": {
+    "intents": [
+      "recommend"
+    ],
+    "decomposed_tasks": [],
+    "filters": {
+      "pet_type": "고양이",
+      "category": "사료",
+      "exclude_brands": [
+        "로얄캐닌"
+      ]
+    },
+    "exclude_brands": [
+      "로얄캐닌"
+    ],
+    "search_query": "고양이 사료",
+    "golden_products": [
+      {
+        "goods_id": "GI251025596",
+        "product_name": "오리젠 캣 6피쉬 5.4kg",
+        "brand_name": "오리젠",
+        "price": 118000,
+        "discount_price": 82900,
+        "rating": 4.9,
+        "reviews": 188,
+        "rerank_score": 0.7985
+      },
+      {
+        "goods_id": "GI251051969",
+        "product_name": "웰니스코어 시그니쳐셀렉트 파테 참치 79g",
+        "brand_name": "웰니스",
+        "price": 4600,
+        "discount_price": 3900,
+        "rating": 4.6,
+        "reviews": 38,
+        "rerank_score": 0.6801
+      },
+      {
+        "goods_id": "GI251025585",
+        "product_name": "아카나 캣 그래스랜드 1.8kg",
+        "brand_name": "아카나",
+        "price": 44000,
+        "discount_price": 26000,
+        "rating": 4.8,
+        "reviews": 91,
+        "rerank_score": 0.6508
+      },
+      {
+        "goods_id": "GI251099897",
+        "product_name": "시그니처바이 고양이 A/a 30g 8개",
+        "brand_name": "시그니처바이",
+        "price": 11000,
+        "discount_price": 11000,
+        "rating": 4.8,
+        "reviews": 84,
+        "rerank_score": 0.602
+      },
+      {
+        "goods_id": "GI251076112",
+        "product_name": "오리젠 캣 오리지널 1.8kg",
+        "brand_name": "오리젠",
+        "price": 52500,
+        "discount_price": 36900,
+        "rating": 4.8,
+        "reviews": 117,
+        "rerank_score": 0.5625
+      }
+    ],
+    "expected_response_contains": [
+      "로얄캐닌",
+      "브랜드 제외",
+      "다른 브랜드",
+      "추천"
+    ],
+    "target_pet_id": null
+  }
+  }
+]

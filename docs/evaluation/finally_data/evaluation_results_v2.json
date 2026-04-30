@@ -1,0 +1,2798 @@
+[
+  {
+    "case_id": "case_001",
+    "user_input": "강아지 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "강아지",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 강아지, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_002",
+    "user_input": "간식도 같이 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "강아지",
+          "간식",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 강아지, 간식, 추천 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_003",
+    "user_input": "우리 강아지 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_004",
+    "user_input": "푸들 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "푸들",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 푸들, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_005",
+    "user_input": "우리 아이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "사과",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 사과, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9200000000000002
+    }
+  },
+  {
+    "case_id": "case_006",
+    "user_input": "우리 포도 건강 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "포도",
+          "건강",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "피부",
+          "헤어볼"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 건강, 사료, 추천 | 누락된 키워드: 피부, 헤어볼"
+      },
+      "total": 0.8200000000000001
+    }
+  },
+  {
+    "case_id": "case_007",
+    "user_input": "우리 골드 건강 관리를 위한 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.4,
+        "pet_id_match": true,
+        "overall": 0.76
+      },
+      "retrieval": {
+        "recall": 0.8,
+        "precision": 0.8,
+        "f1": 0.8000000000000002
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "골드",
+          "체중",
+          "피부",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 골드, 체중, 피부, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.8440000000000001
+    }
+  },
+  {
+    "case_id": "case_008",
+    "user_input": "우리 포도 건강 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "포도",
+          "건강",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "피부",
+          "헤어볼"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 건강, 사료, 추천 | 누락된 키워드: 피부, 헤어볼"
+      },
+      "total": 0.8200000000000001
+    }
+  },
+  {
+    "case_id": "case_009",
+    "user_input": "6살 강아지 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.3333333333333333,
+        "pet_id_match": true,
+        "overall": 0.7333333333333334
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "강아지",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 강아지, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.8933333333333333
+    }
+  },
+  {
+    "case_id": "case_010",
+    "user_input": "간식은 없어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_011",
+    "user_input": "초코 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_012",
+    "user_input": "간식도 같이 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "간식",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 간식, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_013",
+    "user_input": "강아지 사료랑 고양이 간식 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "강아지",
+          "사료",
+          "여기",
+          "고양이",
+          "간식",
+          "보여드릴까요"
+        ],
+        "missing": [
+          "추천",
+          "그리고"
+        ],
+        "reasoning": "매칭된 키워드: 강아지, 사료, 여기, 고양이, 간식, 보여드릴까요 | 누락된 키워드: 추천, 그리고"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_014",
+    "user_input": "응 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 간식, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_015",
+    "user_input": "우리 애들 사료랑 간식 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8571428571428571,
+        "matches": [
+          "초코",
+          "사료",
+          "추천",
+          "그다음",
+          "바나나",
+          "간식"
+        ],
+        "missing": [
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 초코, 사료, 추천, 그다음, 바나나, 간식 | 누락된 키워드: 보여줄까요"
+      },
+      "total": 0.9038095238095238
+    }
+  },
+  {
+    "case_id": "case_016",
+    "user_input": "응 바나나 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": false,
+        "overall": 0.6666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 간식, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.7916666666666666
+    }
+  },
+  {
+    "case_id": "case_017",
+    "user_input": "강아지 장난감 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "장난감",
+          "추천"
+        ],
+        "missing": [
+          "어떤"
+        ],
+        "reasoning": "매칭된 키워드: 장난감, 추천 | 누락된 키워드: 어떤"
+      },
+      "total": 0.78
+    }
+  },
+  {
+    "case_id": "case_018",
+    "user_input": "면으로 된걸로 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "면",
+          "장난감",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 면, 장난감, 추천 | 누락된 키워드: "
+      },
+      "total": 0.8800000000000001
+    }
+  },
+  {
+    "case_id": "case_019",
+    "user_input": "우리 초코 장난감 좀 추천해줄래?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.75,
+        "pet_id_match": true,
+        "overall": 0.9000000000000001
+      },
+      "retrieval": {
+        "recall": 0.8,
+        "precision": 0.8,
+        "f1": 0.8000000000000002
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "장난감",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 장난감, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9000000000000001
+    }
+  },
+  {
+    "case_id": "case_020",
+    "user_input": "면으로 된 건 없어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.75,
+        "pet_id_match": true,
+        "overall": 0.9000000000000001
+      },
+      "retrieval": {
+        "recall": 0.8,
+        "precision": 0.8,
+        "f1": 0.8000000000000002
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "초코",
+          "장난감",
+          "추천"
+        ],
+        "missing": [
+          "면"
+        ],
+        "reasoning": "매칭된 키워드: 초코, 장난감, 추천 | 누락된 키워드: 면"
+      },
+      "total": 0.8250000000000001
+    }
+  },
+  {
+    "case_id": "case_021",
+    "user_input": "요즘 인기 있는 강아지 옷 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 0.0,
+        "precision": 0.0,
+        "f1": 0.0
+      },
+      "keyword": {
+        "score": 0.25,
+        "matches": [
+          "추천"
+        ],
+        "missing": [
+          "인기",
+          "강아지",
+          "옷"
+        ],
+        "reasoning": "매칭된 키워드: 추천 | 누락된 키워드: 인기, 강아지, 옷"
+      },
+      "total": 0.4216666666666667
+    }
+  },
+  {
+    "case_id": "case_022",
+    "user_input": "요즘 바나나한테 필요한 인기 있는 모래 좀 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 0.5,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "모래",
+          "추천"
+        ],
+        "missing": [
+          "인기"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 모래, 추천 | 누락된 키워드: 인기"
+      },
+      "total": 0.765
+    }
+  },
+  {
+    "case_id": "case_023",
+    "user_input": "강아지 사료랑 간식이랑 용품 다 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5714285714285714,
+        "matches": [
+          "강아지",
+          "사료",
+          "추천",
+          "간식"
+        ],
+        "missing": [
+          "여기",
+          "그다음",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 강아지, 사료, 추천, 간식 | 누락된 키워드: 여기, 그다음, 보여줄까요"
+      },
+      "total": 0.8714285714285713
+    }
+  },
+  {
+    "case_id": "case_024",
+    "user_input": "간식도 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.7142857142857143,
+        "matches": [
+          "강아지",
+          "간식",
+          "추천",
+          "마지막으로",
+          "용품"
+        ],
+        "missing": [
+          "여기",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 강아지, 간식, 추천, 마지막으로, 용품 | 누락된 키워드: 여기, 보여줄까요"
+      },
+      "total": 0.9142857142857143
+    }
+  },
+  {
+    "case_id": "case_025",
+    "user_input": "마지막으로 용품도 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "강아지",
+          "용품",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 강아지, 용품, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_026",
+    "user_input": "초코 사료랑 간식이랑 용품 다 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "초코",
+          "사료",
+          "추천",
+          "간식"
+        ],
+        "missing": [
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 초코, 사료, 추천, 간식 | 누락된 키워드: 보여줄까요"
+      },
+      "total": 0.8866666666666667
+    }
+  },
+  {
+    "case_id": "case_027",
+    "user_input": "응 간식도 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "초코",
+          "간식",
+          "추천",
+          "용품"
+        ],
+        "missing": [
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 초코, 간식, 추천, 용품 | 누락된 키워드: 보여줄까요"
+      },
+      "total": 0.8866666666666667
+    }
+  },
+  {
+    "case_id": "case_028",
+    "user_input": "마지막 용품도 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "용품",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 용품, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_029",
+    "user_input": "오늘 날씨 되게 좋다",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_030",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_031",
+    "user_input": "초코랑 놀러 가고 싶다",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [
+          "초코"
+        ],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: 초코"
+      },
+      "total": 0.78
+    }
+  },
+  {
+    "case_id": "case_032",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [
+          "초코"
+        ],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: 초코"
+      },
+      "total": 0.78
+    }
+  },
+  {
+    "case_id": "case_033",
+    "user_input": "강아지 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "강아지"
+        ],
+        "reasoning": "매칭된 키워드: 사료, 추천 | 누락된 키워드: 강아지"
+      },
+      "total": 0.8999999999999999
+    }
+  },
+  {
+    "case_id": "case_034",
+    "user_input": "아니 강아지 말고 고양이 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "고양이",
+          "어떤",
+          "상품",
+          "사료",
+          "간식",
+          "용품",
+          "모래",
+          "습식관"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 고양이, 어떤, 상품, 사료, 간식, 용품, 모래, 습식관 | 누락된 키워드: "
+      },
+      "total": 0.8400000000000001
+    }
+  },
+  {
+    "case_id": "case_035",
+    "user_input": "사료",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.805
+    }
+  },
+  {
+    "case_id": "case_036",
+    "user_input": "초코 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "초코",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 초코, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_037",
+    "user_input": "아니 초코 말고 바나나 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": false,
+        "overall": 0.4
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.9,
+        "matches": [
+          "바나나",
+          "고양이",
+          "어떤",
+          "상품",
+          "사료",
+          "간식",
+          "용품",
+          "모래",
+          "습식관"
+        ],
+        "missing": [
+          "초코"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 고양이, 어떤, 상품, 사료, 간식, 용품, 모래, 습식관 | 누락된 키워드: 초코"
+      },
+      "total": 0.73
+    }
+  },
+  {
+    "case_id": "case_038",
+    "user_input": "사료",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "바나나",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 바나나, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_039",
+    "user_input": "닭고기 알러지 없는 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "반려동물",
+          "강아지",
+          "고양이",
+          "어떤"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 반려동물, 강아지, 고양이, 어떤 | 누락된 키워드: "
+      },
+      "total": 0.8400000000000001
+    }
+  },
+  {
+    "case_id": "case_040",
+    "user_input": "강아지",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "강아지",
+          "닭고기",
+          "추천"
+        ],
+        "missing": [
+          "제외"
+        ],
+        "reasoning": "매칭된 키워드: 강아지, 닭고기, 추천 | 누락된 키워드: 제외"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_041",
+    "user_input": "사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.4,
+        "matches": [
+          "초코",
+          "사료"
+        ],
+        "missing": [
+          "알러지",
+          "닭고기",
+          "제외"
+        ],
+        "reasoning": "매칭된 키워드: 초코, 사료 | 누락된 키워드: 알러지, 닭고기, 제외"
+      },
+      "total": 0.7400000000000001
+    }
+  },
+  {
+    "case_id": "case_042",
+    "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "어떤 반려동물",
+          "강아지",
+          "고양이"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 어떤 반려동물, 강아지, 고양이 | 누락된 키워드: "
+      },
+      "total": 0.8400000000000001
+    }
+  },
+  {
+    "case_id": "case_043",
+    "user_input": "강아지",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "곡물 제외",
+          "그레인 프리"
+        ],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: 곡물 제외, 그레인 프리"
+      },
+      "total": 0.7966666666666667
+    }
+  },
+  {
+    "case_id": "case_044",
+    "user_input": "간식 좀 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "그레인프리"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 간식, 추천 | 누락된 키워드: 그레인프리"
+      },
+      "total": 0.8450000000000001
+    }
+  },
+  {
+    "case_id": "case_045",
+    "user_input": "제일 싼 고양이 모래 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "모래",
+          "추천"
+        ],
+        "missing": [
+          "최저가",
+          "저렴한"
+        ],
+        "reasoning": "매칭된 키워드: 모래, 추천 | 누락된 키워드: 최저가, 저렴한"
+      },
+      "total": 0.7700000000000001
+    }
+  },
+  {
+    "case_id": "case_046",
+    "user_input": "그중에서 제일 저렴한 거로 알려줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.4,
+        "pet_id_match": true,
+        "overall": 0.76
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "모래",
+          "추천",
+          "바나나"
+        ],
+        "missing": [
+          "가격 낮은 순"
+        ],
+        "reasoning": "매칭된 키워드: 모래, 추천, 바나나 | 누락된 키워드: 가격 낮은 순"
+      },
+      "total": 0.8290000000000001
+    }
+  },
+  {
+    "case_id": "case_047",
+    "user_input": "로얄캐닌 말고 다른 사료 있어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [],
+        "missing": []
+      },
+      "total": 0.9200000000000002
+    }
+  },
+  {
+    "case_id": "case_048",
+    "user_input": "고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.805
+    }
+  },
+  {
+    "case_id": "case_049",
+    "user_input": "간식도 같이 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 간식, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_050",
+    "user_input": "우리 고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.725
+    }
+  },
+  {
+    "case_id": "case_051",
+    "user_input": "아비시니안 고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "아비시니안"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천 | 누락된 키워드: 아비시니안"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_052",
+    "user_input": "우리 아이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "포도",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 포도, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9200000000000002
+    }
+  },
+  {
+    "case_id": "case_053",
+    "user_input": "우리 사과 건강 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.25,
+        "pet_id_match": true,
+        "overall": 0.7
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "사과",
+          "눈물",
+          "면역",
+          "건강",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "닭성분",
+          "없는"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 눈물, 면역, 건강, 사료, 추천 | 누락된 키워드: 닭성분, 없는"
+      },
+      "total": 0.8049999999999999
+    }
+  },
+  {
+    "case_id": "case_054",
+    "user_input": "우리 바나나 체중, 피부 관리를 위한 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.2,
+        "pet_id_match": true,
+        "overall": 0.68
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "바나나",
+          "체중",
+          "피부",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 바나나, 체중, 피부, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.8720000000000001
+    }
+  },
+  {
+    "case_id": "case_055",
+    "user_input": "우리 사과 건강 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "사과",
+          "건강",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "눈물",
+          "면역"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 건강, 사료, 추천 | 누락된 키워드: 눈물, 면역"
+      },
+      "total": 0.8200000000000001
+    }
+  },
+  {
+    "case_id": "case_056",
+    "user_input": "1살 고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_057",
+    "user_input": "간식은 없어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_058",
+    "user_input": "포도 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "포도",
+          "치아",
+          "사료",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 포도, 치아, 사료, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_059",
+    "user_input": "간식도 같이 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "포도",
+          "치아",
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 치아, 간식, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.8866666666666667
+    }
+  },
+  {
+    "case_id": "case_060",
+    "user_input": "포도 사료랑 고양이 간식 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 0.6,
+        "precision": 0.6,
+        "f1": 0.6
+      },
+      "keyword": {
+        "score": 0.5714285714285714,
+        "matches": [
+          "사료",
+          "추천",
+          "간식",
+          "보여드릴까요"
+        ],
+        "missing": [
+          "고양이",
+          "여기",
+          "그리고"
+        ],
+        "reasoning": "매칭된 키워드: 사료, 추천, 간식, 보여드릴까요 | 누락된 키워드: 고양이, 여기, 그리고"
+      },
+      "total": 0.7514285714285714
+    }
+  },
+  {
+    "case_id": "case_061",
+    "user_input": "응 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "고양이"
+        ],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: 고양이"
+      },
+      "total": 0.8999999999999999
+    }
+  },
+  {
+    "case_id": "case_062",
+    "user_input": "우리 애들 사료랑 간식 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8571428571428571,
+        "matches": [
+          "바나나",
+          "사료",
+          "추천",
+          "그다음",
+          "사과",
+          "간식"
+        ],
+        "missing": [
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 사료, 추천, 그다음, 사과, 간식 | 누락된 키워드: 보여줄까요"
+      },
+      "total": 0.9038095238095238
+    }
+  },
+  {
+    "case_id": "case_063",
+    "user_input": "응 사과 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": false,
+        "overall": 0.6666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5714285714285714,
+        "matches": [
+          "사과",
+          "간식",
+          "추천",
+          "포도"
+        ],
+        "missing": [
+          "여기",
+          "그다음",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 간식, 추천, 포도 | 누락된 키워드: 여기, 그다음, 보여줄까요"
+      },
+      "total": 0.738095238095238
+    }
+  },
+  {
+    "case_id": "case_064",
+    "user_input": "고양이 장난감 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "장난감",
+          "추천"
+        ],
+        "missing": [
+          "여기",
+          "어떤"
+        ],
+        "reasoning": "매칭된 키워드: 장난감, 추천 | 누락된 키워드: 여기, 어떤"
+      },
+      "total": 0.85
+    }
+  },
+  {
+    "case_id": "case_065",
+    "user_input": "면으로 된걸로 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "면",
+          "장난감",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 면, 장난감, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9466666666666668
+    }
+  },
+  {
+    "case_id": "case_066",
+    "user_input": "우리 바나나 장난감 좀 추천해줄래?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.75,
+        "pet_id_match": true,
+        "overall": 0.9000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "바나나",
+          "장난감",
+          "추천"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 바나나, 장난감, 추천 | 누락된 키워드: "
+      },
+      "total": 0.9600000000000002
+    }
+  },
+  {
+    "case_id": "case_067",
+    "user_input": "면으로 된 건 없어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.75,
+        "pet_id_match": true,
+        "overall": 0.9000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "장난감",
+          "추천"
+        ],
+        "missing": [
+          "면"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 장난감, 추천 | 누락된 키워드: 면"
+      },
+      "total": 0.8850000000000001
+    }
+  },
+  {
+    "case_id": "case_068",
+    "user_input": "요즘 인기 있는 고양이 옷 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "인기",
+          "고양이",
+          "추천"
+        ],
+        "missing": [
+          "옷"
+        ],
+        "reasoning": "매칭된 키워드: 인기, 고양이, 추천 | 누락된 키워드: 옷"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_069",
+    "user_input": "요즘 사과한테 필요한 인기 있는 패드 좀 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 0.5,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.6666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "사과",
+          "추천"
+        ],
+        "missing": [
+          "인기",
+          "패드"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 추천 | 누락된 키워드: 인기, 패드"
+      },
+      "total": 0.7166666666666667
+    }
+  },
+  {
+    "case_id": "case_070",
+    "user_input": "고양이 사료랑 간식이랑 용품 다 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5714285714285714,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천",
+          "간식"
+        ],
+        "missing": [
+          "여기",
+          "그다음",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천, 간식 | 누락된 키워드: 여기, 그다음, 보여줄까요"
+      },
+      "total": 0.8714285714285713
+    }
+  },
+  {
+    "case_id": "case_071",
+    "user_input": "간식도 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.42857142857142855,
+        "matches": [
+          "간식",
+          "추천",
+          "용품"
+        ],
+        "missing": [
+          "고양이",
+          "여기",
+          "마지막으로",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 간식, 추천, 용품 | 누락된 키워드: 고양이, 여기, 마지막으로, 보여줄까요"
+      },
+      "total": 0.8285714285714285
+    }
+  },
+  {
+    "case_id": "case_072",
+    "user_input": "마지막으로 용품도 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "용품",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 용품, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_073",
+    "user_input": "포도 사료랑 간식이랑 용품 다 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "포도",
+          "사료",
+          "추천",
+          "간식"
+        ],
+        "missing": [
+          "그다음",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 사료, 추천, 간식 | 누락된 키워드: 그다음, 보여줄까요"
+      },
+      "total": 0.8466666666666667
+    }
+  },
+  {
+    "case_id": "case_074",
+    "user_input": "응 간식도 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6666666666666666,
+        "matches": [
+          "포도",
+          "간식",
+          "추천",
+          "용품"
+        ],
+        "missing": [
+          "마지막으로",
+          "보여줄까요"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 간식, 추천, 용품 | 누락된 키워드: 마지막으로, 보여줄까요"
+      },
+      "total": 0.8466666666666667
+    }
+  },
+  {
+    "case_id": "case_075",
+    "user_input": "마지막 용품도 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "포도",
+          "용품",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 용품, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_076",
+    "user_input": "오늘 날씨 되게 좋다",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_077",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: "
+      },
+      "total": 1.0
+    }
+  },
+  {
+    "case_id": "case_078",
+    "user_input": "포도랑 놀러 가고 싶다",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [
+          "포도"
+        ],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: 포도"
+      },
+      "total": 0.78
+    }
+  },
+  {
+    "case_id": "case_079",
+    "user_input": "너는 주말에 보통 뭐해?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8,
+        "matches": [
+          "상품 추천",
+          "건강",
+          "상담",
+          "정보"
+        ],
+        "missing": [
+          "포도"
+        ],
+        "reasoning": "매칭된 키워드: 상품 추천, 건강, 상담, 정보 | 누락된 키워드: 포도"
+      },
+      "total": 0.78
+    }
+  },
+  {
+    "case_id": "case_080",
+    "user_input": "고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 1.0,
+        "pet_id_match": true,
+        "overall": 1.0
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "고양이",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 고양이, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.9249999999999999
+    }
+  },
+  {
+    "case_id": "case_081",
+    "user_input": "아니 고양이 말고 사과 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.8333333333333334,
+        "matches": [
+          "사과",
+          "상품",
+          "사료",
+          "간식",
+          "용품"
+        ],
+        "missing": [
+          "강아지"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 상품, 사료, 간식, 용품 | 누락된 키워드: 강아지"
+      },
+      "total": 0.79
+    }
+  },
+  {
+    "case_id": "case_082",
+    "user_input": "사료",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.6,
+        "matches": [
+          "사과",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "강아지",
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 사과, 사료, 추천 | 누락된 키워드: 강아지, 여기"
+      },
+      "total": 0.8266666666666667
+    }
+  },
+  {
+    "case_id": "case_083",
+    "user_input": "포도 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "포도",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_084",
+    "user_input": "아니 포도 말고 바나나 꺼 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.375,
+        "matches": [
+          "바나나",
+          "상품",
+          "사료"
+        ],
+        "missing": [
+          "고양이",
+          "간식",
+          "용품",
+          "모래",
+          "습식관"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 상품, 사료 | 누락된 키워드: 고양이, 간식, 용품, 모래, 습식관"
+      },
+      "total": 0.6525000000000001
+    }
+  },
+  {
+    "case_id": "case_085",
+    "user_input": "사료",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.75,
+        "matches": [
+          "바나나",
+          "사료",
+          "추천"
+        ],
+        "missing": [
+          "여기"
+        ],
+        "reasoning": "매칭된 키워드: 바나나, 사료, 추천 | 누락된 키워드: 여기"
+      },
+      "total": 0.8716666666666667
+    }
+  },
+  {
+    "case_id": "case_086",
+    "user_input": "닭고기 알러지 없는 고양이 사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.3333333333333333,
+        "matches": [
+          "닭고기"
+        ],
+        "missing": [
+          "고양이",
+          "제외"
+        ],
+        "reasoning": "매칭된 키워드: 닭고기 | 누락된 키워드: 고양이, 제외"
+      },
+      "total": 0.7200000000000001
+    }
+  },
+  {
+    "case_id": "case_087",
+    "user_input": "사료 추천해줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.3333333333333333,
+        "matches": [
+          "포도",
+          "사료"
+        ],
+        "missing": [
+          "알러지",
+          "고구마",
+          "새우",
+          "제외"
+        ],
+        "reasoning": "매칭된 키워드: 포도, 사료 | 누락된 키워드: 알러지, 고구마, 새우, 제외"
+      },
+      "total": 0.7200000000000001
+    }
+  },
+  {
+    "case_id": "case_088",
+    "user_input": "곡물 안 들어간(Grain-free) 간식 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.0,
+        "pet_id_match": true,
+        "overall": 0.6000000000000001
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 1.0,
+        "matches": [
+          "어떤 반려동물",
+          "강아지",
+          "고양이"
+        ],
+        "missing": [],
+        "reasoning": "매칭된 키워드: 어떤 반려동물, 강아지, 고양이 | 누락된 키워드: "
+      },
+      "total": 0.8400000000000001
+    }
+  },
+  {
+    "case_id": "case_089",
+    "user_input": "고양이",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "곡물 제외",
+          "그레인 프리"
+        ],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: 곡물 제외, 그레인 프리"
+      },
+      "total": 0.7966666666666667
+    }
+  },
+  {
+    "case_id": "case_090",
+    "user_input": "그레인 프리 간식 좀 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.5,
+        "pet_id_match": true,
+        "overall": 0.8
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.5,
+        "matches": [
+          "간식",
+          "추천"
+        ],
+        "missing": [
+          "사과",
+          "그레인프리"
+        ],
+        "reasoning": "매칭된 키워드: 간식, 추천 | 누락된 키워드: 사과, 그레인프리"
+      },
+      "total": 0.7700000000000001
+    }
+  },
+  {
+    "case_id": "case_091",
+    "user_input": "제일 싼 강아지 패드 보여줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.3333333333333333,
+        "pet_id_match": true,
+        "overall": 0.7333333333333334
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.25,
+        "matches": [
+          "추천"
+        ],
+        "missing": [
+          "최저가",
+          "가장 저렴한",
+          "패드"
+        ],
+        "reasoning": "매칭된 키워드: 추천 | 누락된 키워드: 최저가, 가장 저렴한, 패드"
+      },
+      "total": 0.6683333333333333
+    }
+  },
+  {
+    "case_id": "case_092",
+    "user_input": "그중에서 제일 저렴한 거로 알려줘",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.2,
+        "pet_id_match": false,
+        "overall": 0.48000000000000004
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.0,
+        "matches": [],
+        "missing": [
+          "제일 저렴한",
+          "가격 낮은 순",
+          "추천",
+          "사과"
+        ],
+        "reasoning": "매칭된 키워드:  | 누락된 키워드: 제일 저렴한, 가격 낮은 순, 추천, 사과"
+      },
+      "total": 0.492
+    }
+  },
+  {
+    "case_id": "case_093",
+    "user_input": "로얄캐닌 말고 다른 고양이 사료 있어?",
+    "scores": {
+      "logic": {
+        "intent_match": 1.0,
+        "filter_score": 0.6666666666666666,
+        "pet_id_match": true,
+        "overall": 0.8666666666666667
+      },
+      "retrieval": {
+        "recall": 1.0,
+        "precision": 1.0,
+        "f1": 1.0
+      },
+      "keyword": {
+        "score": 0.25,
+        "matches": [
+          "추천"
+        ],
+        "missing": [
+          "로얄캐닌",
+          "브랜드 제외",
+          "다른 브랜드"
+        ],
+        "reasoning": "매칭된 키워드: 추천 | 누락된 키워드: 로얄캐닌, 브랜드 제외, 다른 브랜드"
+      },
+      "total": 0.7216666666666667
+    }
+  }
+]
